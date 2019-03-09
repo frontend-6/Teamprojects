@@ -1,4 +1,7 @@
 /* styles goes here */
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
 .btn-huge {
     cursor: pointer;
     border: none;
