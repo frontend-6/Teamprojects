@@ -1,1 +1,18 @@
 /* styles goes here */
+.btn-huge {
+    cursor: pointer;
+    border: none;
+    background-color: #826550;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.btn-huge:hover {
+    background-color: #6a4d38;
+}
+.btn-huge:active {
+    color: rgba(255,255,255,.3);
+}
