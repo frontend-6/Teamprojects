@@ -1,1 +1,31 @@
-/* styles goes here */
+.news__date{
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    background-color: black;
+    position: relative;
+}
+span{
+    font-size: 16px;
+    display: block;
+    margin-top: -10px;
+}
+.news__date::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0; 
+    height: 0;
+    border-left: 24px solid transparent;
+    border-right: 23px solid transparent;
+    border-top: 11px solid black;
+}
+.news__title{
+    color: black;
+    font-family: PTSans;
+    font-size: 18px;
+    line-height: 27px;
+    }
