@@ -1,3 +1,7 @@
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
 .wrapper {
     display: flex;
     height: 36px;
