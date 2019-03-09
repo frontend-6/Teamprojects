@@ -1,1 +1,45 @@
 /* styles goes here */
+.top_menu {
+    background-color: #826550;
+    width: 321px;
+    height: 50px;
+    position: relative;
+}
+
+.top_menu--select {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.top_menu--button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 50px;
+    background-color: #6a4d38;
+}
+
+.top_menu--button--img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top_menu--button::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s;
+}
