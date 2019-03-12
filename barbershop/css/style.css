@@ -6,6 +6,7 @@ body {
     display: flex;
     height: 36px;
     position: relative;
+    
 }
 
 
@@ -14,9 +15,9 @@ label::before {
     width: 36px;
     height: 36px;
     border: 1px solid #E9DED6;
-    background-color: none;
     background-color: white;
     position: absolute;
+    cursor: pointer;
 }
 
 input {
@@ -27,7 +28,7 @@ input[type="checkbox"]:checked+label:before {
     background: #DBCABE;
 }
 
-label::before:hover {
+label:hover:before {
     border: 1px #DBCABE solid;
 }
 
@@ -46,6 +47,7 @@ label::after {
     top: 9px;
     left: 9px;
     transform: rotate(-45deg);
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked+label::after {
@@ -58,4 +60,7 @@ label h1 {
     font-size: 24px;
     line-height: 30px;
     text-align: center;
+}
+label {
+    cursor: pointer;
 }
