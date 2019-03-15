@@ -55,8 +55,8 @@ input[type="radio"]:checked + label:hover::after,
     border: 1px solid #d3c8be;
 
 } 
-input[type="radio"]:checked + label:focus::after,
-input[type="radio"]:checked + label:focus::before {
+input[type="radio"]:checked + label:active::after,
+input[type="radio"]:checked + label:active::before {
     background-color:#8a8784; 
     border: 1px solid #8a8784;
 
