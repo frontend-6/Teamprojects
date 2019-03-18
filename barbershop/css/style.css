@@ -10,7 +10,7 @@ input[type="radio"]
     height: 0;
     overflow: hidden;
 }
-label 
+input[type="radio"] + label 
  {
     display: inline-flex;
     position: relative;
@@ -19,7 +19,7 @@ label
     align-items: center;
     cursor: pointer;
 }
-label:before
+input[type="radio"] + label:before
  {
     content: "";
     position: absolute;
@@ -31,15 +31,15 @@ label:before
     border: 1px solid #e5ddd5;
     border-radius: 50%;
 }
-label:hover:before
+input[type="radio"] + label:hover:before
  {
     border-color: #d5c9bd;
 }
 
-label:active:before {
+input[type="radio"] + label:active:before {
     background-color: #d5c9bd;
 }
-label:after 
+input[type="radio"] + label:after 
  {
     content: "";
     position: absolute;
