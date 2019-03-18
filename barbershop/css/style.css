@@ -2,65 +2,65 @@ body {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.wrapper {
-    display: flex;
-    height: 36px;
-    position: relative;
-    
+input[type=checkbox] {
+    width: 0;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
 }
-
-
-label::before {
+input[type=checkbox] + label {
+    cursor: pointer;
+    padding-left: 60px;
+    min-height: 70px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+input[type=checkbox] + label:before {
     content: '';
+    display: block;
     width: 36px;
     height: 36px;
-    border: 1px solid #E9DED6;
+    border: 1px solid #e5ddd5;
     background-color: white;
     position: absolute;
-    cursor: pointer;
+    left: 0;
 }
 
-input {
-    display: none;
-}
-
-input[type="checkbox"]:checked+label:before {
-    background: #DBCABE;
-}
-
-label:hover:before {
-    border: 1px #DBCABE solid;
-}
-
-label::after {
+input[type=checkbox] + label:after {
     content: '';
     width: 22px;
     height: 12px;
     border: solid 3px;
-    border-top-color: #DBCABE;
-    border-left-color: black;
-    border-right-color: #DBCABE;
-    border-bottom-color: black;
+    color: transparent;
+    border-top-color: transparent;
+    border-left-color: currentColor;
+    border-right-color: transparent;
+    border-bottom-color: currentColor;
     border-radius: 3px;
     position: absolute;
-    visibility: hidden;
-    top: 9px;
-    left: 9px;
+    top: 25px;
+    left: 6px;
     transform: rotate(-45deg);
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked+label::after {
-    visibility: visible;
+input[type=checkbox] + label:hover:before {
+    border-color: #d5c9bd;
 }
 
-label h1 {
-    margin: 0 0 0 61px;
-    color: black;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
+input[type=checkbox] + label:active:before {
+    background-color: #d5c9bd;
 }
-label {
-    cursor: pointer;
+
+input[type=checkbox] + label:active:after {
+    color: black;
+}
+
+input[type=checkbox]:checked + label:after {
+    color: black;
+}
+
+input[type=checkbox]:checked + label:active:after {
+    color: transparent;
 }
