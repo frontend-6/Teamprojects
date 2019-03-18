@@ -1,4 +1,7 @@
-/* styles goes here */
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
 .top_menu {
     background-color: #826550;
     width: 321px;
@@ -154,13 +157,4 @@ a.nav-item-hidden {
 
 #toggle:checked ~ .top_menu--select .nav-item {
     box-shadow: 2px 0 1px rgb(98, 75, 59) inset;
-}
-
-
-
-
-
-
-body {
-    font-family: 'PT Sans Narrow', sans-serif;
 }
