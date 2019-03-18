@@ -1,5 +1,5 @@
 .news{
-    background-color: #f8f5f2;
+    /* background-color: #f8f5f2; */
 }
 .news__title{
     color: black;
@@ -21,6 +21,7 @@
     line-height: 30px;
     background-color: black;
     position: relative;
+    min-width: 54px;
 }
 span{
     font-size: 16px;
