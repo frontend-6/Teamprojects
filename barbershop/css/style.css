@@ -30,7 +30,7 @@ input[type="radio"] {
     overflow: hidden;
 }
 
-label {
+input[type="radio"] + label {
     display: inline-flex;
     position: relative;
     padding-left: 97px;
@@ -39,7 +39,7 @@ label {
     cursor: pointer;
 }
 
-label:before {
+input[type="radio"] + label:before {
     content: "";
     position: absolute;
     left: 0px;
@@ -51,15 +51,15 @@ label:before {
     border-radius: 50%;
 }
 
-label:hover:before {
+input[type="radio"] + label:hover:before {
     border-color: #d5c9bd;
 }
 
-label:active:before {
+input[type="radio"] + label:active:before {
     background-color: #d5c9bd;
 }
 
-label:after {
+input[type="radio"] + label:after {
     content: "";
     position: absolute;
     left: 21px;
