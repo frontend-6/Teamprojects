@@ -2,6 +2,7 @@
 body {
     font-family: 'PT Sans Narrow', sans-serif;
 }
+
 .btn-huge {
     cursor: pointer;
     border: none;
@@ -13,22 +14,23 @@ body {
     text-transform: uppercase;
     padding: 20px;
 }
+
 .btn-huge:hover {
     background-color: #6a4d38;
 }
+
 .btn-huge:active {
-    color: rgba(255,255,255,.3);
+    color: rgba(255, 255, 255, .3);
 }
 
-input[type="radio"]
-{
+input[type="radio"] {
     position: absolute;
     width: 0;
     height: 0;
     overflow: hidden;
 }
-label 
- {
+
+label {
     display: inline-flex;
     position: relative;
     padding-left: 97px;
@@ -36,8 +38,8 @@ label
     align-items: center;
     cursor: pointer;
 }
-label:before
- {
+
+label:before {
     content: "";
     position: absolute;
     left: 0px;
@@ -48,16 +50,16 @@ label:before
     border: 1px solid #e5ddd5;
     border-radius: 50%;
 }
-label:hover:before
- {
+
+label:hover:before {
     border-color: #d5c9bd;
 }
 
 label:active:before {
     background-color: #d5c9bd;
 }
-label:after 
- {
+
+label:after {
     content: "";
     position: absolute;
     left: 21px;
@@ -69,15 +71,40 @@ label:after
     border-radius: 100%;
 }
 
-input[type="radio"]:checked + label:after {
+input[type="radio"]:checked+label:after {
     border-color: #e5ddd5;
 }
-input[type="radio"]:checked + label:hover::after,
- input[type="radio"]:checked + label:hover::before {
+
+input[type="radio"]:checked+label:hover::after,
+input[type="radio"]:checked+label:hover::before {
     border-color: #d3c8be;
 
-} 
-input[type="radio"]:checked + label:active::after,
-input[type="radio"]:checked + label:active::before {
+}
+
+input[type="radio"]:checked+label:active::after,
+input[type="radio"]:checked+label:active::before {
     background-color: #d5c9bd;
-} 
+}
+
+.input_text {
+    outline: 0;
+    text-decoration: none;
+    padding: 15px 20px;
+    width: 100%
+}
+
+.name {
+    border: 1px solid #e6ded6;
+    font-family: 'PT Sans', sans-serif;
+    color: #000000;
+    font-size: 17.99px;
+    line-height: 12.757px;
+}
+
+.name:hover {
+    border-color: #d6cabf;
+}
+
+.name:focus {
+    border-color: #9a9a9a;
+}
