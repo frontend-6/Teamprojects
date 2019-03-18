@@ -1,37 +1,22 @@
-/* styles goes here */
-
-
-/* -------INPUT_TEXT_NAME------- */
-
-
-
-
-.input_text{
-  position: absolute;  
-  left: 0;
-  bottom: 0;
-  top: 0;
-  right: 0; 
-  margin: auto;
-
-outline: 0;
-text-decoration: none;
-
-height: 50px;
-width: 280px
+.input_text {
+    outline: 0;
+    text-decoration: none;
+    padding: 15px 20px;
+    width: 100%
 }
-  
 
-.name{
-border: 1px solid #e6ded6;
-font-family: 'PT Sans', sans-serif;    
-color:  #000000;
-font-size: 17.99px;
-line-height: 12.757px;
+.name {
+    border: 1px solid #e6ded6;
+    font-family: 'PT Sans', sans-serif;
+    color: #000000;
+    font-size: 17.99px;
+    line-height: 12.757px;
 }
-  .name:hover{    
-  border-color:  #d6cabf;
-  }
-  .name:focus{
-   border-color: #9a9a9a; 
-  }
+
+.name:hover {
+    border-color: #d6cabf;
+}
+
+.name:focus {
+    border-color: #9a9a9a;
+}
