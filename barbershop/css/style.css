@@ -2,3 +2,65 @@
 body {
     font-family: 'PT Sans Narrow', sans-serif;
 }
+
+input[type="radio"]
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+label 
+ {
+    display: inline-flex;
+    position: relative;
+    padding-left: 97px;
+    min-height: 70px;
+    align-items: center;
+    cursor: pointer;
+}
+label:before
+ {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border: 1px solid #e5ddd5;
+    border-radius: 50%;
+}
+label:hover:before
+ {
+    border-color: #d5c9bd;
+}
+
+label:active:before {
+    background-color: #d5c9bd;
+}
+label:after 
+ {
+    content: "";
+    position: absolute;
+    left: 21px;
+    top: 21px;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 100%;
+}
+
+input[type="radio"]:checked + label:after {
+    border-color: #e5ddd5;
+}
+input[type="radio"]:checked + label:hover::after,
+ input[type="radio"]:checked + label:hover::before {
+    border-color: #d3c8be;
+
+} 
+input[type="radio"]:checked + label:active::after,
+input[type="radio"]:checked + label:active::before {
+    background-color: #d5c9bd;
+} 
