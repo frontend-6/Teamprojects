@@ -170,3 +170,112 @@ input[type=checkbox]:checked + label:after {
 input[type=checkbox]:checked + label:active:after {
     color: transparent;
 }
+/* 
+.news{
+    max-width: 280px;
+}
+*/
+
+.news__title{
+    color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.news__date{
+    padding-top: 5px;
+    padding-right: 3px;
+    height: 50px;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    background-color: black;
+    position: relative;
+    min-width: 54px;
+}
+span{
+    font-size: 16px;
+    display: block;
+    margin-top: -10px;
+}
+.news__date::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0; 
+    height: 0;
+    border-left: 27px solid transparent;
+    border-right: 27px solid transparent;
+    border-top: 11px solid black;
+    bottom: -11px;
+    left: 0;
+}
+.news__descr{
+    color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: -11px;
+    margin-left: 18px;
+    letter-spacing: 0.1px;
+}
+a.news__link{
+    text-decoration: none;
+}
+a.news__link:hover .news__descr{
+    color: #826550;
+    text-decoration: underline;
+}
+a.news__link:hover .news__date{
+    background-color: #826550;
+}
+a.news__link:hover .news__date::after{
+    border-top: 11px solid #826550;
+}
+a.news__link:focus .news__descr{
+    color: #826550;
+    text-decoration: underline;
+}
+a.news__link:focus .news__date{
+    background-color: #6a4d38;
+    color: #978374;
+}
+a.news__link:focus .news__date::after{
+    border-top: 11px solid #6a4d38;
+}
+hr{
+    width: 100%;
+    margin-top: 18px;
+    margin-left: -31px;
+    margin-bottom: -12px;
+    height: 1px;
+    border: none;
+    background-color: #e5ddd5;
+}
+.news__button{
+    width: 100%;
+    border: 1px solid #e5ddd5;
+    color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-left: -29px;
+    margin-top: 24px;
+    padding: 11px;
+    background-color: #f8f5f2;
+}
+.news__button:hover{
+    cursor: pointer;
+}
+.news__button:focus{
+    background-color: #d5c9bd;
+    color: #958c84;
+    outline: none;
+}
