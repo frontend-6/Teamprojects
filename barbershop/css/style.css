@@ -21,6 +21,10 @@ body {
 .btn-huge:active {
     color: rgba(255, 255, 255, .3);
 }
+.btn-huge:disabled {
+    background-color: #aeaeae;
+    cursor: not-allowed;
+}
 
 .radio {
     position: absolute;
