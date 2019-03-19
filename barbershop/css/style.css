@@ -177,13 +177,8 @@ body {
 }
 /* 
 .news{
-<<<<<<< HEAD
-    max-width: 280px;
-=======
     /* background-color: #f8f5f2; */
->>>>>>> 9a387475811cf6bf71cd7c012b7415b3665e5c04
-}
-*/
+
 
 .news__title{
     color: black;
@@ -207,10 +202,6 @@ body {
     position: relative;
     min-width: 54px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 9a387475811cf6bf71cd7c012b7415b3665e5c04
 .news__date > span{
     font-size: 16px;
     display: block;
