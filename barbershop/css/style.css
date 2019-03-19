@@ -23,7 +23,7 @@
     position: relative;
     min-width: 54px;
 }
-span{
+.news__date > span{
     font-size: 16px;
     display: block;
     margin-top: -10px;
