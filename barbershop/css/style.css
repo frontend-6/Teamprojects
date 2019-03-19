@@ -2,3 +2,24 @@
 body {
     font-family: 'PT Sans Narrow', sans-serif;
 }
+.btn--ghost {
+    border: 1px solid #e5ddd5;
+    outline: none;
+    background: transparent;
+    color: black;
+    font-family: "PT Sans Narrow";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 12px 29px;
+}
+.btn--ghost:active {
+    background-color: #d5c9bd;
+}
+
+.btn--ghost:hover {
+    border: 1px solid #d5c9bd;
+}
+.btn--ghost:disabled {
+    cursor: not-allowed;
+}
