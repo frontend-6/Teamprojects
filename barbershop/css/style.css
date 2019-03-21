@@ -465,3 +465,61 @@ a.nav-item-hidden {
 .btn--ghost:disabled {
     cursor: not-allowed;
 }
+
+
+
+
+
+/* statistic Pogorelov */
+
+
+.statistic_list .container{
+    width: 100%;
+    max-width: 768px;
+}
+.list{
+    width: 100%;
+    padding: 0;
+}
+.list li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 78px;
+}
+.select p{
+    text-align: right;
+    padding-right: 20px;
+    color: #F8F4F1;
+    font-size: 18px;  
+}
+.select h2{
+    padding-left: 20px;
+    color: #FFFFFF;
+    font-size: 40px;
+    }
+.select:nth-child(even){
+    background-color:#4D4D4D; 
+    }
+.list, p :nth-child(odd){
+    background-color:#3E3E3E;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
