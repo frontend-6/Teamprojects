@@ -794,3 +794,24 @@ p :nth-child(odd) {
     transform-origin: right top;
     transform: rotate(-12deg);
 }
+.btn-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+	font-family: PTSans;
+	font-size: 18px;
+	font-weight: 700;
+    line-height: 27px;
+    background-color: #292929;
+    border: 1px solid #3f3f3f;
+}
+
+.btn-block:hover{
+    border: 1px solid #545454;
+}
+.btn-block:active{
+    border: 1px solid #252525;
+    background-color: #252525;
+    
+}
