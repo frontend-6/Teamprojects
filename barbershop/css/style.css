@@ -322,6 +322,7 @@ hr {
     max-width: 100%;
     height: 50px;
     position: relative;
+    z-index: 1;
 }
 
 .top_menu--select {
@@ -506,6 +507,16 @@ a.nav-item-hidden {
     /* max-width: 320px; */
 }
 
+@media (min-width: 768px) {
+    .section--logo {
+        min-height: 398px;
+        background-image: url(../img/back-tablet.jpg);
+    }
+    .section--info {
+        margin-top: -184px;
+    }
+}
+
 .wrapper__logo {
     max-width: 100%;
     min-height: 85px;
@@ -518,37 +529,33 @@ a.nav-item-hidden {
     height: auto;
 }
 
-.container__panel {
-    max-width: 100%;
-
-}
-
-.panel--text {
+.info {
     text-align: center;
-    padding: 0 0px;
+    background-color: white;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .info {
+        text-align: left;
+        padding: 30px 40px;
+    }
 }
 
-.panel__h1 {
+.info__h1 {
     color: black;
-    font-family: "PT Sans Narrow";
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
-
-    padding-right: 20px;
-    padding-left: 20px;
-
-
+    margin-top: 0;
 }
 
-.panel__h3 {
+.info__h3 {
     color: black;
-    font-family: "PT Sans Narrow";
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
-
+    margin-top: 0;
 }
 
 .slider_1 {
@@ -716,15 +723,14 @@ a.nav-item-hidden {
 
 .select p {
     text-align: right;
-    padding-right: 20px;
     color: #F8F4F1;
     font-size: 18px;
 }
 
 .select h2 {
-    padding-left: 20px;
     color: #FFFFFF;
     font-size: 40px;
+    margin: 10px 0;
 }
 
 .select:nth-child(even) {
@@ -756,7 +762,7 @@ p :nth-child(odd) {
 .top_footer {
     background-color: #292929;
     position: relative;
-    margin: 300px auto;
+    /* margin: 300px auto; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -786,7 +792,7 @@ p :nth-child(odd) {
 .caron::after {
     left: 0;
     transform-origin: left top;
-    transform: rotate(12deg);
+    transform: rotate(calc(360deg / 4));
 }
 
 .caron::before {
