@@ -1,0 +1,2 @@
+[Thu Mar 21 2019 11:04:43 GMT+0200 (Финляндия (зима))] layer "slider indicator.png": Duplicate path: slider indicator.png
+[Thu Mar 21 2019 11:04:43 GMT+0200 (Финляндия (зима))] layer "+7 (812) 555-66-66": Expected Either a default asset specification or a layer asset specification but "+" found.
