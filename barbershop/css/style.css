@@ -289,7 +289,7 @@ hr{
 
 .top_menu {
     background-color: #826550;
-    width: 100%;
+    max-width: 100%;
     height: 50px;
     position: relative;
 }
@@ -320,7 +320,7 @@ hr{
     display: none;
     opacity: 0;
     background-color: #826550;
-    width: 100%;;
+    max-width: calc(100% - 70px);
     height: 50px;
     position: relative;
     transform: translateX(70px);
@@ -414,7 +414,7 @@ a.nav-item-hidden {
 
 #toggle:checked ~ .top_menu--button--label .line {
     transform: rotate(45deg) scale(1);
-    left: 1.5%;
+    left: 18px;
     right: auto;
 }
 
@@ -468,4 +468,19 @@ a.nav-item-hidden {
 }
 .btn--ghost:disabled {
     cursor: not-allowed;
+}
+
+.section {
+    max-width: 320px;
+}
+
+.wrapper__logo {
+    max-width: 100%;
+    min-height: 85px;
+    background-color: #242424;
+    text-align: center;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
 }
