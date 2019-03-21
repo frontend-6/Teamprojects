@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>styleguide</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+        <button class="btn-huge">Отправить заявку</button>
+        <button class="btn-huge" disabled>Отправить заявку</button>
+
+    <div>
+        <input type="radio" class="radio" name="rb1" id="rb1" checked>
+        <label for="rb1">Переключатель 1</label>
+    </div>
+
+    <div>
+        <input type="radio" class="radio" name="rb1" id="rb2">
+        <label for="rb2">Переключатель 2</label>
+    </div>
+
+    <div class="input">
+        <input class="input_text name" type="text" id="name" value="Представтесь,пожалуйста">
+        <label for="name"></label>
+    </div>
+
+    <input class="checkbox" type="checkbox" name="checkbox" id="raz" class="checkbox"><label for="raz">Покрасить бороду</label>
+
+    <div class="news">
+        <a class="news__link d-flex justify-content-between" href="#">
+            <div class="news__date">
+                19 <span>сент</span>
+            </div>
+            <div class="news__descr">
+                В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил
+                наши стройные ряды. Спешите записаться!
+            </div>
+        </a>
+    </div>
+
+    <div class="top_menu">
+        <input class="top-menu-button--input" type="checkbox" name="top-menu-button" id="toggle">
+        <label class="top_menu--button--label" for="toggle">
+            <span class="line"></span>
+            <div class="top_menu--button"></div>
+        </label>
+        <nav class="top_menu--select d-flex flex-column justify-content-center align-items-left">
+            <a href="javascript:void(0)" class="nav-item nav-item-selected">
+                <span class="nav-item-text">Главная</span>
+            </a>
+            <a href="javascript:void(0)" class="nav-item nav-item-hidden">
+                <span class="nav-item-text">Информация</span>
+            </a>
+            <a href="javascript:void(0)" class="nav-item nav-item-hidden">
+                <span class="nav-item-text">Новости</span>
+            </a>
+            <a href="javascript:void(0)" class="nav-item nav-item-hidden">
+                <span class="nav-item-text">Прайс-лист</span>
+            </a>
+            <a href="javascript:void(0)" class="nav-item nav-item-hidden">
+                <span class="nav-item-text">Контакты</span>
+            </a>
+            <a href="javascript:void(0)" class="nav-item nav-item-hidden nav-item-sign-in">
+                <img class="nav-item-sign-in-img" src="img/sign-in.png" alt="sign-in">
+                <span class="nav-item-text">Войти</span>
+            </a>
+        </nav>
+    </div>
+
+    <button class="btn btn--ghost" type="submit">ПОКАЗАТЬ ВСЕ</button>
+    
+    <button class="btn btn--ghost" disabled type="submit">ПОКАЗАТЬ ВСЕ</button>
+
+</body>
+
+</html>
