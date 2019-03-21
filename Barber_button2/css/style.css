@@ -23,6 +23,6 @@ body {
     background-color: #252525;
     
 }
-p:hover{
+.phone:hover{
 opacity: .3;
 }
