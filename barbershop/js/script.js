@@ -1,3 +1,6 @@
 $(document).ready(function(){
-    $('.slider').slick();
+    $('.swiper-wrapper').slick({
+      dots: true,
+    });
+    
   });
