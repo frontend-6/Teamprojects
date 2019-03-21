@@ -736,11 +736,6 @@ p :nth-child(odd) {
     background-color: #3E3E3E;
 }
 
-/* --------------TOP FOOTER------------ */
-body {
-    display: flex;
-}
-
 .h3_footer_body_text {
     font-family: 'PT Sans Narrow', sans-serif;
     color: #ffffff;
