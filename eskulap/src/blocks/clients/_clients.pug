@@ -1,0 +1,9 @@
+mixin clients(_title, _images)
+    .clients
+        .container
+            h2.clients__title!= _title
+            .row
+                each img, index in _images
+                    .col-3
+                        a(href="http://").clients__item
+                            img(src=img).clients__img

@@ -1,0 +1,12 @@
+mixin expert(_title, _items)
+    .expert
+        .container
+            h2.expert__title!= _title
+            .row
+                //- title, iconSrc, text
+                each item in _items
+                    .col-4
+                        .expert__round
+                            img(src=item.src).expert__icon
+                        h3.expert__in!= item.title
+                        p.expert__text!= item.text

@@ -1,0 +1,8 @@
+mixin popup(_mod)
+    div(class=`popup` + (_mod != '') ? `popup--${_mod}` : '')
+        .popup__panel
+            .popup__close
+                i.icon.icon--close
+            .popup__body
+                if block
+                    block

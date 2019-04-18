@@ -1,0 +1,7 @@
+mixin input(_placeholder, _type)
+    .form__control
+        input(type=_type, placeholder=_placeholder).form__input
+
+mixin textarea(_placeholder)
+    .form__control
+        textarea(placeholder=_placeholder).form__input.form__input--textarea

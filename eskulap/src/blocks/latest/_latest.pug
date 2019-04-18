@@ -1,0 +1,10 @@
+mixin latest(_title, _items)
+    .latest
+        .container
+            h2.latest__title!= _title
+            .row
+                //- title, iconSrc, text
+                each item in _items
+                    .col-4
+                        .latest__item
+                            img(src=item).latest__img

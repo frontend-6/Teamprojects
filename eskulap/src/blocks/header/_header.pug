@@ -1,0 +1,11 @@
+mixin header(_title, _subtitle)
+    header.header
+        .container
+            .header__logo
+                img.header__img
+            h1.header__title!= _title
+            p.header__subtitle= _subtitle
+            if block
+                block
+            a(href="http://").header__down
+                i.icon.icon--down

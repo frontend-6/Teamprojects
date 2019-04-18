@@ -1,0 +1,17 @@
+.btn {
+    display: block;
+    padding: 10px;
+    background-color: red;
+
+    &--primary {
+        font-size: 30px;
+    }
+
+    &--secondary {
+        background-color: blue;
+    }
+
+    &:hover {
+        opacity: .72;
+    }
+}
