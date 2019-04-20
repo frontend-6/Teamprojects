@@ -1,3 +1,21 @@
 .popup {
     
+    &__panel {
+        margin: 0 auto;
+        padding: 20px 20px 50px 146.5px;
+        width: 800px;
+        border: 1px solid red;
+        border-radius: 10px;
+        background: white;
+    }
+    &__close {
+        color: #3677fd;
+        text-align: right;
+        font-size: 40px;
+    }
+    &__body {
+        h2 {
+        text-align: center;
+        }
+    }
 }
