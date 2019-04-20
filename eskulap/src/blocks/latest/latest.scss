@@ -1,6 +1,10 @@
 .latest{
+    &__title {
+        text-align: center;
+    }
+
     &__img{
-    display: block;
-    margin: 0 auto;
-}
+        margin:20px;
+        padding:20px;
+    }
 }
