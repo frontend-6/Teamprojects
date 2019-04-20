@@ -3,8 +3,8 @@ mixin clients(_title, _images)
         .container
             h2.clients__title!= _title
             .row
-                each img(_mod = ""), index in _images
-                    .col-3
+                each img, index in _images
+                    .col-3.d-flex.align-items-center.justify-content-center
                         a(href="http://").clients__item
                             img(src=img, class= (_mod != '') ? `img--${_mod}` : '').clients__img
                             
