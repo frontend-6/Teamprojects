@@ -1,4 +1,9 @@
 .lang {
+    text-decoration: none;
+
+    &:hover {
+        opacity: .8;
+    }
 
     &__text {
         color: #d2d2d2;
