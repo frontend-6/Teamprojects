@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    display: none;
 
     &:after {
         position: fixed;
@@ -20,7 +21,7 @@
     &__panel {
         margin: 0 auto;
         padding: 20px 146.5px 50px 146.5px;
-        width: 800px;
+        max-width: 800px;
         border: 1px solid black;
         border-radius: 10px;
         background: white;
