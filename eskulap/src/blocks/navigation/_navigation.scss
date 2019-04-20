@@ -3,6 +3,8 @@
     &__list {
         text-align: center;
         list-style: none;
+        border-bottom: 1px solid #d1d9e4;
+        padding: 81px 0 81px 0;
 
         a {
             text-decoration: none;
@@ -50,5 +52,12 @@
         a {
             color: white;
         }
+    }
+}
+.popup {
+    &__lang {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
     }
 }
