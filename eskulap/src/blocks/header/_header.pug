@@ -5,8 +5,8 @@ mixin header(_title, _subtitle, _img)
                 .header__logo
                     img(src=_img).header__img
                 h1.header__title!= _title
-                p.header__subtitle= _subtitle
+                p.header__subtitle!= _subtitle
                 if block
                     block
                 a(href="http:").header__down
-                    i.icon.icon--down
+                    <i class="fas fa-arrow-down"></i>

@@ -12,11 +12,12 @@ html(lang="en")
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         link(rel="stylesheet", href="./css/style.css")
     body
-        +cookie("Lorem ipsum dolor sit amet consectetur adipisicing")
+        +cookie("This site uses cookies, so that my service can work better. ")
             +btn('Accept', "primary")
-        +header("free portfolio PSD template<br>FOR GRAPHIC designerS", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","img/Elipsa.png")
+        +header("free portfolio PSD template<br>FOR GRAPHIC designerS", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud","img/Elipsa.png")
             +btn('Hire me', "secondary")
-            a(href="").burger burger
+            a(href="").burger
+                <i class="fas fa-bars"></i>
         +about("About Me", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis<br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia ")
         +expert("Expert in", expert)
         +latest("latest", latest)
