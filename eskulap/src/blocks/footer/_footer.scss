@@ -1,0 +1,40 @@
+.footer {
+    background-color: #e8f3ff;
+    background: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+    padding: 46px 0 53px;
+    position: relative;
+
+    * {
+        z-index: 2;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        z-index: 1;
+        width: 66%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 139px;
+        -webkit-transform: skew(15deg, 15deg);
+        -ms-transform: skew(15deg, 15deg);
+        transform: skew(45deg, 0deg);
+    }
+
+    &__text {
+        color: white;
+        font-size: 50px;
+        line-height: 65px;
+        /* Text style for "Need a graphic" */
+        font-weight: 300;
+        text-transform: initial;
+    }
+
+    &__text--fatty {
+        letter-spacing: 0.55px;
+    }
+}
