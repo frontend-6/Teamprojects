@@ -1,15 +1,17 @@
 .cookie {
     position: sticky;
     top: 0;
-    background-color: darkblue;
+    background-color: #194277;
     text-align: center;
     padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 10;
 
     &__text {
         margin-right: 15px;
         color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 36px;
     }
 }

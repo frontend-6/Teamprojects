@@ -1,3 +1,17 @@
 .popup {
-    
+    &__panel {
+        margin: 0 auto;
+        padding: 20px 20px 50px 145px;
+        width: 800px;
+        border: 1px solid red;
+        border-radius: 10px;
+        background: white;
+    }
+    &__close {
+        color: #3677fd;
+        text-align: right;
+    }
+    &__body {
+        text-align: center;
+    }
 }
