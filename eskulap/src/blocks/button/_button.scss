@@ -1,14 +1,29 @@
 .btn {
-    display: block;
-    padding: 10px;
-    background-color: red;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius:50px;
+    align-self: center;
 
     &--primary {
-        font-size: 30px;
+        font-size: 12px;
+        color: #194277;
+        background-color: WHITE;
+        padding: 10px 35px;
     }
 
     &--secondary {
-        background-color: blue;
+        color: #3695ff;
+        text-transform: uppercase;
+        border:2px solid blue;
+        padding: 20px 90px;
+    }
+
+    &--secondary_send {
+        color: white;
+        background-color: #3695ff;
+        text-transform: uppercase;
+        padding: 20px 90px;
     }
 
     &:hover {
