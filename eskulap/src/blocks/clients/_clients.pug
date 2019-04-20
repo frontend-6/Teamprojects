@@ -4,6 +4,7 @@ mixin clients(_title, _images)
             h2.clients__title!= _title
             .row
                 each img, index in _images
-                    .col-3
+                    .col-3.d-flex.align-items-center.justify-content-center
                         a(href="http://").clients__item
-                            img(src=img).clients__img
+                            img(src=img).clients__img.clients__img--index
+                            

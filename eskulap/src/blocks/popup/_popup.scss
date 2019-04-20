@@ -20,7 +20,8 @@
         right: 20px;
 
         &:hover {
-            transform: rotateX(360deg);
+            transform-origin: center;
+            transform: rotateZ(180deg);
         }
     }
     &__body {
