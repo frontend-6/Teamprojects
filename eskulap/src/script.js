@@ -1,0 +1,1 @@
+//@prepros-append blocks/popup/_popup.js
