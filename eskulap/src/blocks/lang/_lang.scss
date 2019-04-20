@@ -1,0 +1,18 @@
+.lang {
+    text-decoration: none;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &__text {
+        color: #d2d2d2;
+        text-transform: uppercase;
+        margin-right: 5px;
+    }
+
+    &__img {
+        width: 37px;
+        height: 22px;
+    }
+}
