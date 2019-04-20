@@ -1,14 +1,26 @@
-.clients__title{
-    color: #3677fd;
-    font-family: 'Lato', sans-serif;
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 35px; 
-    text-align: center;
-    letter-spacing: -1.6px;
-    margin-bottom: 80px;
-}
-.clients__img{
-    filter: grayscale(100%);
-    opacity: 0.2;
+.clients {
+
+    &__item {
+        filter: contrast(0%) brightness(1.5);
+
+        &:hover {
+            filter: contrast(100%);
+        }
+    }
+
+    &__title{
+        color: #3677fd;
+        font-family: 'Lato', sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 35px; 
+        text-align: center;
+        letter-spacing: -1.6px;
+        margin-bottom: 80px;
+    }
+
+    &__img{
+        display: block;
+        margin: 0 auto;
+    }
 }
