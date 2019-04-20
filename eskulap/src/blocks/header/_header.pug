@@ -1,11 +1,12 @@
-mixin header(_title, _subtitle)
+mixin header(_title, _subtitle, _img)
     header.header
         .container
-            .header__logo
-                img.header__img
-            h1.header__title!= _title
-            p.header__subtitle= _subtitle
-            if block
-                block
-            a(href="http://").header__down
-                i.icon.icon--down
+            .header__container
+                .header__logo
+                    img(src=_img).header__img
+                h1.header__title!= _title
+                p.header__subtitle= _subtitle
+                if block
+                    block
+                a(href="http:").header__down
+                    i.icon.icon--down
