@@ -1,4 +1,5 @@
 .navigation {
+    
     &__list {
         text-align: center;
         list-style: none;
@@ -21,6 +22,10 @@
 }
 
 .social {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 98px;
     &__list {
         list-style-type: none;
         display: flex;
@@ -47,5 +52,12 @@
         a {
             color: white;
         }
+    }
+}
+.popup {
+    &__lang {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
     }
 }
