@@ -1,10 +1,10 @@
-mixin clients(_title, _images)
+mixin clients(_title, _images, _href)
     .clients
         .container
             h2.clients__title!= _title
             .row
                 each img, index in _images
                     .col-3.d-flex.align-items-center.justify-content-center
-                        a(href="http://").clients__item
-                            img(src=img).clients__img.clients__img--index
+                        a(href=_href[index]).clients__item
+                            img(src=img).clients__img
                             
