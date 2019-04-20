@@ -1,46 +1,29 @@
 .btn {
-    //display: block;
+    display: inline-block;
     text-decoration: none;
+    font-weight: 700;
+    border-radius:50px;
+    align-self: center;
 
     &--primary {
+        font-size: 12px;
         color: #194277;
         background-color: WHITE;
-        font-family: 'Lato', sans-serif;
-        font-size: 12px;
-        font-weight: 700;
-        border-radius:50px;
-        padding-left: 35px;
-        padding-right: 35px;
-        padding-top: 10px;
-        padding-bottom:10px;
+        padding: 10px 35px;
     }
 
     &--secondary {
         color: #3695ff;
-        font-family: 'Lato', sans-serif;
-        font-size: 16px;
-        font-weight: 700;
         text-transform: uppercase;
-        border-radius:50px;
         border:2px solid blue;
-        padding-left: 90px;
-        padding-right: 90px;
-        padding-top: 20px;
-        padding-bottom:20px;
+        padding: 20px 90px;
     }
 
     &--secondary_send {
         color: white;
         background-color: #3695ff;
-        font-family: 'Lato', sans-serif;
-        font-size: 16px;
-        font-weight: 700;
         text-transform: uppercase;
-        border-radius:50px;
-        padding-left: 90px;
-        padding-right: 90px;
-        padding-top: 30px;
-        padding-bottom:10px;
+        padding: 20px 90px;
     }
 
     &:hover {
