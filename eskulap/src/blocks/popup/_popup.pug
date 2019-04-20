@@ -1,5 +1,5 @@
 mixin popup(_mod)
-    div(class=`popup` + (_mod != '') ? `popup--${_mod}` : '')
+    div(class= (_mod != '' && _mod != undefined) ? `popup--${_mod}` : '').popup
         .container
             .popup__panel
                 .popup__close
