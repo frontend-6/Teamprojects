@@ -1,0 +1,9 @@
+.navigation {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 98px; }
+
+.social__item {
+  list-style-type: none;
+  font-size: 200px; }
