@@ -19,6 +19,10 @@
         font-size: 30px;
         transition: .3s;
 
+        &:first-child {
+            padding: 20px 30px;
+        }
+
         &:hover {
             background-color: #3680fe;
             transform-origin: center;
