@@ -21,6 +21,8 @@
 
         &:hover {
             background-color: #3680fe;
+            transform-origin: center;
+            transform: rotateZ(360deg);
         }
 
         a {
