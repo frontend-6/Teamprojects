@@ -6,8 +6,25 @@
 }
 
 .social {
-    &__item {
+    &__list {
         list-style-type: none;
-        font-size: 200px;
+        display: flex;
+    }
+    &__item {
+        background-color: #e1e1e1;
+        padding: 20px;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 30px;
+        transition: .3s;
+
+        &:hover {
+            background-color: #3680fe;
+        }
+
+        a {
+            color: white;
+        }
     }
 }
