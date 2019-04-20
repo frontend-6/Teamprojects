@@ -1,8 +1,9 @@
 mixin popup(_mod)
     div(class=`popup` + (_mod != '') ? `popup--${_mod}` : '')
-        .popup__panel
-            .popup__close
-                <i class="fas fa-times"></i>
-            .popup__body
-                if block
-                    block
+        .container
+            .popup__panel
+                .popup__close
+                    <i class="fas fa-times"></i>
+                .popup__body
+                    if block
+                        block
