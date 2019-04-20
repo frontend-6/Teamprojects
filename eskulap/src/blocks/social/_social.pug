@@ -1,0 +1,7 @@
+mixin social(_icons)
+    .social
+        ul.social__list
+            each icon in _icons
+                li.social__item
+                    a(href="http://", class=`social__link--${icon}`).social__link
+                        i(class=`fa-${icon}`).fab

@@ -1,2 +1,6 @@
-mixin navigation()
-    .navigation
+mixin navigation(_nav, _active)
+    nav.navigation
+        ul.navigation__list
+            each val, index in _nav
+                li.navigation__item
+                    a(href="http://", class= (index == _active - 1) ? "navigation__link--active" : '').navigation__link= val
