@@ -17,7 +17,7 @@
         font-size: 24px;
         font-weight: bold;
         text-transform: uppercase;
-        margin-top: 55px;
+        margin-top: 56px;
     }
     &__round {
         border: 1px solid #b7c0c9;
@@ -25,12 +25,16 @@
         width: 142px;
         height: 142px;
         position: relative;
-        margin-top: 64px;
+        margin-top: 63px;
     }
     &__icon {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+    &__text {
+        line-height: 35px;
+        margin-top: 20px;
     }
 }
