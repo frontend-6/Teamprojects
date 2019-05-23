@@ -4,7 +4,7 @@
 .statistic {
     // Selector styles
     // TODO: add code
-    background-color: white;
+    // margin-top: 50px;
 
     // @media queries
     // TODO: add code
@@ -20,6 +20,11 @@
 
     // BEM elements
     // TODO: add code
+    &__white {
+        background-color: white;
+        padding-top: 27px;
+    }
+
     &__title {
         color: $color-black;
         font-family: $font-pt-sans;
@@ -28,5 +33,20 @@
         line-height: 30px;
         text-transform: uppercase;
         text-align: center;
+        max-width: 220px;
+        margin: 0 auto;
+        letter-spacing: -.09em;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        color: $color-black;
+        font-family: $font-pt-sans;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: -.09em;
+        max-width: 245px;
+        margin: 0 auto;
     }
 }
