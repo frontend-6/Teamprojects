@@ -1,11 +1,8 @@
 extends ../layouts/base.pug
 
 include ../../blocks/logo/logo.pug
-<<<<<<< HEAD
 include ../../blocks/footer/footer.pug
-=======
 include ../../blocks/statistic/statistic.pug
->>>>>>> 5c3beae108270843de6b3aabaf27fb0bae7ab08d
 
 //- TODO: include page-specific block templates
 
@@ -13,9 +10,5 @@ block page
     //- TODO: add code
     .header
         +logo().header__logo
-<<<<<<< HEAD
-    .footer
-        +footer().footer
-=======
         +statistic(data)
->>>>>>> 5c3beae108270843de6b3aabaf27fb0bae7ab08d
+    +footer()
