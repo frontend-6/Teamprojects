@@ -1,0 +1,39 @@
+include ./variables.pug
+include ./blocks/_blocks.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        +cookie("This site uses cookies, so that my service can work better. ")
+            +btn('Accept', "primary")
+        +header("free portfolio PSD template<br>FOR GRAPHIC designerS", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud","img/Elipsa.png")
+            a(href="").burger
+                <i class="fas fa-bars"></i>
+            +btn('Hire me', "secondary")
+        +about("About Me", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis<br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia ")
+        +expert("Expert in", expert)
+        +latest("latest", latest)
+        +clients("Clients", latest__logo, latest__href)
+        +footer("Need a graphic designer? <strong class='footer__text--fatty'>Ready to work!</strong>")
+            +btn("hire me", "secondary")
+        +popup('hire')
+            h2 Hire Me
+            form(action="", method="get").form
+                +input("Textinput", "text")
+                +input("Emailinput", "email")
+                +textarea("Your message")
+                .form__submit
+                    +btn("Send message", "secondary_send")
+        +popup()
+            +navigation(['About Me', 'Services', 'My Works', 'Clients'], 3)
+            +social(['facebook-f', 'twitter', 'dribbble', 'behance'])
+            .popup__lang
+                +lang("eng", "./img/flag.jpg")
