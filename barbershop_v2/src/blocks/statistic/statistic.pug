@@ -1,0 +1,11 @@
+//-
+    name: statistic
+    description: Markup for the statistic block
+    arguments:
+        - {object} data - block data
+
+mixin statistic(data = {})
+    .statistic&attributes(attributes)
+        .statistic__white
+            h1.statistic__title= data.title
+            p.statistic__subtitle= data.subtitle
