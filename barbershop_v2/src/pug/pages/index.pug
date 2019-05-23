@@ -1,6 +1,10 @@
 extends ../layouts/base.pug
 
+include ../../blocks/logo/logo.pug
+
 //- TODO: include page-specific block templates
 
 block page
     //- TODO: add code
+    .header
+        +logo().header__logo

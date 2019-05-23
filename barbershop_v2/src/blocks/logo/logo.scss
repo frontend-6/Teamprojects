@@ -1,7 +1,10 @@
 /**
- * Styles for the {{block}} block.
+ * Styles for the logo block.
  */
-.{{block}} {
+.logo {
+    background-color: #242424;
+    text-align: center;
+    padding: 28px 0;
     // Selector styles
     // TODO: add code
 
@@ -13,10 +16,16 @@
 
     // Nested selectors
     // TODO: add code
-
+    
     // Bem modifiers
     // TODO: add code
 
     // BEM elements
     // TODO: add code
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 }

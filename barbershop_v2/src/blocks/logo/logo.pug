@@ -1,0 +1,9 @@
+//-
+    name: logo
+    description: Markup for the logo block
+    arguments:
+        - {object} data - block data
+
+mixin logo(data = {})
+    .logo&attributes(attributes)
+        img.logo__img(src="./img/logotype-mobile.png", alt="")
