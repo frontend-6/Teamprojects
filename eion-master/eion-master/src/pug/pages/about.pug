@@ -1,0 +1,21 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/counters/counters.pug
+include ../../blocks/common/side-section/side-section.pug
+
+include ../../blocks/about/hero/hero.pug
+include ../../blocks/about/testimonials/testimonials.pug
+include ../../blocks/about/team/team.pug
+include ../../blocks/about/img-banner/img-banner.pug
+
+block page
+    +hero(data.content.hero)
+    .two-section
+        +img-banner(data.content.section1.leftImg).two-section__left
+        +side-section(data.content.section1).two-section__right       
+    .two-section
+        +side-section(data.content.section2).two-section__left
+        +img-banner(data.content.section2.rightImg).two-section__right
+    +section(data.content.team).page__section
+        +team(data.content.team.people)
+    +counters(data.content.counters, {theme: 'light'})

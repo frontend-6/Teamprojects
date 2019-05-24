@@ -1,0 +1,18 @@
+mixin comment(data = {}, mods = {})
+    li.comment(data-id=data.id)&attributes(attributes)
+        .comment__inner
+            .comment__avatar
+                img(src=data.img, alt=data.author).comment__img
+            
+            .comment__body
+                .comment__author= data.author
+                .comment__text= data.content
+                a(href="javascript:void(0);").comment__reply-link
+                    i.fas.fa-reply(aria-label="Reply")
+                    span.comment__reply-link-text Reply
+
+        .comment__replies
+            if data.replies
+                ul.comment__reply-list
+                    each comment in data.replies
+                        +comment(comment).comment__reply

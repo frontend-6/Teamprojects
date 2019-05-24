@@ -1,0 +1,55 @@
+/**
+ * Styles for the review form block.
+ */
+.review-form {
+    padding: 45px 15px 50px;
+
+    background: $color-concrete;
+
+    @include breakpoint-up(sm) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @include breakpoint-up(md) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    &__top {
+        margin-top: 40px;
+
+        @include breakpoint-up(sm) {
+            align-items: baseline;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__rating {
+        margin-top: 20px;
+
+        @include breakpoint-up(sm) {
+            margin-top: 0;
+
+            text-align: right;
+        }
+    }
+
+    &__fields {
+        margin-top: 30px;
+    }
+
+    &__submit {
+        margin-top: 30px;
+        min-width: 220px;
+    }
+
+    &__rating-error {
+        display: block;
+        margin-top: 5px;
+
+        color: $color-primary;
+        @include font-size(14px);
+    }
+}

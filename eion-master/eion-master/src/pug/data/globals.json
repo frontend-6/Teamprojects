@@ -1,0 +1,196 @@
+{
+    "siteTitle": "Eion",
+    "siteTagline": "HTML template for flower & beauty shops",
+
+    "menu": [{
+        "text": "About",
+        "link": "about.html"
+    }, {
+        "text": "Flower",
+        "link": "product-detail.html"
+    }, {
+        "text": "Shop",
+        "link": "product-category-3-columns.html"
+    }, {
+        "text": "Pages",
+        "link": "javascript:void(0);",
+        "label": "New",
+        "submenu": [{
+            "text": "Home",
+            "link": "javascript:void(0);",
+            "submenu": [{
+                "text": "Home 1",
+                "link": "index.html"
+            }, {
+                "text": "Home 2",
+                "link": "index-2.html"
+            }, {
+                "text": "Home 3",
+                "link": "index-3.html"
+            }]
+        }, {
+            "text": "Blog",
+            "link": "javascript:void(0);",
+            "submenu": [{
+                "text": "Blog Category Standard",
+                "link": "blog-category-standard.html"
+            }, {
+                "text": "Blog Grid Category",
+                "link": "blog-grid-category.html"
+            }, {
+                "text": "Blog Masonry Category",
+                "link": "blog-masonry-category.html"
+            }, {
+                "text": "Blog Single Post No Sidebar",
+                "link": "blog-single-post-no-sidebar.html"
+            }, {
+                "text": "Blog Single Post Sidebar",
+                "link": "blog-single-post-sidebar.html"
+            }]
+        }, {
+            "text": "Product",
+            "link": "javascript:void(0);",
+            "submenu": [{
+                "text": "Category 2 Columns",
+                "link": "product-category-2-columns.html"
+            }, {
+                "text": "Category 3 Columns",
+                "link": "product-category-3-columns.html"
+            }, {
+                "text": "Category List",
+                "link": "product-category-3-columns-2.html"
+            }, {
+                "text": "Category 3 Columns Sidebar",
+                "link": "product-category-3-columns-sidebar.html"
+            }, {
+                "text": "Category List Sidebar",
+                "link": "product-category-3-columns-sidebar-2.html"
+            }, {
+                "text": "Category 4 Columns",
+                "link": "product-category-4-columns.html"
+            }, {
+                "text": "Category Fullwidth",
+                "link": "product-category-fullwidth.html"
+            }, {
+                "text": "Product Detail",
+                "link": "product-detail.html"
+            }]
+        }, {
+            "text": "General",
+            "link": "javascript:void(0);",
+            "submenu": [{
+                "text": "Shopping Cart",
+                "link": "shopping-cart.html"
+            }, {
+                "text": "Checkout",
+                "link": "checkout.html"
+            }, {
+                "text": "About",
+                "link": "about.html"
+            }, {
+                "text": "Contact",
+                "link": "contact.html"
+            }, {
+                "text": "FAQs",
+                "link": "faqs.html"
+            }, {
+                "text": "Under Construction",
+                "link": "under-construction.html"
+            }]
+        }]
+    }, {
+        "text": "Blog",
+        "link": "blog-category-standard.html"
+    }, {
+        "text": "Contact",
+        "link": "contact.html"
+    }],
+
+    "search": {
+        "results": [{
+            "rating": 5,
+            "link": "product-detail.html",
+            "thumb": "img/content/products/120x80/flower-01.jpg",
+            "price": 530,
+            "name": "Fl Model A351"
+        }]
+    },
+
+    "minicart": [{
+        "link": "product-detail.html",
+        "thumb": "img/content/products/120x80/flower-01.jpg",
+        "price": 530,
+        "name": "Fl Model A315",
+        "qty": 2
+    }, {
+        "link": "product-detail.html",
+        "thumb": "img/content/products/120x80/flower-02.jpg",
+        "price": 399,
+        "name": "Fl Model A210",
+        "qty": 1
+    }],
+
+    "menuCenter": true,
+    "sideNavAlign": "left",
+
+    "footer": {
+        "about": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing 1992 elit London, do <em>flower</em> tempor incididunt ut labore et dolore magna aliqua.</p><p><em>Eion</em> renim ad 2015 minim veniam, quis nostrud exercitation ullamco.</p>",
+
+        "menu": [{
+            "text": "FAQs",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Size Guide",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Delivery Info",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Return Info",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Discount",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Gift",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "My Wishlist",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Our Stores",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Help",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Customize",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "iOS App",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Android App",
+            "link": "javascript:void(0);"
+        }],
+
+        "address": "PO Box CT16122 Collins Street West, Victoria 8007, Australia.",
+
+        "phone": "+1 (2) 345 6789",
+        "fax": "+1 (2) 345 6789",
+        "email": "Contact@yourdomain.com",
+
+        "copyright": "© Copyright 2015. Powered by WordPress. Eion Theme by SunriseThemes <br> Html template by polarfawx",
+
+        "instagramFeed": [
+            "img/content/instagram-feed/feed-01.jpg",
+            "img/content/instagram-feed/feed-02.jpg",
+            "img/content/instagram-feed/feed-03.jpg",
+            "img/content/instagram-feed/feed-04.jpg",
+            "img/content/instagram-feed/feed-05.jpg",
+            "img/content/instagram-feed/feed-06.jpg",
+            "img/content/instagram-feed/feed-07.jpg",
+            "img/content/instagram-feed/feed-08.jpg"
+        ]
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "pageTitle": "Product Category 3 Columns 2",
+
+    "content": {
+        "header": {
+            "title": "Popular Products",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        },
+
+        "filter": {
+            "layouts": [{
+                "label": "2 Columns",
+                "iconClass": "fas fa-th-large",
+                "link": "product-category-2-columns.html"
+            }, {
+                "label": "3 Columns",
+                "iconClass": "fas fa-th-list",
+                "link": "product-category-3-columns.html"
+            }, {
+                "label": "4 Columns",
+                "iconClass": "fas fa-th",
+                "link": "product-category-4-columns.html"
+            }],
+            "showProducts": 6,
+            "totalProducts": 30,
+            "views": ["12", "24", "All"],
+
+            "sort": ["Newest", "Popylarity", "Price: low to high", "Price: high to low"]
+        },
+
+        "list": {
+            "products": [{
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-01.jpg",
+                "rating": 5,
+                "link": "product-detail.html",
+                "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>"
+            }, {
+                "name": "Fl-Model A351",
+                "oldPrice": 530,
+                "price": 399,
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "img": "img/content/products/480x360/flower-02.jpg",
+                "rating": 5,
+                "link": "product-detail.html",
+                "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-03.jpg",
+                "rating": 5,
+                "link": "product-detail.html",
+                "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-04.jpg",
+                "rating": 5,
+                "link": "product-detail.html",
+                "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>"
+            }, {
+                "name": "Fl-Model A351",
+                "oldPrice": 530,
+                "price": 399,
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "img": "img/content/products/480x360/flower-05.jpg",
+                "rating": 5,
+                "link": "product-detail.html",
+                "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-06.jpg",
+                "rating": 5,
+                "link": "product-detail.html",
+                "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>"
+            }]
+        },
+
+        "pagination": {
+            "pages": 2,
+            "activePage": 1
+        }
+    }
+}

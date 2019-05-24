@@ -1,0 +1,18 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/page-header/page-header.pug
+include ../../blocks/common/sidebar-coupon/sidebar-coupon.pug
+include ../../blocks/common/sidebar-widget/sidebar-widget.pug
+include ../../blocks/common/sidebar-list/sidebar-list.pug
+
+include ../../blocks/blog/blog-layout/blog-layout.pug
+include ../../blocks/blog/blog-author/blog-author.pug
+include ../../blocks/blog/tag-cloud/tag-cloud.pug
+include ../../blocks/blog/blog-comments/blog-comments.pug
+include ../../blocks/blog/comment/comment.pug
+include ../../blocks/blog/popular-posts/popular-posts.pug
+include ../../blocks/blog/latest-posts/latest-posts.pug
+include ../../blocks/blog/post-grid/post-grid.pug
+
+block page
+    +blog-layout(data.content.blog)

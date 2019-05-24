@@ -1,0 +1,29 @@
+mixin slider(data = {}, mods = {})
+    .slider&attributes(attributes)
+        .slider__container.swiper-container
+            .swiper-wrapper
+                each slide, i in data.slides
+                    .swiper-slide.slider__slide(
+                        class = {
+                            'swiper-slide-active': (i == 0),
+                            ['slider__slide_theme_' + slide.theme] : true,
+                        }
+                        style = `background-image: url(${slide.img})`
+                    )
+                        .slider__slide-inner
+                            .slider__content-wrap
+                                .slider__content
+                                    h2.slider__title= slide.title
+                                    .slider__text= slide.text
+            // /.slider__container 
+
+            button.slider__arrow.slider__arrow_prev.swiper-button-prev
+                i.fas.fa-angle-left(aria-label="Previous Slide")
+            button.slider__arrow.slider__arrow_next.swiper-button-next
+                i.fas.fa-angle-right(aria-label="Next Slide")
+
+            .slider__pagination.swiper-pagination
+
+        if data.skipLink
+            +skip-link(data.skipLink).slider__skip-link
+    // /.slider 

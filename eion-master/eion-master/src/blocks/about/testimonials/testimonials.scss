@@ -1,0 +1,93 @@
+/**
+ * Styles for the testimonials block.
+ */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .swiper-container {
+        max-width: 100%;
+    }
+
+    &__quote {
+        display: flex;
+    }
+
+    &__avatar {
+        flex: 0 0 50px;
+
+        @include breakpoint-up(sm) {
+            flex-basis: 70px;
+        }
+    }
+
+    &__avatar-img {
+        display: block;
+        max-width: 100%;
+
+        border-radius: 50%;
+    }
+
+    &__body {
+        margin-left: 20px;
+
+        @include breakpoint-up(sm) {
+            margin-left: 30px;
+        }
+    }
+
+    &__author {
+        margin-top: 15px;
+
+        color: $color-primary;
+    }
+
+    &__position {
+        font-family: $font-family-serif;
+        @include font-size(14px);
+        font-style: italic;
+    }
+
+    &__text {
+        margin-top: 24px;
+
+        font-family: $font-family-serif;
+    }
+
+    &__pagination {
+        position: static;
+        display: flex;
+        margin-top: 30px;
+    }
+
+    &__bullet {
+        display: block;
+        height: 10px;
+        padding: 0;
+        width: 10px;
+
+        text-indent: -9999px;
+
+        background: transparent;
+        border: 1px solid $color-secondary;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+
+        transition: background-color 0.25s linear;
+
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        &_active {
+            background: $color-secondary;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 2px 1px $color-primary;
+        }
+    }
+}

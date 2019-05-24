@@ -1,0 +1,35 @@
+mixin cart-form(data = {}, mods = {})
+    form(action="#" method="post").cart-form&attributes(attributes)
+        table.cart-form__table
+            tbody
+                each item in data
+                    tr.cart-form__item
+                        td.cart-form__cell.cart-form__cell_img
+                            a(
+                                href=item.link
+                                tabindex="-1"
+                            ).cart-form__item-thumb
+                                img(
+                                    src=item.img
+                                    alt=item.title
+                                ).cart-form__item-img
+                        
+                        td.cart-form__cell.cart-form__cell_title
+                            a(href=item.link).cart-form__item-title
+                                | #{item.title}
+
+                        td.cart-form__cell.cart-form__cell_price
+                            .cart-form__item-price $#{item.price}
+
+                        td.cart-form__cell.cart-form__cell_qty
+                            +qty(item.qty).cart-form__item-qty
+
+                        td.cart-form__cell.cart-form__cell_total
+                            .cart-form__item-total $#{item.price * item.qty}
+
+                        td.cart-form__cell.cart-form__cell_remove
+                            a(
+                                href="javascript:void(0);"
+                                role="button"
+                            ).cart-form__remove-btn
+                                i.fas.fa-times(aria-label="Remove this item")

@@ -1,0 +1,139 @@
+{
+    "pageTitle": "Product Category 4 Columns",
+
+    "content": {
+        "header": {
+            "title": "Popular Products",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        },
+
+        "filter": {
+            "layouts": [{
+                "label": "2 Columns",
+                "iconClass": "fas fa-th-large",
+                "link": "product-category-2-columns.html"
+            }, {
+                "label": "3 Columns",
+                "iconClass": "fas fa-th-list",
+                "link": "product-category-3-columns.html"
+            }, {
+                "label": "4 Columns",
+                "iconClass": "fas fa-th",
+                "link": "product-category-4-columns.html",
+                "selected": true
+            }],
+            "showProducts": 12,
+            "totalProducts": 30,
+            "views": ["12", "24", "All"],
+
+            "sort": ["Newest", "Popylarity", "Price: low to high", "Price: high to low"]
+        },
+
+        "grid": {
+            "itemSize": "small",
+            "itemCol": "1-4",
+            "products": [{
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-01.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "oldPrice": 530,
+                "price": 399,
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "img": "img/content/products/480x360/flower-02.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-03.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-04.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-05.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "oldPrice": 530,
+                "price": 399,
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "img": "img/content/products/480x360/flower-06.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-09.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "oldPrice": 530,
+                "price": 399,
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "img": "img/content/products/480x360/flower-10.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-11.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "oldPrice": 530,
+                "price": 399,
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "img": "img/content/products/480x360/flower-12.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-13.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-14.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }]
+        },
+
+        "pagination": {
+            "pages": 2,
+            "activePage": 1
+        }
+    }
+}

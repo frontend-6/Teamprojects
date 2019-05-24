@@ -1,0 +1,95 @@
+include ../../blocks/common/account/account.pug
+include ../../blocks/common/btn/btn.pug
+include ../../blocks/common/header/header.pug
+include ../../blocks/common/lang-menu/lang-menu.pug
+include ../../blocks/common/minicart/minicart.pug
+include ../../blocks/common/icon/icon.pug
+include ../../blocks/common/side-nav/side-nav.pug
+include ../../blocks/common/search/search.pug
+include ../../blocks/common/megamenu/megamenu.pug
+include ../../blocks/common/section/section.pug
+include ../../blocks/common/product/product.pug
+include ../../blocks/common/product-carousel/product-carousel.pug
+include ../../blocks/common/rating/rating.pug
+include ../../blocks/common/post/post.pug
+include ../../blocks/common/post-gallery/post-gallery.pug
+include ../../blocks/common/share/share.pug
+include ../../blocks/common/footer/footer.pug
+include ../../blocks/common/subscribe/subscribe.pug
+include ../../blocks/common/payments/payments.pug
+include ../../blocks/common/back-to-top/back-to-top.pug
+include ../../blocks/common/instagram-grid/instagram-grid.pug
+include ../../blocks/common/instagram-carousel/instagram-carousel.pug
+include ../../blocks/common/search-modal/search-modal.pug
+include ../../blocks/common/video/video.pug
+include ../../blocks/common/social/social.pug
+include ../../blocks/common/tabs/tabs.pug
+include ../../blocks/common/skip-link/skip-link.pug
+include ../../blocks/common/form-group/form-group.pug
+include ../../blocks/common/input-box/input-box.pug
+include ../../blocks/common/pubdate/pubdate.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    block functions
+        -
+            const blogDate = function(datestr) {
+                const date = new Date(datestr);
+                const month = date.toLocaleString('en-us', { month: 'long'});
+                const day = date.getDate();
+                const year = date.getFullYear();
+                return `${day} ${month}, ${year}`;
+            };
+
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        if data.pageTitle
+            title #{data.pageTitle} | #{data.siteTitle}
+        else
+            title #{data.siteTitle} &#8211; #{data.siteTagline}
+
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="icon", href="img/favicon.ico")
+    body.page#top
+        a(href="#main-content").page__skip-link Skip to content
+
+        if data.menuCenter
+            -
+                const menu      = data.menu;
+                const menuLeft  = menu.slice(0, Math.floor(menu.length / 2));
+                const menuRight = menu.slice(Math.floor(menu.length / 2));
+            +header({
+                menuLeft: menuLeft,
+                menuRight: menuRight,
+                isHomepage: data.isHomepage,
+                search: data.search,
+                minicart: data.minicart,
+            }).page__header
+        else
+            +header({
+                menu: data.menu,
+                isHomepage: data.isHomepage,
+                search: data.search,
+                minicart: data.minicart,
+            }).page__header
+
+        +side-nav({
+            menu  : data.menu,
+        }, {
+            align : data.sideNavAlign,
+        }).page__nav
+
+        if data.searchModal
+            +search-modal(data.searchModal)
+
+        block page
+
+        +footer(data.footer).page__footer
+        +back-to-top().page__back-to-top
+
+        block scripts
+            script(src="js/vendor.js")
+            script(src="js/main.js")

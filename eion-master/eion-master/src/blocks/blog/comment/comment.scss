@@ -1,0 +1,111 @@
+/**
+ * Styles for the comment block.
+ */
+.comment {
+    &__inner {
+        display: flex;
+        padding-bottom: 28px;
+
+        background: {
+            image: repeating-linear-gradient(
+                to right,
+                $color-text,
+                $color-text 6px,
+                transparent 6px,
+                transparent 11px);
+            position: bottom;
+            repeat: repeat-x;
+            size: 100% 1px;
+        }
+    }
+
+    &__avatar {
+        flex: 0 0 50px;
+
+        @include breakpoint-up(sm) {
+            flex-basis: 70px;
+        }
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+
+        border-radius: 50%;
+    }
+
+    &__body {
+        flex: 1;
+        margin-left: 20px;
+
+        @include breakpoint-up(sm) {
+            margin-left: 30px;
+        }
+    }
+
+    &__author {
+        color: $color-secondary;
+        @include font-size(14px);
+    }
+
+    &__text {
+        margin-top: 12px;
+
+        font-family: $font-family-serif;
+        @include font-size(14px);
+        line-height: 1.5714;
+    }
+
+    &__reply-link {
+        display: inline-block;
+        margin-top: 12px;
+
+        color: $color-silver;
+        @include font-size(10px);
+        text-decoration: none;
+        text-transform: uppercase;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+
+    &__reply-link-text {
+        margin-left: 6px;
+    }
+
+    &__replies {
+        padding-left: 30px;
+
+        @include breakpoint-up(sm) {
+            padding-left: 50px;
+        }
+
+        @include breakpoint-up(md) {
+            padding-left: 70px;
+        }
+
+        & & {
+            padding-left: 0;
+
+            @include breakpoint-up(sm) {
+                padding-left: 50px;
+            }
+
+            @include breakpoint-up(lg) {
+                padding-left: 70px;
+            }
+        }
+
+        & & & {
+            padding-left: 0;
+        }
+    }
+
+    &__reply {
+        margin-top: 20px;
+    }
+}

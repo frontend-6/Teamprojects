@@ -1,0 +1,13 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/page-header/page-header.pug
+include ../../blocks/common/countdown/countdown.pug
+
+include ../../blocks/shop/special-offer/special-offer.pug
+include ../../blocks/shop/product-scroll/product-scroll.pug
+
+block page
+    +page-header(data.content.pageHeader)
+    .two-section
+        +special-offer(data.content.category.cta).two-section__left
+        +product-scroll(data.content.category.products).two-section__right

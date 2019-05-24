@@ -1,0 +1,19 @@
+{
+    "pageTitle": "Checkout",
+
+    "content": {
+        "order": {
+            "items": [{
+                "title": "Fl Model A351",
+                "qty": 1,
+                "total": 530
+            }, {
+                "title": "Fl Model A511",
+                "qty": 2,
+                "total": 1060
+            }],
+            "subtotal": 1590,
+            "total": 1590
+        }
+    }
+}

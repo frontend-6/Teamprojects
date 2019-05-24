@@ -1,0 +1,6 @@
+mixin pubdate(data = {}, mods = {})
+    .pubdate&attributes(attributes)
+        i.far.fa-clock(aria-label="Publised on")
+        time(datetime=data.date)= blogDate(data.date)
+        |  by 
+        a(href=data.authorLink).pubdate__author= data.author

@@ -1,0 +1,68 @@
+/**
+ * Styles for the blog-author block.
+ */
+.blog-author {
+    padding: 30px;
+
+    @include font-size(14px);
+    text-align: center;
+
+    background: $color-white;
+
+    @include breakpoint-up(md) {
+        display: flex;
+
+        text-align: left;
+    }
+
+    &__avatar-img {
+        display: block;
+        margin: 0 auto;
+        max-width: 170px;
+
+        border-radius: 50%;
+
+        @include breakpoint-up(md) {
+            margin: 0;
+        }
+    }
+
+    &__body {
+        margin-top: 30px;
+
+        @include breakpoint-up(md) {
+            margin-left: 30px;
+            margin-top: 0;
+        }
+    }
+
+    &__title {
+        color: $color-secondary;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        display: block;
+        margin-top: 4px;
+
+        color: $color-primary;
+        @include font-size(10px);
+        text-transform: none;
+    }
+
+    &__bio {
+        margin-top: 20px;
+
+        font-family: $font-family-serif;
+        line-height: 1.5714;
+    }
+
+    &__social {
+        margin: 35px auto 10px;    
+
+        @include breakpoint-up(md) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

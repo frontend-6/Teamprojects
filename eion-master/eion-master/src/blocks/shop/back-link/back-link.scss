@@ -1,0 +1,21 @@
+/**
+ * Styles for the back link block.
+ */
+.back-link {
+    color: $color-text;
+    @include font-size(14px);
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: color 0.25s linear;
+
+    &:hover,
+    &:focus {
+        color: $color-primary;
+    }
+
+    &__text {
+        margin-left: 2px;
+    }
+}

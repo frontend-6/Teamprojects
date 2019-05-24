@@ -1,0 +1,9 @@
+mixin cta(data = {}, mods = {})
+    section.cta&attributes(attributes)
+        .page__container.cta__wrap(style=`background-image: url(${data.bg})`)
+            .cta__inner
+                h2.cta__title= data.title
+                +btn(data.btn).cta__btn
+            // /.cta__inner
+        // /.cta__wrap
+    // /.cta 

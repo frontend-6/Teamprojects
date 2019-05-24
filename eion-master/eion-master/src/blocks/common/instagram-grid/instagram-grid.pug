@@ -1,0 +1,10 @@
+mixin instagram-grid(data = {}, mods = {})
+    .instagram-grid&attributes(attributes)
+        ul.instagram-grid__list
+            each item in data
+                li.instagram-grid__item
+                    img(src=item, alt="").instagram-grid__img
+        a(href="javascript:void(0);").instagram-grid__link
+            i.fab.fa-instagram(aria-label="Follow us on Instagram")
+            |  @Eion_flower
+    // /.instagram-grid 

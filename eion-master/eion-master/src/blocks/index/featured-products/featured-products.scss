@@ -1,0 +1,22 @@
+/**
+ * Styles for the featured products block.
+ */
+.featured-products {
+    &__inner {
+        @include breakpoint-up(sm) {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+    }
+
+    &__product {
+        &:not(:first-child) {
+            margin-top: 30px;
+
+            @include breakpoint-up(sm) {
+                margin-top: 0;
+            }
+        }
+    }
+}

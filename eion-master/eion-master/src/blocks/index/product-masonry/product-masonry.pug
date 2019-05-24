@@ -1,0 +1,18 @@
+mixin product-masonry(data = {}, mods = {})
+    section.product-masonry&attributes(attributes)
+        .page__container
+            .product-masonry__inner
+                h2.product-masonry__title= data.title
+
+                .product-masonry__grid
+                    each product, i in data.items
+                        if i % 2 == 0
+                            .product-masonry__item.product-masonry__item_right
+                                +product(product, {size: 'large'})
+                        else
+                            .product-masonry__item.product-masonry__item_left
+                                +product(product, {size: 'large'})
+                // /.product-masonry__grid 
+            // /.product-masonry__inner 
+        // /.page__container 
+    // /.product-masonry 

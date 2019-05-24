@@ -1,0 +1,11 @@
+mixin instagram-carousel(data = {}, mods = {})
+    .instagram-carousel.swiper-container&attributes(attributes)
+        .swiper-wrapper
+            each img in data
+                .swiper-slide
+                    img(src=img, alt="Instagram feed").instagram-carousel__img
+
+        a(href="javascript:void(0)").instagram-carousel__link
+            i.fab.fa-instagram(aria-label="Follow us on Instagram")
+            |  @Eion_flower
+    // /.instagram-carousel 

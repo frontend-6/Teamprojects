@@ -1,0 +1,314 @@
+/**
+ * Styles for the slider block.
+ */
+.slider {
+    position: relative;
+
+    &__slide {
+        background: {
+            color: $color-gray;
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+    }
+
+    &__slide-inner {
+        align-items: center;
+        display: flex;
+        height: 400px;
+        padding: 0 15px;
+
+        @include breakpoint-up(sm) {
+            height: 500px;
+        }
+
+        @include breakpoint-up(md) {
+            height: 600px;
+        }
+
+        @include breakpoint-up(lg) {
+            height: 700px;
+        }
+
+        @include breakpoint-up(xl) {
+            height: 800px;
+        }
+    }
+
+    &__content-wrap {
+        margin: 0 auto;
+        max-width: 500px;
+
+        opacity: 0;
+
+        transition: opacity 1s ease-in 0.5s;
+
+        @include breakpoint-up(md) {
+            max-width: 700px;
+        }
+
+        @include breakpoint-up(lg) {
+            max-width: 800px;
+        }
+
+        .swiper-slide-active & {
+            opacity: 1;
+        }
+
+        .slider__slide_theme_box & {
+            padding: 8px 7px;
+
+            border: 2px solid $color-white;
+
+            @include breakpoint-up(md) {
+                margin-top: 15px;
+            }
+        }
+
+        .slider__slide_theme_bordered & {
+            @include breakpoint-up(md) {
+                margin-top: 40px;
+            }
+        }
+
+        .slider__slide_theme_default & {
+            @include breakpoint-up(md) {
+                margin-top: -20px;
+            }
+        }
+    }
+
+    &__content {
+        color: $color-secondary;
+        text-align: center;
+
+        .slider__slide_theme_bordered & {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 28px 0;
+
+            border: 3px solid $color-secondary;
+            border-top: 0;
+        }
+
+        .slider__slide_theme_box & {
+            padding: 46px 0;
+
+            background: rgba($color-white, 0.69);
+        }
+    }
+
+    &__title {
+        font-family: $font-family-cursive;
+        @include font-size(36px);
+        text-transform: uppercase;
+
+        @include breakpoint-up(sm) {
+            @include font-size(46px);
+        }
+
+        @include breakpoint-up(md) {
+            @include font-size(60px);
+        }
+
+        @include breakpoint-up(lg) {
+            @include font-size(76px);
+        }
+
+        .slider__slide_theme_bordered & {
+            display: flex;
+            margin: -48px -2px 0;
+
+            @include breakpoint-up(sm) {
+                margin-top: -56px;
+            }
+
+            @include breakpoint-up(md) {
+                margin-top: -60px;
+            }
+
+            @include breakpoint-up(lg) {
+                margin-top: -74px;
+            }
+
+            &:before,
+            &:after {
+                content: "";
+
+                flex: 1;
+                height: 3px;
+                margin-top: 20px;
+
+                background: $color-secondary;
+
+                @include breakpoint-up(sm) {
+                    margin-top: 26px;
+                }
+
+                @include breakpoint-up(md) {
+                    margin-top: 32px;
+                }
+
+                @include breakpoint-up(lg) {
+                    margin-top: 46px;
+                }
+            }
+
+            &:before {
+                margin-right: 12px;
+            }
+
+            &:after {
+                margin-left: 12px;
+            }
+        }
+    }
+
+    &__text {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 0 15px;
+
+        font-family: $font-family-serif;
+        @include font-size(16px);
+        line-height: 1.875;
+
+        @include breakpoint-up(md) {
+            @include font-size(18px);
+        }
+    }
+
+    &__arrow {
+        display: none;
+
+        @include breakpoint-up(md) {
+            bottom: 50%;
+            position: absolute;
+
+            display: block;
+            height: 50px;
+            width: 50px;
+
+            color: $color-secondary;
+            @include font-size(16px);
+            line-height: 50px;
+            text-align: center;
+            
+            background: $color-white;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+
+            transition: all 0.25s linear;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+
+        &_prev {
+            left: 5px;
+            
+            @include breakpoint-up(lg) {
+                left: 45px;
+            }
+
+            @include breakpoint-up(xl) {
+                left: 120px;
+            }
+        }
+
+        &_next {
+            right: 5px;
+
+            @include breakpoint-up(lg) {
+                right: 45px;
+            }
+
+            @include breakpoint-up(xl) {
+                right: 120px;
+            }
+        }
+    }
+
+    &__skip-link {
+        bottom: 5px;
+        left: 50%;
+        position: absolute;
+        z-index: 2;
+
+        @include breakpoint-up(md) {
+            bottom: 25px;
+        }
+    }
+
+    &__pagination {
+        bottom: 70px;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: center;
+
+        @include breakpoint-up(md) {
+            bottom: 100px;
+        }
+
+        @include breakpoint-up(lg) {
+            bottom: 160px;
+        }
+
+        @include breakpoint-up(xl) {
+            bottom: 200px;
+        }
+    }
+
+    &__bullet {
+        height: auto;
+        padding: 5px;
+        width: auto;
+
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        opacity: 1;
+
+        transition: border-color 0.25s linear;
+
+        &:not(:first-child) {
+            margin-left: 1px;
+        }
+
+        &_active {
+            border-color: $color-primary;
+        }
+    }
+
+    &__bullet-inner {
+        display: block;
+        height: 9px;
+        padding: 0;
+        width: 9px;
+
+        text-indent: -9999px;
+
+        background: $color-secondary;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+
+        transition: background-color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            background: $color-primary;
+        }
+
+        .slider__bullet_active & {
+            background: $color-primary;
+        }
+    }
+}

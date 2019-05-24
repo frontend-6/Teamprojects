@@ -1,0 +1,5 @@
+mixin post-masonry(data = {}, mods = {})
+    .post-masonry&attributes(attributes)
+        each post in data
+            .post-masonry__item-wrap
+                +post(post, {level: 2}).blog-masonry__item

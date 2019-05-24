@@ -1,0 +1,121 @@
+/**
+ * Styles for the cart-form block.
+ */
+.cart-form {
+    &__table {
+        width: 100%;
+
+        border-collapse: separate; 
+        border-spacing: 0 10px;
+
+        @include breakpoint-up(md) {
+            table-layout: fixed;
+        }
+    }
+
+    &__item {
+        background: $color-white;
+    }
+
+    &__cell {
+        padding: 20px 10px;
+
+        text-align: left;
+        vertical-align: middle;
+
+        &:first-child {
+            display: none;
+
+            @include breakpoint-up(sm) {
+                display: table-cell;
+            }
+        }
+
+        @include breakpoint-up(md) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &_img {
+            @include breakpoint-up(md) {
+                width: 16.6667%;
+            }
+        }
+
+        &_title {
+            @include breakpoint-up(md) {
+                width: 33.3333%;
+            }
+        }
+
+        &_price {
+            @include breakpoint-up(md) {
+                width: 16.6667%;
+            }
+        }
+
+        &_qty {
+            @include breakpoint-up(md) {
+                width: 16.6667%;
+            }
+        }
+
+        &_total {
+            @include breakpoint-up(md) {
+                width: 8.3333%;
+            }
+        }
+
+        &_remove {   
+            text-align: center;
+
+            @include breakpoint-up(md) {
+                max-width: none;
+                width: 8.3333%;
+            }
+        }
+    }
+
+    &__item-thumb {
+        display: block;
+        width: 100%;
+        max-width: 130px;
+    }
+
+    &__item-img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__item-title {
+        color: $color-secondary;
+        font-family: $font-family-serif;
+        text-decoration: none;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+
+    &__item-total {
+        color: $color-primary;
+    }
+
+    &__remove-btn {
+        display: inline-block;
+
+        color: $color-text;
+        @include font-size(12px);
+        text-decoration: none;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-secondary;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/**
+ * Styles for the contact-form block.
+ */
+.contact-form {
+    &__submit {
+        margin-top: 30px;
+        min-width: 220px;
+    }
+
+    &__error {
+        display: block;
+        margin-top: 5px;
+
+        color: $color-primary;
+        @include font-size(14px);
+    }
+}

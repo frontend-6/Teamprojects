@@ -1,0 +1,6 @@
+mixin sidebar-widget(data = {}, mods = {})
+    section.sidebar-widget&attributes(attributes)
+        h2.title.title_size_small.sidebar-widget__title= data.title
+
+        if block
+            block

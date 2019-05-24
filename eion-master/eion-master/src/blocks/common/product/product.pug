@@ -1,0 +1,71 @@
+mixin product(data = {}, mods = {})
+    - const size = mods.size || 'default';
+    .product(class = {
+        ['product_size_' + size]: true,
+        product_wide            : !!mods.wide,
+    })&attributes(attributes)
+        .product__thumb
+            if data.label
+                - const labelShape = data.label.shape || 'circle';
+                - const labelTheme = data.label.theme || 'sale';
+                .product__label(class={
+                    ['product__label_shape_' + labelShape]: true,
+                    ['product__label_theme_' + labelTheme]: true,
+                })= data.label.text
+
+            if data.img
+                .product__thumb-inner
+                    img(src=data.img, alt=data.name).product__thumb-img
+
+                    if !mods.wide
+                        .product__thumb-overlay
+                            +btn({
+                                url: 'javascript:void(0);',
+                                text: 'Add to cart'
+                            }, {
+                                size  : (mods.size == 'large') && 'responsive',
+                                theme : 'primary',
+                            }).product__thumb-btn
+
+                            +btn({
+                                url: 'javascript:void(0);',
+                                text: 'View Gallery'
+                            }, {
+                                size  : (mods.size == 'large') && 'responsive',
+                                theme : 'light',
+                            }).product__thumb-btn
+            else if data.gallery
+                +product-carousel(data.gallery).product__carousel
+
+        .product__info
+            +rating(data.rating).product__rating
+
+            .product__info-header
+                a(href=data.link).product__name= data.name
+
+                if data.oldPrice
+                    .product__price
+                        del.product__price-old $#{data.oldPrice}
+                        ins.product__price-new $#{data.price}
+                else
+                    .product__price $#{data.price}
+
+            if data.desc
+                .product__desc !{data.desc}
+
+            if mods.wide
+                .product__btns
+                    +btn({
+                        url: 'javascript:void(0);',
+                        text: 'Add to cart'
+                    }, {
+                        theme: 'primary',
+                    }).product__btn
+
+                    +btn({
+                        url: 'javascript:void(0);',
+                        text: 'View Gallery'
+                    }, {
+                        theme: 'light',
+                    }).product__btn
+    // /.product 

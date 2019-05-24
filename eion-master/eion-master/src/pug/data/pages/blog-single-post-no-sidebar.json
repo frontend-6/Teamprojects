@@ -1,0 +1,71 @@
+{
+    "pageTitle": "Blog Single Post no Sidebar",
+
+    "content": {
+        "blog": {
+            "singlePost": {
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "img": "img/content/blog/1024x768/post-05.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8,
+                "content": "<p>Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere explicabo, ut mollitia blanditiis, aperiam nostrum ex fugit nam ipsa voluptatem dignissimos labore sequi beatae sunt alias aliquam nisi corporis quam possimus ducimus quasi iste soluta officiis laudantium. Dolorum soluta neque dignissimos optio, asperiores recusandae autem laudantium, eveniet porro accusantium in sequi deleniti maxime pariatur rerum omnis quibusdam officiis repellat atque dolore hic. Error debitis veritatis ratione.</p><p>Facere nihil vero aspernatur doloremque ipsam beatae sunt quibusdam. Vero doloribus accusamus culpa laboriosam illum aperiam sint nisi ullam necessitatibus placeat sequi impedit molestias provident voluptate consequatur itaque asperiores repudiandae ipsa reiciendis, veniam enim? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Nam autem optio repellat, quos itaque enim amet tenetur sunt maiores facere veniam vel perspiciatis, aliquid molestias cumque totam vero quo, praesentium, architecto.</p><p>Explicabo pariatur, dolorem illo rem veritatis recusandae harum nemo laudantium, quos sapiente corporis maxime minima. Impedit esse, provident quod ea ad, totam. Explicabo praesentium, facilis vitae, officia quam facere quo recusandae officiis, dolores ratione sit sapiente odio sint. Laborum non ipsa quo aperiam rerum reiciendis possimus modi.</p><p>Asperiores esse accusamus qui unde iusto est fuga laboriosam corporis suscipit velit ullam veritatis assumenda aperiam aliquid ratione, magnam ex tempore. Amet delectus ratione expedita illo, odio quasi, quisquam, culpa voluptate voluptatem aut quam autem dolorem incidunt, maiores nesciunt fugiat nostrum pariatur. Saepe nulla aspernatur odit quasi suscipit sequi rerum laboriosam rem voluptatibus ipsa, repudiandae facilis? Quo iste, sint maxime cum necessitatibus vitae, voluptate illum minima ea minus at suscipit deserunt in ducimus ad corporis nemo blanditiis! Numquam, nemo, accusamus! Architecto nemo sint ad pariatur explicabo, obcaecati debitis, adipisci facilis magnam.</p><p>Molestiae magni dolor nostrum quos temporibus asperiores repellat assumenda accusamus eos consectetur. Deleniti quo, ipsa fugit odit cupiditate excepturi enim perspiciatis ipsum voluptates provident magni sint totam suscipit numquam, minima consequuntur.</p><p>Nam autem optio repellat, quos itaque enim amet tenetur sunt maiores facere veniam vel perspiciatis, aliquid molestias cumque totam vero quo, praesentium, architecto.</p><p>Explicabo pariatur, dolorem illo rem veritatis recusandae harum nemo laudantium, quos sapiente corporis maxime minima. Impedit esse, provident quod ea ad, totam. Explicabo praesentium, facilis vitae, officia quam facere quo recusandae officiis, dolores ratione sit sapiente odio sint. Laborum non ipsa quo aperiam rerum reiciendis possimus modi.</p>",
+                "tags": ["Tag 1", "Tag 2"]
+            },
+
+            "author": {
+                "name": "Peter Adam",
+                "img": "img/content/avatars/300x300/peter-adam.jpg",
+                "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud sed do eiusmod tempor incididunt ut labore. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."
+            },
+
+            "comments": {
+                "total": 4,
+                "comments": [{
+                    "id": 1,
+                    "img": "img/content/avatars/160x160/kendall-jenner.jpg",
+                    "author": "Kendall Jenner",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+                    "replies": [{
+                        "id": 2,
+                        "img": "img/content/avatars/160x160/katie.jpg",
+                        "author": "Katie",
+                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                    }]
+                }, {
+                    "id": 3,
+                    "img": "img/content/avatars/160x160/emily-stella.jpg",
+                    "author": "Emily Stella",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+                }, {
+                    "id": 4,
+                    "img": "img/content/avatars/160x160/kimberly.jpg",
+                    "author": "Kimberly",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+                }]
+            },
+
+            "relatedPosts": [{
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-no-sidebar.html",
+                "img": "img/content/blog/480x360/post-02.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }, {
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-no-sidebar.html",
+                "img": "img/content/blog/480x360/post-04.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }]
+        }
+    }
+}

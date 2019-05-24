@@ -1,0 +1,21 @@
+/**
+ * Styles for the popular products block.
+ */
+.popular-products {
+    &__grid {
+        @include breakpoint-up(sm) {
+            margin: 0 auto;
+            max-width: 480px;
+        }
+
+        @include breakpoint-up(md) {
+            max-width: none;
+        }
+    }
+
+    &__view-more {
+        display: block;
+        margin: 70px auto 0;
+        width: 170px;
+    }
+}

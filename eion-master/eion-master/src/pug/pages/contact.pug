@@ -1,0 +1,20 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/side-section/side-section.pug
+
+include ../../blocks/contact/contact-info/contact-info.pug
+include ../../blocks/contact/map/map.pug
+include ../../blocks/contact/contact-form/contact-form.pug
+
+block page
+    +contact-info(data.content.info)
+    .two-section#contact-bottom
+        +map().two-section__left
+        +side-section({
+            title: 'Leave a message',
+            intro: 'Please don\'t heristate to contact us for more information.',
+            contactForm: true
+        }).two-section__right
+
+block prepend scripts
+    script(src=`https://maps.googleapis.com/maps/api/js?key=`)

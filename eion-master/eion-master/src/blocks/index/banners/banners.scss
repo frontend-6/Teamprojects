@@ -1,0 +1,145 @@
+/**
+ * Styles for the banners block.
+ */
+.banners {
+    &__grid {
+        @include breakpoint-up(sm) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+
+            @supports (display: grid) {
+                display: grid;
+                grid-gap: 30px;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 0;
+            }
+        }
+
+        @include breakpoint-up(lg) {
+            @supports (display: grid) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+
+    &__item {
+        @include font-size(18px);
+
+        @include breakpoint-up(sm) {
+            padding: 15px;
+            width: 50%;
+        }
+
+        @include breakpoint-up(lg) {
+            width: 25%;
+        }
+
+        @supports (display: grid) {
+            @include breakpoint-up(sm) {
+                grid-area: span 1 / span 1;
+                padding: 0;
+                width: auto;
+
+                &_wide {
+                    grid-column: span 2;
+                }
+        
+                &_tall {
+                    grid-row: span 2;
+        
+                    &.banners__item_wide {
+                        @include font-size(48px);
+                    }
+                }
+            }
+        }
+
+        &:not(:first-child) {
+            margin-top: 30px;
+
+            @include breakpoint-up(sm) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__item-inner {
+        position: relative;
+
+        display: block;
+        height: 100%;
+        padding-bottom: 100%;
+
+        background: {
+            color: $color-gray;
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+
+        .banners__item_wide:not(.banners__item_tall) & {
+            @include breakpoint-up(sm) {
+                @supports (display: grid) {
+                    padding-bottom: 50%;
+                }
+            }
+        }
+    }
+
+    &__link {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        color: $color-white;
+        font-weight: $font-weight-bold;
+        line-height: 1.5;
+        letter-spacing: 0.3em;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        background: rgba($color-black, 0.25);
+
+        transition: background-color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            background: rgba($color-black, 0.6);
+        }
+    }
+
+    &__text {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+
+        border: 2px dashed transparent;
+        border-radius: 50%;
+
+        transition: border-color 0.25s linear;
+
+        .banners__item_wide.banners__item_tall & {
+            @include breakpoint-up(sm) {
+                @supports (display: grid) {
+                    height: 400px;
+                    width: 400px;
+                }
+            }
+        }
+
+        .banners__item:hover &,
+        .banners__link:focus & {
+            border-color: $color-white;
+        }
+    }
+}

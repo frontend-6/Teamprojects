@@ -1,0 +1,4 @@
+mixin reviews(data = {}, mods = {})
+    ul.reviews&attributes(attributes)
+        each review in data
+            +review(review)

@@ -1,0 +1,152 @@
+mixin header__nav-list(data)
+    ul.header__nav-list
+        each item in data.menu
+            if item.submenu
+                li.header-dropdown.header-dropdown_align_mega.header__nav-item
+                    a(
+                        href="javascript:void(0);"
+                        role="button"
+                    ).header__nav-link.header-dropdown__toggle= item.text
+                        if item.label
+                            .header__nav-label
+                                i.icon-bell.icons(aria-hidden="true")
+                        if item.submenu
+                            i.icon-arrow-down.icons.header__nav-arrow(
+                                aria-hidden="true"
+                            )
+                    .header-dropdown__popover
+                        +megamenu(item.submenu)
+            else
+                li.header__nav-item
+                    a(
+                        href = item.link
+                    ).header__nav-link= item.text
+                        if item.label
+                            .header__nav-label
+                                i.icon-bell.icons(aria-hidden="true")
+
+mixin header__account(data)
+    .header-dropdown(class = "header-dropdown_align_" + data.align)
+        button.header-dropdown__toggle.header__btn
+            i.icon-user.icons(aria-label="Toggle account")
+        .header-dropdown__backdrop
+        .header-dropdown__popover
+            h2.header-dropdown__title Account
+            .header-dropdown__content
+                +account({
+                    langMenuAlign: (data.align === 'right') ? 'bottom' : 'right'
+                })
+            button.header-dropdown__close
+                i.icon-close.icons(aria-label="Hide account")
+        // .header-dropdown__popover 
+    // .header-dropdown 
+
+mixin header__minicart(data, mods)
+    .header-dropdown(class = "header-dropdown_align_" + mods.align)
+        button.header-dropdown__toggle.header__btn
+            i.icon-basket.icons(aria-label="Toggle shopping cart")
+            span.header__cart-items(aria-hidden="true") 3
+        .header-dropdown__backdrop
+        .header-dropdown__popover
+            h2.header-dropdown__title Shopping Cart
+            .header-dropdown__content
+                +minicart(data)
+            button.header-dropdown__close
+                i.icon-close.icons(aria-label="Hide minicart")
+        // .header-dropdown__popover 
+    // .header-dropdown 
+
+mixin header__search(data, mods)
+    .header-dropdown(class = "header-dropdown_align_" + mods.align)
+        button.header-dropdown__toggle.header__btn
+            i.icon-magnifier.icons(aria-label="Toggle search")
+        .header-dropdown__backdrop
+        .header-dropdown__popover
+            h2.header-dropdown__title Search
+            .header-dropdown__content
+                +search(data)
+            button.header-dropdown__close
+                i.icon-close.icons(aria-label="Hide search")
+        // .header-dropdown__popover 
+    // .header-dropdown 
+
+mixin header__nav-toggle()
+    button.header__btn.header__nav-toggle
+        i.icon-list.icons(aria-label="Toggle menu")
+
+mixin header__logo(data = {})
+    if data.isHomepage
+        h1(class={
+            header__logo        : true,
+            header__logo_left   : !!data.left,
+            header__logo_center : !!data.center,
+        })
+            img(src="img/logo.png", alt="Eion").header__logo-img
+            span.header__logo-alt Eion
+    else
+        a(
+            href  = "."
+            class = {
+                header__logo        : true,
+                header__logo_left   : !!data.left,
+                header__logo_center : !!data.center,
+            }
+        )
+            img(src="img/logo.png", alt="Eion").header__logo-img
+            .header__logo-alt Eion
+
+mixin header(data = {}, mods = {})
+    header.header&attributes(attributes)
+        if data.menu
+            .header__left
+                nav.header__nav
+                    +header__logo({
+                        isHomepage : data.isHomepage,
+                        left       : true,
+                    })
+                    +header__nav-list({
+                        menu     : data.menu,
+                        labelAlt : data.menuLabelAlt
+                    })
+            // .header__left 
+
+            .header__right
+                .header__actions
+                    +header__account({align: 'right'})
+                    +header__minicart(data.minicart, {align: 'right'})
+                    button.header__btn.header__search-toggle
+                        i.icon-magnifier.icons(aria-label="Toggle search")
+                    +header__nav-toggle()
+                // .header__actions 
+            // .header__right 
+        else if data.menuLeft && data.menuRight
+            .header__left
+                .header__actions
+                    +header__nav-toggle()
+                    +header__account({align: 'left'})
+                // .header__actions 
+            // .header__left 
+
+            .header__center
+                nav.header__nav
+                    +header__nav-list({
+                        menu     : data.menuLeft,
+                        labelAlt : data.menuLabelAlt
+                    })
+                    +header__logo({
+                        isHomepage : data.isHomepage,
+                        center     : true,
+                    })
+                    +header__nav-list({
+                        menu     : data.menuRight,
+                        labelAlt : data.menuLabelAlt
+                    })
+            // .header__center 
+
+            .header__right
+                .header__actions
+                    +header__minicart(data.minicart, {align: 'right'})
+                    +header__search(data.search, {align: 'right'})
+                // .header__actions 
+            // .header__right 
+    // /.header 

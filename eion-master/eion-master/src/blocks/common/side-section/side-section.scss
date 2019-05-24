@@ -1,0 +1,67 @@
+/**
+ * Styles for the banner section block.
+ */
+.side-section {
+    background: $color-white;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 630px;
+        padding: 80px 15px;
+
+        @include breakpoint-up(md) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        @include breakpoint-up(lg) {
+            margin: 0 auto;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+
+        @include breakpoint-up(xl) {
+            padding-bottom: 80px;
+            padding-top: 90px;
+        }
+    }
+
+    &__intro {
+        margin-top: 25px;
+
+        @include font-size(18px);
+    }
+
+    &__content {
+        flex: 1 1 auto;
+        margin-top: 25px;
+    }
+
+    &__countdown {
+        margin-top: 20px;
+    }
+
+    &__subscribe {
+        margin-top: 20px;
+    }
+
+    &__testimonials {
+        height: 100%;
+    }
+
+    &__small {
+        margin-top: 55px;
+
+        color: $color-silver;
+        font-family: $font-family-serif;
+        @include font-size(14px);
+        font-style: italic;
+    }
+
+    &__btn {
+        margin-top: 55px;
+        width: 170px;
+    }
+}

@@ -1,0 +1,7 @@
+mixin product-list(data = {}, mods = {})
+    .product-list&attributes(attributes)
+        each product in data.products
+            +product(product, {
+                wide : true,
+                size : !!mods.large ? 'large' : 'small',
+            }).product-list__item

@@ -1,0 +1,12 @@
+mixin input-box(data = {}, mods = {})
+    - const theme = mods.theme || 'default'
+    form.input-box&attributes(attributes)
+        +form-group(data.input, {theme: 'box-'+theme}).input-box__field
+        +btn(data.btn, {
+            theme: data.btnTheme,
+            rect: true,
+            size: 'large',
+        })(
+            type = "submit"
+            name = "subscribe"
+        ).input-box__submit

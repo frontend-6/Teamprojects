@@ -1,0 +1,15 @@
+mixin contact-info(data = {}, mods = {})
+    .contact-info(
+        style=`background-image: url(${data.bg})`
+    )&attributes(attributes)
+        .contact-info__inner
+            h1.contact-info__title= data.title
+            
+            address.contact-info__address= data.address
+
+            ul.contact-info__list
+                li.contact-info__item Phone: #{data.phone}
+                li.contact-info__item Fax: #{data.fax}
+                li.contact-info__item Email: #{data.email}
+
+        +skip-link(data.skipLink).contact-info__skip-link

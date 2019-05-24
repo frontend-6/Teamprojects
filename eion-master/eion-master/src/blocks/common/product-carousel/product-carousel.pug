@@ -1,0 +1,10 @@
+mixin product-carousel(data = {}, mods = {})
+    .product-carousel.swiper-container&attributes(attributes)
+        .swiper-wrapper
+            each item, i in data
+                .swiper-slide(
+                    class = (i == 0) && "swiper-slide-active"
+                )
+                    img(src=item.img, alt="").product-carousel__img
+
+        .product-carousel__pagination.swiper-pagination

@@ -1,0 +1,74 @@
+mixin post(data = {}, mods = {})
+    - const titleTag = 'h' + (mods.level || '3');
+    article.post(class=mods.sidebar && "post_sidebar")&attributes(attributes)
+        if data.img
+            if data.link
+                a(href=data.link aria-hidden="true" tabindex="-1").post__thumb
+                    img(src=data.img, alt=data.title).post__thumb-img
+                    .post__thumb-overlay
+                        i.icon-plus.icons(aria-hidden="true")
+            else
+                .post__thumb
+                    img(src=data.img, alt=data.title).post__thumb-img
+        else if data.gallery
+            +post-gallery(data.gallery).post__gallery
+        else if data.embed
+            iframe(
+                src         = data.embed.src
+                width       = data.embed.width
+                height      = data.embed.height
+            ).post__embed
+        else if data.quote
+            #{titleTag}.post__quote
+                q= data.quote
+        else if data.video
+            +video(data.video, {format: '16x9'}).article__video
+
+        if data.title
+            #{titleTag}.post__title(class = mods.largeTitle && "post__title_large")
+                if data.link
+                    a(href=data.link).post__title-link= data.title
+                else
+                    | #{data.title}
+
+        .post__meta
+            +pubdate({
+                date: data.date,
+                authorLink: data.authorLink,
+                author: data.author,
+            }).post__pubdate
+            
+            .post__comments
+                i.far.fa-comment(aria-label="Comments")
+                | #{' '}
+                span #{data.comments}
+            .post__likes
+                i.far.fa-heart(aria-label="Likes")
+                | #{' '}
+                span #{data.likes}
+        // /.post__meta 
+
+        if data.excerpt
+            .text.text_post.post__excerpt
+                p= data.excerpt
+            // /.post__excerpt 
+
+        if data.content
+            .text.text_post.post__content !{data.content}
+
+        if data.excerpt || data.quote || data.video
+            .post__bottom
+                +btn({
+                    text : 'Read more',
+                    url  : data.link,
+                }, {theme: 'primary'}).post__read-more
+
+                +share().post__share
+            // /.post__bottom 
+
+        else if data.tags
+            .post__bottom
+                .post__tags
+                    i.fas.fa-tags(aria-label="Tags").post__tags-icon
+                    +tag-cloud(data.tags).post__tags-cloud
+                +share().post__share

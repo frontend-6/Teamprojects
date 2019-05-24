@@ -1,0 +1,31 @@
+mixin product-page(data = {}, mods = {})
+    .product-page&attributes(attributes)
+        .page__container
+            +back-link()
+
+            .product-page__inner
+                .product-page__gallery
+                    +product-gallery(data.gallery)
+
+                .product-page__info
+                    +product-info(data.info)
+
+                .product-page__review-form
+                    +review-form()
+
+                .product-page__tabs
+                    +tabs([{
+                        active: true,
+                        id: 'product-reviews',
+                        title: 'Reviews (' + data.reviews.length + ')',
+                        blockName: 'reviews',
+                        content: data.reviews,
+                    }, {
+                        id: 'product-description',
+                        title: 'Description',
+                        blockName: 'product-desc',
+                        content: data.desc,
+                    }])
+
+        +section({title: data.newProducts.title}).product-page__new-products
+            +carousel(data.newProducts.items, {fourCols: true}, 'product')

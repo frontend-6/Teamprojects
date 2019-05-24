@@ -1,0 +1,97 @@
+/**
+ * Styles for the payment block.
+ */
+.payment {
+    @include font-size(14px);
+
+    &__method:not(:first-child) {
+        margin-top: 18px;
+    }
+
+    &__label {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__radio {
+        @include visually-hidden();
+    }
+
+    &__mark {
+        display: block;
+        height: 10px;
+        width: 10px;
+
+        border: 1px solid $color-secondary;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        transition: all 0.25s linear;
+
+        &:hover {
+            box-shadow: 0 0 1px 2px $color-primary;
+        }
+
+        .payment__radio:checked + & {
+            background-color: $color-secondary;
+        }
+
+        .payment__radio:focus + & {
+            box-shadow: 0 0 1px 2px $color-primary;
+        }
+    }
+
+    &__title {
+        margin-left: 20px;
+        padding: 12px 0;
+
+        color: $color-secondary;
+        text-transform: uppercase;
+    }
+
+    &__cards {
+        margin-left: 30px;
+
+        @include breakpoint-up(sm) {
+            margin-left: 20px;
+        }
+    }
+
+    &__link {
+        display: block;
+        margin-left: 30px;
+        margin-top: 10px;
+        width: 100%;
+
+        color: $color-text;
+        font-family: $font-family-serif;
+        font-style: italic;
+        text-decoration: none;
+
+        transition: color 0.25s linear;
+
+        @include breakpoint-up(sm) {
+            margin-left: auto;
+            margin-top: 0;
+            width: auto;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+
+    &__desc {
+        display: none;
+        padding: 5px 0 5px 30px;
+
+        font-family: $font-family-serif;
+        
+        .payment__method:first-child & {
+            display: block;
+        }
+    }
+}

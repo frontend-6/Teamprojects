@@ -1,0 +1,22 @@
+mixin share(data = {}, mods = {})
+    .share&attributes(attributes)
+        button.share__toggle(
+            aria-haspopup = "true"
+            aria-expanded = "false"
+        )
+            i.fas.fa-share-alt(aria-label="Share")
+        
+        .share__menu
+            +social({
+                links: [{
+                    className : 'twitter',
+                    text      : 'Share on Twitter',
+                }, {
+                    className : 'facebook-f',
+                    text      : 'Share on Facebook',
+                }, {
+                    className : 'google-plus-g',
+                    text      : 'Share on Google Plus',
+                }]
+            }, {theme: 'share'})
+    // /.share

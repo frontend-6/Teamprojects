@@ -1,0 +1,59 @@
+/**
+ * Styles for the category layout block.
+ */
+.category-layout {
+    padding: 30px 0 100px;
+
+    &__inner {
+        @include breakpoint-up(lg) {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 0 -15px;
+        }
+    }
+
+    &__content {
+        margin: 0 auto;
+        max-width: 450px;
+
+        @include breakpoint-up(md) {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: none;
+        }
+
+        @include breakpoint-up(lg) {
+            padding: 0 15px;
+            width: 75%;
+        }
+    }
+
+    &__sidebar {
+        margin-top: 60px;
+
+        @include breakpoint-up(lg) {
+            margin-top: 0;
+            padding: 0 15px;
+            width: 25%;
+        }
+    }
+
+    &__sidebar-widget,
+    &__sidebar-coupon {
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+
+    &__grid {
+        margin-top: 30px;
+    }
+
+    &__list {
+        margin-bottom: 60px;
+    }
+
+    &__pagination {
+        margin-top: 60px;
+    }
+}

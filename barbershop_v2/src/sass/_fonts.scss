@@ -1,2 +1,17 @@
 // insert @font-face rules here
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+@font-face {
+    font-family: 'PTSans-Narrow Bold';
+    font-weight: 700;
+    src: local('PTSans-Narrow Bold'),
+         local('PTSans-Narrow-Bold'),
+         url('../fonts/PTSans-NarrowBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'PTSans-Narrow Regular';
+    font-weight: 400;
+    src: local('PTSans-Narrow Regular'),
+         local('PTSans-Narro-Regular'),
+         url('../fonts/PTSans-Narrow.woff') format('woff');
+}

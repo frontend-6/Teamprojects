@@ -1,0 +1,32 @@
+/**
+ * Styles for the sidebar list block.
+ */
+.sidebar-list {
+    &__item {
+        &:not(:first-child) {
+            margin-top: 12px;
+        }
+    }
+
+    &__link {
+        color: $color-secondary;
+        font-family: $font-family-serif;
+        @include font-size(14px);
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+
+            &:before {
+                color: $color-malta;
+            }
+        }
+
+        .sidebar-list_blog &:before {
+            content: "+";
+
+            margin-right: 10px;
+        }
+    }
+}

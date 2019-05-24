@@ -1,0 +1,28 @@
+{
+    "pageTitle": "Shopping Cart",
+
+    "content": {
+        "title": "Checkout",
+        "text": "Check again all the items in your shopping cart",
+
+        "items": [{
+            "link": "product-detail.html",
+            "img": "img/content/products/200x150/flower-05.jpg",
+            "title": "Flower Model A351",
+            "price": "530",
+            "qty": 2
+        }, {
+            "link": "product-detail.html",
+            "img": "img/content/products/200x150/flower-02.jpg",
+            "title": "Flower Model A351",
+            "price": "530",
+            "qty": 1
+        }, {
+            "link": "product-detail.html",
+            "img": "img/content/products/200x150/flower-03.jpg",
+            "title": "Flower Model A351",
+            "price": "530",
+            "qty": 1
+        }]
+    }
+}

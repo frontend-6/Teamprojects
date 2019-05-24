@@ -1,0 +1,7 @@
+mixin featured-products(data = {}, mods = {})
+    .featured-products&attributes(attributes)
+        .featured-products__inner
+            each item in data
+                +product(item, {size: 'large'}).featured-products__product
+        // /.featured-products__inner
+    // /.featured-products 

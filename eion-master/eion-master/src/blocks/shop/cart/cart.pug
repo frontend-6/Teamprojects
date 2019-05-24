@@ -1,0 +1,31 @@
+mixin cart(data = {}, mods = {})
+    .cart&attributes(attributes)
+        .page__container
+            h1.title.title_center.cart__title= data.title
+            p.cart__text= data.text
+
+            +cart-form(data.items).cart__form
+
+            .cart__bottom
+                .cart__bottom-inner
+                    .cart__coupon
+                        +input-box({
+                            input: {
+                                id: 'cart-coupon',
+                                name: 'coupon',
+                                type: 'text',
+                                placeholder: 'Coupon code...',
+                                label: 'Coupon code',
+                                required: true
+                            },
+                            btn: {
+                                text: 'Apply Coupon'
+                            },
+                            btnTheme: 'gray',
+                        }, {theme: 'coupon'}).cart__coupon-box
+                    .cart__totals
+                        +cart-totals({
+                            total: data.items.reduce((acc, item) => {
+                                return acc + (item.price * item.qty);
+                            }, 0)
+                        })

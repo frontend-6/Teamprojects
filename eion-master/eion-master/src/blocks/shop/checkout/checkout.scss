@@ -1,0 +1,206 @@
+/**
+ * Styles for the checkout block.
+ */
+.checkout {
+    padding-bottom: 120px;
+    padding-top: 100px;
+
+    &__title {
+        display: none;
+    }
+
+    &__back-link {
+        color: $color-text;
+        @include font-size(14px);
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+
+    &__back-link-text {
+        margin-left: 2px;
+    }
+
+    &__inner {
+        @include breakpoint-up(lg) {
+            display: flex;
+            margin: 0 -15px;
+        }
+    }
+
+    &__left,
+    &__right {
+        @include breakpoint-up(lg) {
+            flex: 0 0 50%;
+            padding: 0 15px;
+        }
+    }
+
+    &__right {
+        margin-top: 60px;
+
+        @include breakpoint-up(lg) {
+            margin-top: 0;
+        }
+    }
+
+    &__right-inner {
+        background: $color-concrete;
+    }
+
+    &__section-title {
+        margin-bottom: 40px;
+        margin-top: 28px;
+    }
+
+    &__section-title-text {
+        vertical-align: baseline;
+    }
+
+    &__check {
+        display: inline-block;
+        margin-top: 48px;
+
+        &_inline {
+            margin-left: 18px;
+            margin-top: 0;
+        }
+    }
+
+    &__check-input {
+        @include visually-hidden();
+    }
+
+    &__check-mark {
+        position: relative;
+
+        display: inline-block;
+        height: 15px;
+        margin-right: 10px;
+        width: 15px;
+
+        vertical-align: middle;
+
+        background-color: transparent;
+        border: 2px solid $color-secondary;
+        cursor: pointer;
+
+        transition: all 0.25s linear;
+
+        &:hover,
+        .checkout__check-input:focus + & {
+            outline: 1px solid $color-primary;
+        }
+
+        .checkout__check-input:checked + & {
+            &:before {
+                content: "";
+
+                left: 2px;
+                position: absolute;
+                top: 2px;
+
+                display: block;
+                height: 6px;
+                width: 8px;
+
+                border-left: 2px solid $color-secondary;
+                border-bottom: 2px solid $color-secondary;
+
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &__check-text {
+        margin-right: 15px;
+
+        vertical-align: middle;
+
+        &_small {
+            margin-right: 0;
+
+            color: $color-secondary;
+            font-family: $font-family-serif;
+            @include font-size(18px);
+            font-style: italic;
+        }
+    }
+
+    &__account-fields {
+        display: none;
+        margin-top: 25px;
+    }
+
+    &__account-text {
+        margin-bottom: 25px;
+    }
+
+    &__shipping-fields {
+        display: none;
+        margin-bottom: 10px;
+    }
+
+    &__error {
+        display: block;
+        margin-top: 5px;
+
+        color: $color-primary;
+        @include font-size(14px);
+    }
+
+    &__review-order {
+        padding: 22px 15px 48px;
+
+        border-bottom: 1px dashed rgba($color-black, 0.1);
+
+        @include breakpoint-up(sm) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        @include breakpoint-up(md) {
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+    }
+
+    &__payment {
+        padding: 34px 15px 60px;
+
+        @include breakpoint-up(sm) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        @include breakpoint-up(md) {
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+    }
+
+    &__btn-wrap {
+        padding: 0 15px 70px;
+
+        @include breakpoint-up(sm) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        @include breakpoint-up(md) {
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+    }
+
+    &__btn {
+        min-width: 220px;
+    }
+}

@@ -1,0 +1,47 @@
+/**
+ * Styles for the FAQ topics block.
+ */
+.faq-topics {
+    &__item {
+        margin-top: 15px;
+    }
+
+    &__link {
+        position: relative;
+
+        display: inline-block;
+        padding-left: 12px;
+
+        color: $color-text;
+        font-family: $font-family-serif;
+        @include font-size(14px);
+        text-decoration: none;
+
+        transition: all 0.25s linear;
+
+        &:before {
+            content: "";
+
+            left: 0;
+            position: absolute;
+            top: 8px;
+
+            display: block;
+            height: 4px;
+            width: 4px;
+
+            background: $color-text;
+            border-radius: 50%;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-secondary;
+            text-decoration: underline;
+
+            &:before {
+                background: $color-secondary;
+            }
+        }
+    }
+}

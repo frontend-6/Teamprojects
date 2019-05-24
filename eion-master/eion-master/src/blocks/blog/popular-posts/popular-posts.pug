@@ -1,0 +1,4 @@
+mixin popular-posts(data = {}, mods = {})
+    .popular-posts&attributes(attributes)
+        each post in data
+            +post(post, {level: 3, sidebar: true}).popular-posts__post

@@ -1,0 +1,43 @@
+/**
+ * Styles for the page header block.
+ */
+.page-header {
+    padding: 75px 0;
+
+    @include breakpoint-up(md) {
+        padding-bottom: 85px;
+        padding-top: 85px;
+    }
+
+    @include breakpoint-up(lg) {
+        padding-bottom: 105px;
+        padding-top: 105px;
+    }
+
+    background: {
+        color: $color-text;
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    };
+
+    &__title {
+        color: $color-white;
+        @include font-size(30px);
+        font-weight: $font-weight-bold;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include breakpoint-up(sm) {
+            @include font-size(40px);
+        }
+
+        @include breakpoint-up(md) {
+            @include font-size(60px);
+        }
+
+        @include breakpoint-up(lg) {
+            @include font-size(72px);
+        }
+    }
+}

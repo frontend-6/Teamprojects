@@ -1,0 +1,8 @@
+mixin page-header(data = {}, mods = {})
+    .page-header(
+        style=`background-image: url(${data.bg})`
+    )&attributes(attributes)
+        .page__container
+            h1.page-header__title= data.title
+        // /.page__container 
+    // /.page-header 

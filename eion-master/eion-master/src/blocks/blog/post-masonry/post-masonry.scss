@@ -1,0 +1,19 @@
+/**
+ * Styles for the post masonry block.
+ */
+.post-masonry {
+    @include breakpoint-up(md) {
+        column-count: 2;
+        column-gap: 30px;
+    }
+
+    @include breakpoint-up(lg) {
+        column-count: 3;
+    }
+
+    &__item-wrap {
+        display: inline-block;
+        margin-top: 30px;
+        width: 100%;
+    }
+}

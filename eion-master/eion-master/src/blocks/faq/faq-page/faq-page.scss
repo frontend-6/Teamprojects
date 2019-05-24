@@ -1,0 +1,62 @@
+/**
+ * Styles for the FAQ page block.
+ */
+.faq-page {
+    &__header {
+        display: flex;
+        flex-direction: column;
+        height: 320px;
+        justify-content: center;
+
+        background: {
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+    }
+
+    &__header-inner {
+        padding: 0 15px;
+    }
+
+    &__title {
+        color: $color-white;
+        @include font-size(36px);
+        font-weight: $font-weight-bold;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__search {
+        margin: 18px auto 0;
+        max-width: 570px;
+    }
+
+    &__content {
+        padding: 95px 0 150px;
+
+        @include breakpoint-up(lg) {
+            display: flex;
+            margin: 0 -15px;
+        }
+    }
+
+    &__section {
+        @include breakpoint-up(lg) {
+            padding: 0 15px;
+            width: 50%;
+        }
+
+        &:not(:first-child) {
+            margin-top: 60px;
+
+            @include breakpoint-up(lg) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__section-title {
+        margin-bottom: 50px;
+    }
+}

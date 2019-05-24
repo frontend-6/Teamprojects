@@ -1,0 +1,16 @@
+/**
+ * Styles for the input box block.
+ */
+.input-box {
+    display: flex;
+
+    &__field {
+        flex: 1 1 auto;
+    }
+
+    &__submit {
+        @include breakpoint-up(sm) {
+            min-width: 170px;
+        }
+    }
+}

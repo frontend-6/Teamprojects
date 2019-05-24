@@ -1,0 +1,29 @@
+/**
+ * Styles for the account block.
+ */
+.account {
+    position: relative;
+
+    padding: 29px 20px;
+    min-width: 270px;
+
+    &__form-group {
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+    &__btns {
+        margin-top: 20px;
+    }
+
+    &__social {
+        margin-top: 28px;
+    }
+
+    &__lang {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+    }
+}

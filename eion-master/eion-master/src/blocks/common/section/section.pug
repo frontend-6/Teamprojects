@@ -1,0 +1,11 @@
+mixin section(data = {}, mods = {})
+    section.section&attributes(attributes)
+        .page__container
+            .section__heading
+                h2.title.title_center.section__title= data.title
+                if data.text
+                    p.section__intro= data.text
+        
+            if block
+                block
+        // /.page__container 

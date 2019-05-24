@@ -1,0 +1,77 @@
+/**
+ * Styles for the accordion block.
+ */
+.accordion {
+    &__toggle {
+        align-items: center;
+        display: flex;
+        margin-top: 10px;
+        padding: 15px;
+        width: 100%;
+
+        color: $color-text;
+        font-family: $font-family-sans-serif;
+        @include font-size(14px);
+
+        background: transparent;
+        border: 1px dashed $color-text;
+        cursor: pointer;
+
+        transition: all 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+
+            border-color: $color-primary;
+        }
+
+        .accordion__header_active & {
+            color: $color-white;
+
+            background: $color-primary;
+            border: 0;
+
+            &:hover,
+            &:focus {
+                color: $color-white;
+
+                background: $color-secondary;
+                border: 0;
+            }
+        }
+    }
+
+    &__title {
+        margin-right: auto;
+
+        text-transform: uppercase;
+    }
+
+    &__icon {
+        margin-left: 30px;
+
+        &_open {
+            display: block;
+
+            .accordion__header_active & {
+                display: none;
+            }
+        }
+
+        &_close {
+            display: none;
+
+            .accordion__header_active & {
+                display: block;
+            }
+        }
+    }
+
+    &__content {
+        display: none;
+        padding: 15px 18px;
+
+        font-family: $font-family-serif;
+    }
+}

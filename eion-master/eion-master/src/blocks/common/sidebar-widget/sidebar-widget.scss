@@ -1,0 +1,12 @@
+/**
+ * Styles for the sidebar widget block.
+ */
+.sidebar-widget {
+    padding: 30px;
+
+    background: $color-concrete;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+}

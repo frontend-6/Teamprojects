@@ -1,0 +1,140 @@
+{
+    "pageTitle": "Blog Masonry Category",
+
+    "content": {
+        "title": "Latest From the Blog",
+
+        "masonry": [{
+            "link": "blog-single-post-sidebar.html",
+            "quote": "Sometimes I ride my bike to nowhere, to see nothing, just so I can ride my bike.",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "video": "https://player.vimeo.com/video/35865194",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-01.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "link": "blog-single-post-sidebar.html",
+            "quote": "To bike, or not a bike: That is not a question.",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "video": "https://player.vimeo.com/video/53460286",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x320/post-01.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x480/post-01.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-05.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x320/post-02.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x270/post-01.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "gallery": [{
+                "img": "img/content/blog/480x360/post-04.jpg",
+                "alt": ""
+            }, {
+                "img": "img/content/blog/480x360/post-10.jpg",
+                "alt": ""
+            }, {
+                "img": "img/content/blog/480x360/post-11.jpg",
+                "alt": ""
+            }],
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "link": "blog-single-post-sidebar.html",
+            "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-07.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }]
+    }
+}

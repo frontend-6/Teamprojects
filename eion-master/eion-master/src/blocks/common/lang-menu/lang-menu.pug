@@ -1,0 +1,16 @@
+mixin lang-menu(data = {}, mods = {})
+    - const align = data.align || 'right';
+    .lang-menu(class = "lang-menu_align_" + align)&attributes(attributes)
+        button.lang-menu__toggle
+            i.icon-globe.icons(aria-label="Choose your language")
+
+        ul.lang-menu__list
+            li.lang-menu__item
+                a(
+                    href="javascript:void(0);"
+                ).lang-menu__link.lang-menu__link_active English US
+            li.lang-menu__item
+                a(href="javascript:void(0);").lang-menu__link France
+            li.lang-menu__item
+                a(href="javascript:void(0);").lang-menu__link Spanish
+    // /.lang-menu 

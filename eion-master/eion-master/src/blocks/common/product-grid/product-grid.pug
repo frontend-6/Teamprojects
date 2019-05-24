@@ -1,0 +1,12 @@
+mixin product-grid(data = {}, mods = {})
+    .product-grid(
+        class="product-grid_col_" + data.itemCol
+    )&attributes(attributes)
+        .product-grid__inner
+            each product in data.products
+                .product-grid__item
+                    +product(product, {
+                        size: data.itemSize
+                    }).product-grid__product
+        // /.product-grid__inner 
+    // /.product-grid 

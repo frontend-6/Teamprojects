@@ -1,0 +1,30 @@
+/**
+ * Styles for the sidebar cart block.
+ */
+.sidebar-cart {
+    padding: 20px;
+
+    border: 2px dashed $color-text;
+
+    &__title {
+        color: $color-secondary;
+        @include font-size(14px);
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+    }
+
+    &__icon {
+        margin-left: 8px;
+
+        color: $color-primary;
+        @include font-size(20px);
+    }
+
+    &__empty {
+        margin-top: 8px;
+
+        font-family: $font-family-serif;
+        @include font-size(12px);
+        font-style: italic;
+    }
+}

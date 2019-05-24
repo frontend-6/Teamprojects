@@ -1,0 +1,58 @@
+/**
+ * Styles for the news block.
+ */
+    // Selector styles
+    // TODO: add code
+.form-main{
+    font-family: 'PTSans-Narrow Bold';
+    font-size: 30px;
+}
+.form-control{
+    display: block;
+    margin: auto;
+    width: 280px;
+    height: 48px;
+    margin-bottom: 8px;
+    padding-left: 15px;
+     &::placeholder{
+        font-family: 'PTSans-Narrow Regular';
+        color: black;
+        font-size: 18px;
+        line-height: 30px;
+        
+    }
+     &--ta{
+         height: 110px;
+     }
+     &--mb{
+         margin-bottom: 35px;
+     }
+     &:hover{
+         
+         border-color: black;
+     }
+     
+     
+}
+.forma{
+
+        display: block;
+        max-width: 100%;
+        margin: auto;
+}
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // Bem modifiers
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+

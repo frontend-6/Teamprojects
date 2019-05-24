@@ -1,0 +1,48 @@
+/**
+ * Styles for the product page block.
+ */
+.product-page {
+    padding: 100px 0 120px;
+
+    &__inner {
+        margin-top: 25px;
+
+        @include breakpoint-up(lg) {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    }
+
+    &__gallery {
+        @include breakpoint-up(lg) {
+            padding: 0 15px;
+            width: 50%;
+        }
+    }
+
+    &__info {
+        margin-top: 60px;
+
+        @include breakpoint-up(lg) {
+            margin-top: 0;
+            padding: 0 15px;
+            width: 50%;
+        }
+    }
+
+    &__review-form,
+    &__tabs {
+        margin-top: 30px;
+
+        @include breakpoint-up(lg) {
+            padding: 0 15px;
+            width: 50%;
+        }
+    }
+
+    &__new-products {
+        margin-top: 140px;
+    }
+}

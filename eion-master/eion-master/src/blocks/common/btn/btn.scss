@@ -1,0 +1,128 @@
+/**
+ * Styles for the button block.
+ */
+.btn {
+    display: inline-block;
+    height: 30px;
+    padding: 0 18px;
+
+    font-family: $font-family-sans-serif;
+    @include font-size(10px);
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    border-radius: 15px;
+    cursor: pointer;
+
+    transition: all 0.25s linear;
+
+    &_theme_primary {
+        color: $color-white;
+
+        background: $color-primary;
+        border: 0;
+
+        &:hover,
+        &:focus {
+            background: $color-secondary;
+        }
+    }
+
+    &_theme_gray {
+        color: $color-white;
+
+        background: $color-text;
+        border: 0;
+
+        &:hover,
+        &:focus {
+            background: $color-secondary;
+        }
+    }
+
+    &_theme_secondary {
+        color: $color-primary;
+
+        background: $color-white;
+        border: 1px dashed $color-primary;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+
+            background: $color-primary;
+        }
+    }
+
+    &_theme_light {
+        color: $color-text;
+
+        background: transparent;
+        border: 1px dashed $color-text;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+
+            background: $color-secondary;
+            border: 1px solid $color-secondary;
+        }
+    }
+
+    &_theme_dark {
+        color: $color-white;
+
+        background: $color-secondary;
+        border: 0;
+
+        &:hover,
+        &:focus {
+            background: $color-primary;
+        }
+    }
+
+    &_theme_inverse {
+        color: $color-primary;
+
+        background: $color-white;
+        border: 0;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+
+            background: $color-primary;
+        }
+    }
+
+    &_size_large {
+        height: 60px;
+        padding: 0 30px;
+
+        @include font-size(14px);
+        line-height: 60px;
+
+        border-radius: 30px;
+        border-width: 2px;
+    }
+
+    &_size_responsive {
+        @include breakpoint-up(lg) {
+            height: 60px;
+            padding: 0 30px;
+
+            @include font-size(14px);
+            line-height: 60px;
+
+            border-radius: 30px;
+            border-width: 2px;
+        }
+    }
+
+    &_rect {
+        border-radius: 0;
+    }
+}

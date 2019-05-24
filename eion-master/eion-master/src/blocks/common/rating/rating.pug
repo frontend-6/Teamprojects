@@ -1,0 +1,25 @@
+mixin rating(data, mods = {})
+    if !data
+        .rating.rating_not-rated&attributes(attributes)
+            span.rating__sr-text Not rated
+
+            span.rating__stars(aria-hidden="true")
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+    else
+        .rating&attributes(attributes)
+            span.rating__sr-text Rated #{data}
+
+            span.rating__stars(aria-hidden="true")
+                - let star = 1;
+                while star <= 5
+                    if star <= data
+                        i.fas.fa-star
+                    else if star - data < 1
+                        i.fas.fa-star-half-alt
+                    else
+                        i.far.fa-star
+                    - star++;

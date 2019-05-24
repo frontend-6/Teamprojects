@@ -1,0 +1,10 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/pagination/pagination.pug
+include ../../blocks/common/product-grid/product-grid.pug
+
+include ../../blocks/shop/category-page/category-page.pug
+include ../../blocks/shop/product-filter/product-filter.pug
+
+block page
+    +category-page(data.content)

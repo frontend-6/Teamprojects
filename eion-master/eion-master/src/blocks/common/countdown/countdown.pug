@@ -1,0 +1,23 @@
+mixin countdown(data = {}, mods = {})
+    .countdown(
+        class=mods.justified && "countdown_justified"
+    )&attributes(attributes)
+        .countdown__inner
+            .countdown__item
+                .countdown__item-inner
+                    span.countdown__num.countdown__num_days= data.days
+                    span.countdown__unit days
+            .countdown__item
+                .countdown__item-inner
+                    span.countdown__num.countdown__num_hours= data.hours
+                    span.countdown__unit hours
+            .countdown__item
+                .countdown__item-inner
+                    span.countdown__num.countdown__num_mins= data.mins
+                    span.countdown__unit mins
+            .countdown__item
+                .countdown__item-inner
+                    span.countdown__num.countdown__num_secs= data.secs
+                    span.countdown__unit secs
+        // /.countdown__inner 
+    // /.countdown 

@@ -1,0 +1,113 @@
+{
+    "pageTitle": "Blog Grid Category",
+
+    "content": {
+        "title": "Latest From the Blog",
+
+        "grid": [{
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-01.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-02.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-03.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "gallery": [{
+                "img": "img/content/blog/480x360/post-04.jpg",
+                "alt": ""
+            }, {
+                "img": "img/content/blog/480x360/post-10.jpg",
+                "alt": ""
+            }, {
+                "img": "img/content/blog/480x360/post-11.jpg",
+                "alt": ""
+            }],
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-05.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-06.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-07.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-08.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }, {
+            "title": "Sunt in culpa qui officia desent mollit anim.",
+            "link": "blog-single-post-sidebar.html",
+            "img": "img/content/blog/480x360/post-09.jpg",
+            "date": "2015-06-02",
+            "author": "Author",
+            "authorLink": "javascript:void(0);",
+            "comments": 3,
+            "likes": 8,
+            "excerpt": "Lorem ipsum dolor sit amet, contur adicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ads minim veniam, quis nostrud exercitation"
+        }],
+
+        "pagination": {
+            "pages": 2,
+            "activePage": 1
+        }
+    }
+}

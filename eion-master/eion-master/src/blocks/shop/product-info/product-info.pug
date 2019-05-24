@@ -1,0 +1,32 @@
+mixin product-info(data = {}, mods = {})
+    .product-info&attributes(attributes)
+        +rating(data.rating).product-info__rating
+
+        h1.product-info__title= data.title
+        .product-info__item-id Item ##{data.id}
+
+        .product-info__price $#{data.price}
+
+        .text.product-info__short-desc !{data.shortDesc}
+
+        .product-info__additional
+            .product-info__in-stock
+                span.product-info__small-text In stock 
+                i.fas.fa-check-circle(aria-hidden="true")
+
+            a(href="javascript:void(0);").product-info__link
+                span.product-info__add-text Size Guide 
+                i.fas.fa-info-circle(aria-hidden="true")
+
+            a(href="javascript:void(0);").product-info__link
+                span.product-info__add-text Add to Wishlist 
+                i.far.fa-heart(aria-hidden="true")
+
+        +btn({
+            text: 'Add to cart',
+        }, {
+            size: 'large',
+            theme: 'dark',
+        }).product-info__add-to-cart
+
+        +social(data.social).product-info__social

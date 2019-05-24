@@ -1,0 +1,9 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/pagination/pagination.pug
+
+include ../../blocks/blog/blog-page/blog-page.pug
+include ../../blocks/blog/post-masonry/post-masonry.pug
+
+block page
+    +blog-page(data.content)

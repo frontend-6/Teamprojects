@@ -1,0 +1,12 @@
+mixin blog-page(data = {}, mods = {})
+    main.blog-page&attributes(attributes)
+        .page__container
+            h1.title.title_center.blog-page__title= data.title
+
+            if data.grid
+                +post-grid(data.grid, {small: true}).blog-page__grid
+            else if data.masonry
+                +post-masonry(data.masonry).blog-page__masonry
+
+            if data.pagination
+                +pagination(data.pagination).blog-page__pagination

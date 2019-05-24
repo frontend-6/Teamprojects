@@ -1,0 +1,61 @@
+/**
+ * Styles for the product carousel block.
+ */
+.product-carousel {
+    @include breakpoint-up(sm) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .swiper-wrapper {
+        height: auto;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+
+        opacity: 0.2;
+
+        transition: opacity linear 0.25s;
+
+        .swiper-slide-active & {
+            opacity: 1;
+        }
+    }
+
+    &__pagination {
+        position: static;
+
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    &__bullet {
+        display: block;
+        height: 10px;
+        margin: 0 4px;   
+        padding: 0;
+        width: 10px;
+
+        text-indent: -99px;
+
+        background: rgba($color-secondary, 0.3);
+        border: 3px solid $color-white;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+
+        overflow: hidden;
+        transition: background-color 0.25s linear;
+
+        &_active,
+        &:hover,
+        &:focus {
+            background: $color-secondary;
+        }
+    }
+}

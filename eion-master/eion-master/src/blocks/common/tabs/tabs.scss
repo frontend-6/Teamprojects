@@ -1,0 +1,52 @@
+/**
+ * Styles for the tabs block.
+ */
+.tabs {
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:first-child) {
+        margin-left: 50px;
+    }
+
+    &__link {
+        display: block;
+        padding-bottom: 6px;
+
+        color: $color-text;
+        @include font-size(14px);
+        text-decoration: none;
+        text-transform: uppercase;
+
+        border-bottom: 1px dashed transparent;
+
+        transition: all 0.25s linear;
+
+        &_active,
+        &:hover,
+        &:focus {
+            color: $color-secondary;
+        }
+
+        &_active {
+            border-color: $color-secondary;
+        }
+    }
+
+    &__panel {
+        display: none;
+
+        opacity: 1;
+
+        transition: opacity 0.25s ease;
+
+        &_active {
+            display: block;
+        }
+
+        &_fade {
+            opacity: 0;
+        }
+    }
+}

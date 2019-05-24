@@ -1,0 +1,405 @@
+{
+    "menuCenter": false,
+    "sideNavAlign": "right",
+
+    "content": {
+        "slider": {
+            "slides": [{
+                "img": "img/content/slider/slide-01.jpg",
+                "title": "Flower",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+                "theme": "bordered"
+            }, {
+                "img": "img/content/slider/slide-02.jpg",
+                "title": "Flower",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+                "theme": "box"
+            }, {
+                "img": "img/content/slider/slide-03.jpg",
+                "title": "Flower",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+                "theme": "default"
+            }]
+        },
+
+        "specialOffers": [{
+            "desc": "For all standard order",
+            "title": "Gift",
+            "link": "javascript:void(0);"
+        }, {
+            "desc": "For all standard order",
+            "title": "Free Shipping",
+            "link": "javascript:void(0);"
+        }, {
+            "desc": "Only in 30 days",
+            "title": "Free Returns",
+            "link": "javascript:void(0);"
+        }],
+
+        "featuredProducts": {
+            "title": "Featured Products",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+
+            "itemSize": "large",
+            "itemCol": "1-2",
+            "products": [{
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/760x570/flower-01.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A123",
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "oldPrice": 530,
+                "price": 399,
+                "gallery": [{
+                    "img": "img/content/products/480x360/flower-03.jpg",
+                    "title": "Fl-Model A123"
+                }, {
+                    "img": "img/content/products/480x360/flower-07.jpg",
+                    "title": "Fl-Model A123"
+                }, {
+                    "img": "img/content/products/480x360/flower-08.jpg",
+                    "title": "Fl-Model A123"
+                }],
+                "rating": 5,
+                "link": "product-detail.html"
+            }]
+        },
+
+        "coupon1": {
+            "img": "img/content/coupons/coupon-01.jpg",
+            "title": "Coupon 15%",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        },
+
+        "dealOfTheWeek": {
+            "title": "Deal Of the week",
+            "intro": "Sale is only in a week up to 30% off",
+            "countdown": {
+                "days": "06",
+                "hours": "15",
+                "mins": "42",
+                "secs": "17"
+            },
+            "btn": {
+                "text": "Shop now",
+                "url": "javascript:void(0);"
+            }
+        },
+
+        "newProducts": {
+            "title": "New Products",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+            
+            "items": [{
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-01.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "oldPrice": 530,
+                "price": 399,
+                "img": "img/content/products/480x360/flower-02.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-03.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-04.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-05.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "oldPrice": 530,
+                "price": 399,
+                "img": "img/content/products/480x360/flower-06.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-09.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-10.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-11.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "oldPrice": 530,
+                "price": 399,
+                "img": "img/content/products/480x360/flower-12.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-13.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/480x360/flower-14.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }]
+        },
+
+        "counters": [{
+            "title": "Coffee Cups",
+            "value": 24622
+        }, {
+            "title": "Flower Sold",
+            "value": 6134
+        }, {
+            "title": "Flower Hired",
+            "value": 7516
+        }, {
+            "title": "Happy Customers",
+            "value": 12023
+        }],
+
+        "coupon2": {
+            "img": "img/content/coupons/coupon-02.jpg",
+            "title": "Coupon 15%",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        },
+
+        "newsletter": {
+            "title": "Newsletter",
+            "intro": "Sign up to receive the coupon 15% off for your first purchase via email and get informations about flower, accessories, tips,... and many exclusive offers.",
+            "small": "*Discount applies only to orders over $100",
+            "subscribe": true
+        },
+
+        "blog": {
+            "title": "Latest blog",
+            "posts": [{
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-sidebar.html",
+                "img": "img/content/blog/480x360/post-01.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }, {
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-sidebar.html",
+                "img": "img/content/blog/480x360/post-02.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }, {
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-sidebar.html",
+                "img": "img/content/blog/480x360/post-03.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }, {
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-sidebar.html",
+                "gallery": [{
+                    "img": "img/content/blog/480x360/post-04.jpg",
+                    "alt": ""
+                }, {
+                    "img": "img/content/blog/480x360/post-10.jpg",
+                    "alt": ""
+                }, {
+                    "img": "img/content/blog/480x360/post-11.jpg",
+                    "alt": ""
+                }],
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }, {
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-sidebar.html",
+                "img": "img/content/blog/480x360/post-05.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }, {
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-sidebar.html",
+                "img": "img/content/blog/480x360/post-06.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }, {
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-sidebar.html",
+                "img": "img/content/blog/480x360/post-07.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }, {
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-sidebar.html",
+                "img": "img/content/blog/480x360/post-08.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }, {
+                "title": "Sunt in culpa qui officia desent mollit anim.",
+                "link": "blog-single-post-sidebar.html",
+                "img": "img/content/blog/480x360/post-09.jpg",
+                "date": "2015-06-02",
+                "author": "Author",
+                "authorLink": "javascript:void(0);",
+                "comments": 3,
+                "likes": 8
+            }]
+        },
+
+        "cta": {
+            "bg": "img/content/cta/cta-01.jpg",
+            "title": "Free Ship all order",
+            "btn": {
+                "url": "javascript:void(0);",
+                "text": "Apply now"
+            }
+        }
+    },
+
+    "footer": {
+        "about": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing 1992 elit London, do <em>flower</em> tempor incididunt ut labore et dolore magna aliqua.</p><p><em>Eion</em> renim ad 2015 minim veniam, quis nostrud exercitation ullamco.</p>",
+
+        "menu": [{
+            "text": "FAQs",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Size Guide",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Delivery Info",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Return Info",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Discount",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Gift",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "My Wishlist",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Our Stores",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Help",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Customize",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "iOS App",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Android App",
+            "link": "javascript:void(0);"
+        }],
+
+        "address": "PO Box CT16122 Collins Street West, Victoria 8007, Australia.",
+
+        "phone": "+1 (2) 345 6789",
+        "fax": "+1 (2) 345 6789",
+        "email": "Contact@yourdomain.com",
+
+        "copyright": "© Copyright 2015. Powered by WordPress. Eion Theme by SunriseThemes <br> Html template by polarfawx",
+
+        "instagram": [
+            "img/content/instagram-feed/feed-01.jpg",
+            "img/content/instagram-feed/feed-02.jpg",
+            "img/content/instagram-feed/feed-03.jpg",
+            "img/content/instagram-feed/feed-04.jpg",
+            "img/content/instagram-feed/feed-05.jpg",
+            "img/content/instagram-feed/feed-06.jpg"
+        ]
+    },
+
+    "searchModal": [{
+        "title": "Flower Model A351",
+        "link": "product-detail.html",
+        "rating": 5,
+        "price": "$530",
+        "img": "img/content/products/200x150/flower-05.jpg"
+    }, {
+        "title": "Flower Model A351",
+        "link": "product-detail.html",
+        "rating": 5,
+        "price": "$530",
+        "img": "img/content/products/200x150/flower-02.jpg"
+    }, {
+        "title": "Flower Model A351",
+        "link": "product-detail.html",
+        "rating": 5,
+        "price": "$530",
+        "img": "img/content/products/200x150/flower-03.jpg"
+    }],
+
+    "isHomepage": true
+}

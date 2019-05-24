@@ -1,0 +1,24 @@
+mixin accordion(data = {}, mods = {})
+    .accordion(role="presentation")&attributes(attributes)
+        each item, i in data
+            h3(
+                aria-level="3"
+                class=(i==0) && "accordion__header_active"
+            )
+                button(
+                    aria-expanded="true"
+                    aria-controls="sect" + (i + 1)
+                    id="accordion" + (i + 1) + "id"
+                    type="button"
+                ).accordion__toggle
+                    span.accordion__title= item.title
+                    i.icons.icon-plus.accordion__icon.accordion__icon_open(
+                        aria-hidden="true"
+                    )
+                    i.icons.icon-close.accordion__icon.accordion__icon_close(
+                        aria-hidden="true"
+                    )
+            .accordion__content(
+                id="sect" + (i + 1)
+                aria-labelledby="accordion" + (i + 1) + "id"
+            )= item.text

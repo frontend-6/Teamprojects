@@ -1,0 +1,17 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/page-header/page-header.pug
+include ../../blocks/common/pagination/pagination.pug
+include ../../blocks/common/sidebar-coupon/sidebar-coupon.pug
+include ../../blocks/common/sidebar-widget/sidebar-widget.pug
+include ../../blocks/common/sidebar-list/sidebar-list.pug
+include ../../blocks/common/product-grid/product-grid.pug
+
+include ../../blocks/shop/category-layout/category-layout.pug
+include ../../blocks/shop/product-filter/product-filter.pug
+include ../../blocks/shop/product-list/product-list.pug
+include ../../blocks/shop/sidebar-cart/sidebar-cart.pug
+
+block page
+    +page-header(data.content.pageHeader)
+    +category-layout(data.content.blog)

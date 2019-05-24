@@ -1,0 +1,6 @@
+mixin tag-cloud(data = {}, mods = {})
+    .tag-cloud&attributes(attributes)
+        ul.tag-cloud__list
+            each tag in data
+                li.tag-cloud__item
+                    a(href="javascript:void(0);").tag-cloud__link= tag

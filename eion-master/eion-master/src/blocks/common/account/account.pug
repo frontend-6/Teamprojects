@@ -1,0 +1,50 @@
+mixin account(data = {}, mods = {})
+    .account&attributes(attributes)
+        form.account__form(method="post" action="#")
+            +form-group({
+                type: 'text',
+                name: 'username',
+                id: 'account-username',
+                required: true,
+                placeholder: 'Username or Email Address',
+                icon: 'user'
+            }, {theme: 'account'}).account__form-group
+
+            +form-group({
+                type: 'text',
+                name: 'password',
+                id: 'account-password',
+                required: true,
+                placeholder: 'Password',
+                icon: 'lock'
+            }, {theme: 'account'}).account__form-group
+            
+            .btn-group.account__btns
+                +btn({text: 'Register'}, {theme: 'secondary'})(
+                    type = "submit"
+                    name = "register"
+                ).btn-group__btn
+                +btn({text: 'Login'}, {theme: 'primary'})(
+                    type = "submit"
+                    name = "login"
+                ).btn-group__btn
+        // /.account__form 
+        
+        +social({
+            text: 'Connect with:',
+            links: [{
+                className : 'twitter',
+                text      : 'Connect with Twitter',
+            }, {
+                className : 'facebook-f',
+                text      : 'Connect with Facebook',
+            }, {
+                className : 'google-plus-g',
+                text      : 'Connect with Google Plus',
+            }]
+        }, {theme: 'account'}).account__social
+
+        .account__lang
+            +lang-menu({align: data.langMenuAlign})
+        // /.account__lang 
+    // /.account 

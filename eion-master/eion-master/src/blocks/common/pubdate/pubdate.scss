@@ -1,0 +1,18 @@
+/**
+ * Styles for the publication date block.
+ */
+.pubdate {
+    color: $color-silver;
+    font-family: $font-family-serif;
+    @include font-size(14px);
+
+    &__author {
+        color: $color-silver;
+
+        transition: color 0.25s linear;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}

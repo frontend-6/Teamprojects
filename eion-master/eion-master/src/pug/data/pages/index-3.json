@@ -1,0 +1,118 @@
+{
+    "content": {
+        "slider": {
+            "slides": [{
+                "img": "img/content/slider/slide-01.jpg",
+                "title": "Flower",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+                "theme": "bordered"
+            }, {
+                "img": "img/content/slider/slide-02.jpg",
+                "title": "Flower",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+                "theme": "box"
+            }, {
+                "img": "img/content/slider/slide-03.jpg",
+                "title": "Flower",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+                "theme": "default"
+            }]
+        },
+
+        "products": {
+            "title": "All Flower",
+
+            "items": [{
+                "name": "Fl-Model A123",
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "oldPrice": 530,
+                "price": 399,
+                "img": "img/content/products/760x570/flower-01.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/760x570/flower-02.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A123",
+                "label": {
+                    "shape": "circle",
+                    "theme": "sale",
+                    "text": "Sale"
+                },
+                "oldPrice": 530,
+                "price": 399,
+                "img": "img/content/products/760x570/flower-03.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/760x570/flower-04.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A123",
+                "price": 530,
+                "img": "img/content/products/760x570/flower-05.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }, {
+                "name": "Fl-Model A351",
+                "price": 530,
+                "img": "img/content/products/760x570/flower-06.jpg",
+                "rating": 5,
+                "link": "product-detail.html"
+            }]
+        },
+
+        "coupon1": {
+            "img": "img/content/coupons/coupon-03.jpg",
+            "title": "Flower Wedding",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        },
+
+        "coupon2": {
+            "img": "img/content/coupons/coupon-02.jpg",
+            "title": "Coupon 15%",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        }
+    },
+
+    "footer": {
+        "alt": true,
+
+        "address": "PO Box CT16122 Collins Street West, Victoria 8007, Australia.",
+
+        "phone": "+1 (2) 345 6789",
+        "fax": "+1 (2) 345 6789",
+        "email": "Contact@yourdomain.com",
+
+        "copyright": "© Copyright 2015. Powered by WordPress. Eion Theme by SunriseThemes <br> Html template by polarfawx",
+
+        "newsletter": {
+            "text": "Sign up to receive the coupon 15% off for your first purchase via email and get informations about flower, accessories, tips,... and many exclusive offers.",
+            "note": "*Discount applies only to orders over $100"
+        },
+
+        "instagramFeed": [
+            "img/content/instagram-feed/feed-01.jpg",
+            "img/content/instagram-feed/feed-02.jpg",
+            "img/content/instagram-feed/feed-03.jpg",
+            "img/content/instagram-feed/feed-04.jpg",
+            "img/content/instagram-feed/feed-05.jpg",
+            "img/content/instagram-feed/feed-06.jpg",
+            "img/content/instagram-feed/feed-07.jpg",
+            "img/content/instagram-feed/feed-08.jpg"
+        ]
+    },
+
+    "isHomepage": true
+}

@@ -1,0 +1,148 @@
+mixin footer(data = {}, mods = {})
+    .footer(class = data.alt && "footer_light")&attributes(attributes)
+        if data.instagramFeed && !data.alt
+            +instagram-carousel(data.instagramFeed)
+        .footer__top
+            .page__container
+                .footer__top-inner
+                    if data.alt
+                        .footer__block
+                            h2.title.title_size_large.footer__block-title
+                                | Eion
+
+                            address.footer__address= data.address
+
+                            ul.footer__contacts
+                                li.footer__contact-item Phone: #{data.phone}
+                                li.footer__contact-item Fax: #{data.fax}
+                                li.footer__contact-item Email: #{data.email}
+
+                            +social({
+                                links: [{
+                                    className: 'twitter',
+                                    text: 'Follow us on Twitter',
+                                }, {
+                                    className: 'facebook-f',
+                                    text: 'Follow us on Facebook',
+                                }, {
+                                    className: 'instagram',
+                                    text: 'Follow us on Instagram',
+                                }, {
+                                    className: 'google-plus-g',
+                                    text: 'Follow us on Google Plus',
+                                }, {
+                                    className: 'pinterest',
+                                    text: 'Follow us on Pinterest',
+                                }]
+                            }, {theme:'footer-alt'}).footer__social
+                        // /.footer__block 
+
+                        .footer__block.footer__block_wide
+                            h2.title.title_size_small.footer__block-title Newsletter
+
+                            .footer__text.text !{data.newsletter.text}
+
+                            +input-box({
+                                input: {
+                                    id: 'subscribe-email',
+                                    name: 'email',
+                                    type: 'email',
+                                    placeholder: 'Your email...',
+                                    label: 'Your email',
+                                    required: true
+                                },
+                                btn: {
+                                    text: 'Subscribe'
+                                },
+                            }, {theme: 'footer'}).footer__subscribe-box
+
+                            .footer__note= data.newsletter.note
+                        // /.footer__block 
+                    else
+                        .footer__block
+                            h2.title.title_light.title_size_small.footer__block-title About Us
+
+                            .footer__text.text !{data.about}
+
+                            img(
+                                src = "img/signature.png"
+                                alt = "John Doe"
+                            ).footer__signature
+                        // /.footer__block 
+
+                        .footer__block
+                            h2.title.title_light.title_size_small.footer__block-title Information
+
+                            ul.footer__menu
+                                each item in data.menu
+                                    li.footer__menu-item
+                                        a(href=item.link).footer__menu-link
+                                            | #{item.text}
+                        // /.footer__block 
+
+                        .footer__block
+                            if data.instagram
+                                h2.title.title_light.title_size_small.footer__block-title Instagram
+
+                                +instagram-grid(data.instagram).footer__instagram
+                            else
+                                h2.title.title_light.title_size_small.footer__block-title Newsletter
+
+                                .footer__text.text
+                                    p Enter your email and we'll send you a coupon with 10% off your next order.
+
+                                +subscribe({}, {footer: true}).footer__subscribe
+                        // /.footer__block 
+
+                        .footer__block
+                            h2.title.title_light.title_size_small.footer__block-title Contact us
+
+                            address.footer__address= data.address
+
+                            ul.footer__contacts
+                                li.footer__contact-item Phone: #{data.phone}
+                                li.footer__contact-item Fax: #{data.fax}
+                                li.footer__contact-item Email: #{data.email}
+
+                            +social({
+                                links: [{
+                                    className: 'twitter',
+                                    text: 'Follow us on Twitter',
+                                }, {
+                                    className: 'facebook-f',
+                                    text: 'Follow us on Facebook',
+                                }, {
+                                    className: 'instagram',
+                                    text: 'Follow us on Instagram',
+                                }, {
+                                    className: 'google-plus-g',
+                                    text: 'Follow us on Google Plus',
+                                }, {
+                                    className: 'pinterest',
+                                    text: 'Follow us on Pinterest',
+                                }]
+                            }, {theme:'footer'}).footer__social
+                    // /.footer__block 
+                // /.footer__top-inner 
+            // /.page__container 
+        // /.footer__top 
+    
+        .footer__bottom
+            .page__container
+                .footer__bottom-inner
+                    if !data.alt
+                        a(href="javascript:void(0)").footer__logo
+                            img(
+                                src = "img/logo-footer.png"
+                                alt = "Eion"
+                            ).footer__logo-img
+
+                    .footer__copyright !{data.copyright}
+
+                    +payments().footer__payments
+                // /.footer__bottom-inner 
+            // /.page__container 
+        // /.footer__bottom 
+
+        if data.instagramFeed && !!data.alt
+            +instagram-carousel(data.instagramFeed)

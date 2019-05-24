@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: local('Montserrat Regular'),
+         local('Montserrat-Regular'),
+         url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+         url('../fonts/Montserrat-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: local('Montserrat Bold'),
+         local('Montserrat-Bold'),
+         url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('../fonts/Montserrat-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    src: local('PT Serif Regular'),
+         local('PTSerif-Regular'),
+         url('../fonts/PTSerif-Regular.woff2') format('woff2'),
+         url('../fonts/PTSerif-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Serif Italic'),
+         local('PTSerif-Italic'),
+         url('../fonts/PTSerif-Italic.woff2') format('woff2'),
+         url('../fonts/PTSerif-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'No. Seven';
+    font-style: normal;
+    font-weight: 400;
+    src: local('No. Seven Regular'),
+         local('NoSeven-Regular'),
+         url('../fonts/NoSeven-Regular.woff2') format('woff2'),
+         url('../fonts/NoSeven-Regular.woff') format('woff');
+}

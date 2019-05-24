@@ -1,0 +1,17 @@
+mixin special-offers(data = {}, mods = {})
+    .special-offers&attributes(attributes)
+        .page__container
+            .special-offers__inner
+                each box in data
+                    .special-offers__box-wrap
+                        .special-offers__box
+                            .special-offers__desc= box.desc
+                            h2.special-offers__title= box.title
+                            .special-offers__learn-more
+                                a(href=box.link).special-offers__link
+                                    | More info here &gt;
+                        // /.special-offers__box 
+                    // /.special-offers__box-wrap 
+            // /.special-offers__inner 
+        // /.page__container 
+    // /.special-offers 

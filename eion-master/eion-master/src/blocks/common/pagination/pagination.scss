@@ -1,0 +1,54 @@
+/**
+ * Styles for the pagination block.
+ */
+.pagination {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 5px;
+    }
+
+    &__link {
+        display: block;
+        height: 40px;
+        width: 40px;
+
+        color: $color-text;
+        @include font-size(14px);
+        font-weight: $font-weight-bold;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+
+        background: transparent;
+        border: 1px dashed $color-text;
+        border-radius: 50%;
+
+        transition: all 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+
+            background: $color-primary;
+            border: 1px solid $color-primary;
+        }
+
+        &_active {
+            color: $color-white;
+
+            background: $color-primary;
+            border: 1px solid $color-primary;
+
+            &:hover,
+            &:focus {
+                background: $color-secondary;
+                border: 1px solid $color-secondary;
+            }
+        }
+    }
+}

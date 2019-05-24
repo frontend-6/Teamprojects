@@ -1,0 +1,14 @@
+/**
+ * Styles for the button group block.
+ */
+.btn-group {
+    display: flex;
+
+    &__btn {
+        flex: 1;
+
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,172 @@
+{
+    "pageTitle": "Product Category 3 Columns with Sidebar",
+
+    "content": {
+        "pageHeader": {
+            "title": "Flower Category",
+            "bg": "img/content/products/shop-header-bg-01.jpg"
+        },
+
+        "blog": {
+            "sidebar": {
+                "lists": [{
+                    "title": "Flower Type",
+                    "items": [
+                        "Bouquets",
+                        "Centerpieces",
+                        "Decorations",
+                        "Boutonniers"
+                    ]
+                }, {
+                    "title": "Wedding Style",
+                    "items": [
+                        "Alternative",
+                        "Beach",
+                        "Bohemian",
+                        "Casual",
+                        "Classic",
+                        "DIY",
+                        "Fall"
+                    ]
+                }, {
+                    "title": "Blossom",
+                    "items": [
+                        "Alliums",
+                        "Amaryllis",
+                        "Andromedas",
+                        "Anemones",
+                        "Apple & Cherry Blossoms",
+                        "Astrantias",
+                        "Bells Of Ireland",
+                        "Berries & Fruit",
+                        "Branches",
+                        "Calla Lilies"
+                    ]
+                }]
+            },
+
+            "filter": {
+                "layouts": [{
+                    "label": "2 Columns",
+                    "iconClass": "fas fa-th-large",
+                    "link": "product-category-2-columns"
+                }, {
+                    "label": "3 Columns",
+                    "iconClass": "fas fa-th-list",
+                    "link": "product-category-3-columns",
+                    "selected": true
+                }, {
+                    "label": "4 Columns",
+                    "iconClass": "fas fa-th",
+                    "link": "product-category-4-columns"
+                }],
+                "showProducts": 6,
+                "totalProducts": 30,
+                "views": ["12", "24", "All"],
+    
+                "sort": ["Newest", "Popylarity", "Price: low to high", "Price: high to low"]
+            },
+    
+            "grid": {
+                "itemSize": "small",
+                "itemCol": "1-3",
+                "products": [{
+                    "name": "FL A351",
+                    "oldPrice": 530,
+                    "price": 399,
+                    "label": {
+                        "shape": "circle",
+                        "theme": "sale",
+                        "text": "Sale"
+                    },
+                    "img": "img/content/products/480x360/flower-01.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-02.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-03.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "oldPrice": 530,
+                    "price": 399,
+                    "label": {
+                        "shape": "circle",
+                        "theme": "sale",
+                        "text": "Sale"
+                    },
+                    "img": "img/content/products/480x360/flower-04.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-05.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-06.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "oldPrice": 530,
+                    "price": 399,
+                    "label": {
+                        "shape": "circle",
+                        "theme": "sale",
+                        "text": "Sale"
+                    },
+                    "img": "img/content/products/480x360/flower-09.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-10.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-11.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-12.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-13.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "FL A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-14.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }]
+            },
+    
+            "pagination": {
+                "pages": 2,
+                "activePage": 1
+            }
+        }
+    }
+}

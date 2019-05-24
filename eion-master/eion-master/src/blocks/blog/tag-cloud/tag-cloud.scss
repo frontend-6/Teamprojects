@@ -1,0 +1,42 @@
+/**
+ * Styles for the tag-cloud block.
+ */
+.tag-cloud {
+    overflow: hidden;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -5px;
+    }
+
+    &__item {
+        padding: 5px;
+    }
+
+    &__link {
+        display: block;
+        height: 30px;
+        padding: 0 18px;
+
+        color: $color-primary;
+        @include font-size(10px);
+        line-height: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        background: transparent;
+        border: 1px dashed $color-primary;
+        border-radius: 15px;
+
+        transition: all 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+
+            background: $color-primary;
+            border: 1px solid $color-primary;
+        }
+    }
+}

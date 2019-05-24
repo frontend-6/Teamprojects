@@ -1,0 +1,15 @@
+mixin carousel(data = {}, mods = {}, type)
+    .carousel.swiper-container(class = {
+        ['carousel_2-rows']: !!mods.twoRows,
+        ['carousel_4-cols']: !!mods.fourCols,
+    })&attributes(attributes)
+        .swiper-wrapper
+            each item in data
+                .swiper-slide
+                    if (type === 'post')
+                        +post(item)
+                    else if (type == 'product')
+                        +product(item, {size: 'small'})
+
+        .carousel__pagination
+    // /.carousel 

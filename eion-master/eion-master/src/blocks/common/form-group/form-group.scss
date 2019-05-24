@@ -1,0 +1,151 @@
+/**
+ * Styles for the form group block.
+ */
+.form-group {
+    position: relative;
+
+    display: block;
+
+    &__input {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        color: $color-text;
+        font-family: $font-family-serif;
+        font-style: italic;
+
+        background: transparent;
+        overflow: auto;
+
+        &::-ms-clear {
+            display: none;
+        }
+
+        .form-group_theme_account & {
+            padding: 5px 10px;
+
+            color: $color-text;
+
+            border: 1px solid $color-mercury;
+        }
+
+        .form-group_theme_footer & {
+            padding: 15px 18px;
+
+            color: $color-white;
+            @include font-size(14px);
+
+            border: 1px dashed $color-white;
+        }
+
+        .form-group_theme_newsletter & {
+            padding: 18px 23px;
+
+            color: $color-text;
+            @include font-size(14px);
+
+            border: 2px dashed $color-silver;
+        }
+
+        .form-group_theme_box-white & {
+            padding: 15px 18px;
+
+            color: $color-text;
+            @include font-size(16px);
+
+            background: $color-white;
+            border: 0;
+        }
+
+        .form-group_theme_box-footer & {
+            padding: 15px 18px;
+
+            color: $color-text;
+            @include font-size(16px);
+
+            border: 2px dashed $color-primary;
+            border-right: 0;
+        }
+
+        .form-group_theme_box-coupon & {
+            height: 100%;
+            padding: 15px 18px;
+
+            color: $color-text;
+            @include font-size(16px);
+
+            border: 2px dashed $color-text;
+            border-right: 0;
+        }
+
+        .form-group_theme_default &,
+        .form-group_theme_checkout & {
+            height: 100%;
+            padding: 15px 35px 15px 18px;
+
+            color: $color-text;
+            @include font-size(14px);
+
+            border: 1px dashed $color-text;
+        }
+
+        &::placeholder {
+            opacity: 1;
+
+            .form-group_theme_account &,
+            .form-group_theme_newsletter &,
+            .form-group_theme_default &,
+            .form-group_theme_box-white &,
+            .form-group_theme_box-footer &,
+            .form-group_theme_box-coupon & {
+                color: $color-silver;
+            }
+
+            .form-group_theme_footer & {
+                color: $color-gallery;
+            }
+
+            .form-group_theme_checkout & {
+                color: rgba($color-text, 0.6);
+            }
+        }
+
+        &_select {
+            appearance: none;
+
+            &::-ms-expand {
+                display: none;
+            }
+
+            &:invalid {
+                color: rgba($color-text, 0.6);
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+
+        @include font-size(12px);
+
+        .form-group_theme_default &,
+        .form-group_theme_checkout & {
+            right: 18px;
+            top: 16px;
+
+            color: $color-text;
+        }
+
+        .form-group_theme_account & {
+            right: 10px;
+            top: 6px;
+
+            color: $color-silver;
+        }
+    }
+
+    &__hidden-label {
+        @include visually-hidden();
+    }
+}

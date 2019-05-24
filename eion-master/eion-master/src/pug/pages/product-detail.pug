@@ -1,0 +1,16 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/carousel/carousel.pug
+
+include ../../blocks/shop/product-page/product-page.pug
+include ../../blocks/shop/product-info/product-info.pug
+include ../../blocks/shop/product-gallery/product-gallery.pug
+include ../../blocks/shop/review-form/review-form.pug
+include ../../blocks/shop/star-rating/star-rating.pug
+include ../../blocks/shop/reviews/reviews.pug
+include ../../blocks/shop/review/review.pug
+include ../../blocks/shop/product-desc/product-desc.pug
+include ../../blocks/shop/back-link/back-link.pug
+
+block page
+    +product-page(data.content)

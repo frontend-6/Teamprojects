@@ -1,0 +1,9 @@
+extends ../layouts/base.pug
+
+include ../../blocks/shop/checkout/checkout.pug
+include ../../blocks/shop/review-order/review-order.pug
+include ../../blocks/shop/payment/payment.pug
+include ../../blocks/shop/back-link/back-link.pug
+
+block page
+    +checkout(data.content)

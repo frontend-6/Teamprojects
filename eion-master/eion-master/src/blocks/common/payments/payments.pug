@@ -1,0 +1,23 @@
+mixin payments(data = {}, mods = {})
+    ul.payments&attributes(attributes)
+        li.payments__item
+            a(href="javascript:void(0);").payments__link
+                i.fab.fa-cc-visa(aria-label="Visa")
+        li.payments__item
+            a(href="javascript:void(0);").payments__link
+                i.fab.fa-cc-mastercard(aria-label="Mastercard")
+        li.payments__item
+            a(href="javascript:void(0);").payments__link
+                i.fab.fa-cc-paypal(aria-label="PayPal")
+        li.payments__item
+            a(href="javascript:void(0);").payments__link
+                i.fab.fa-cc-amex(aria-label="American Express")
+        li.payments__item
+            a(href="javascript:void(0);").payments__link
+                i.fab.fa-cc-jcb(aria-label="JCB")
+        li.payments__item
+            a(href="javascript:void(0);").payments__link
+                i.fab.fa-cc-discover(aria-label="Discover")
+        li.payments__item
+            a(href="javascript:void(0);").payments__link
+                i.fab.fa-cc-stripe(aria-label="Stripe")

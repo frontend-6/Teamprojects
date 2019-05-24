@@ -1,0 +1,20 @@
+mixin testimonials(data = {}, mods = {})
+    .testimonials&attributes(attributes)
+        .testimonials__container.swiper-container
+            .swiper-wrapper
+                each quote in data
+                    .swiper-slide
+                        .testimonials__quote
+                            .testimonials__avatar
+                                img(
+                                    src=quote.img
+                                    alt=quote.author
+                                ).testimonials__avatar-img
+
+                            .testimonials__body
+                                .testimonials__author= quote.author
+                                .testimonials__position= quote.position
+
+                                .testimonials__text !{quote.text}
+
+        .testimonials__pagination

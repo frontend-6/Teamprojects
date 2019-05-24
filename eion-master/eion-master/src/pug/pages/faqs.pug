@@ -1,0 +1,8 @@
+extends ../layouts/base.pug
+
+include ../../blocks/faq/faq-page/faq-page.pug
+include ../../blocks/faq/faq-topics/faq-topics.pug
+include ../../blocks/faq/accordion/accordion.pug
+
+block page
+    +faq-page(data.content)

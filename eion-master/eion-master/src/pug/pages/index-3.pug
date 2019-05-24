@@ -1,0 +1,12 @@
+extends ../layouts/base.pug
+
+include ../../blocks/index/slider/slider.pug
+include ../../blocks/index/product-masonry/product-masonry.pug
+include ../../blocks/index/banner/banner.pug
+
+block page
+    +slider(data.content.slider).page__slider
+    +product-masonry(data.content.products).page__section
+    .two-section
+        +banner(data.content.coupon1).two-section__left
+        +banner(data.content.coupon2).two-section__right

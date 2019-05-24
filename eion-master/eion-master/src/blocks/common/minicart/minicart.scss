@@ -1,0 +1,129 @@
+/**
+ * Styles for the minicart block.
+ */
+.minicart {
+    min-width: 270px;
+    padding: 29px 20px 25px;
+
+    &__item {
+        position: relative;
+
+        display: flex;
+        padding-bottom: 10px;
+
+        background: {
+            image: repeating-linear-gradient(
+                to right,
+                $color-silver,
+                $color-silver 9px,
+                transparent 9px,
+                transparent 12px);
+            position: bottom;
+            repeat: repeat-x;
+            size: 100% 1px;
+        }
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    &__thumb {
+        display: block;
+        width: 80px;
+    }
+
+    &__img {
+        display: block;
+        max-width: 80px;
+    }
+
+    &__product-info {
+        margin-left: 20px;
+
+        @include font-size(14px);
+    }
+
+    &__name {
+        display: block;
+
+        color: $color-secondary;
+        font-family: $font-family-serif;
+        
+        font-style: italic;
+        text-decoration: none;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+
+    &__price {
+        margin-top: 5px;
+
+        color: $color-primary;
+    }
+
+    &__qty {
+        bottom: 10px;
+        left: 0;
+        position: absolute;
+
+        width: 30px;
+
+        color: $color-white;
+        @include font-size(10px);
+        text-align: center;
+
+        background: $color-secondary;
+    }
+
+    &__remove {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        padding: 0 3px;
+
+        color: $color-text;
+        @include font-size(14px);
+
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        opacity: 0;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-secondary;
+        }
+
+        &:focus,
+        .minicart__item:hover & {
+            opacity: 1;
+        }
+    }
+
+    &__total {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18px;
+
+        color: $color-secondary;
+        font-weight: $font-weight-bold;
+    }
+
+    &__total-text {
+        @include font-size(14px);
+        text-transform: uppercase;
+    }
+
+    &__btns {
+        margin-top: 26px;
+    }
+}

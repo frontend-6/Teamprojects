@@ -1,0 +1,102 @@
+/**
+ * Styles for the banner block.
+ */
+.banner {
+    padding: 25px;
+
+    color: $color-white;
+    text-align: center;
+
+    background: {
+        color: $color-silver-chalice;
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    };
+
+    &__inner {
+        height: 100%;
+
+        border: 2px dashed $color-white;
+
+        @include breakpoint-up(md) {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__content {
+        margin: 30px 0 20px;
+        padding: 15px;
+
+        @include breakpoint-up(md) {
+            margin-bottom: 30px;
+            margin-top: 90px;
+            padding: 25px;
+        }
+
+        @include breakpoint-up(lg) {
+            margin-bottom: 40px;
+            margin-top: 110px;
+        }
+
+        @include breakpoint-up(xl) {
+            margin-bottom: 60px;
+            margin-top: 170px;
+        }
+    }
+
+    &__title {
+        font-family: $font-family-serif;
+        @include font-size(40px);
+        text-transform: uppercase;
+
+        @include breakpoint-up(lg) {
+            @include font-size(50px);
+        }
+
+        @include breakpoint-up(xl) {
+            @include font-size(60px);
+        }
+    }
+
+    &__text {
+        margin: 12px auto 0;
+        max-width: 530px;
+
+        font-family: $font-family-serif;
+        line-height: 1.6667;
+
+        @include breakpoint-up(lg) {
+            @include font-size(18px);
+        }
+    }
+
+    &__footer {
+        &:before {
+            content: "";
+
+            display: block;
+            height: 1px;
+            margin: 20px auto 20px;
+            width: 90px;
+            
+            background: {
+                image: repeating-linear-gradient(
+                    to right,
+                    $color-white,
+                    $color-white 9px,
+                    transparent 9px,
+                    transparent 12px);
+                position: bottom;
+                repeat: repeat-x;
+                size: 100% 1px;
+            }
+        }
+
+        font-family: $font-family-cursive;
+        @include font-size(30px);
+        text-transform: uppercase;
+    }
+}

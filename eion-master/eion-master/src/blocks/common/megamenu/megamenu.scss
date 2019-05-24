@@ -1,0 +1,65 @@
+/**
+ * Styles for the megamenu block.
+ */
+.megamenu {
+    @include font-size(14px);
+
+    box-shadow: 0 2px 5px rgba($color-black, 0.1);
+
+    &__inner {
+        display: flex;
+        margin: 0 auto;
+        max-width: $container-lg;
+        padding: 18px 0 48px;
+
+        @include breakpoint-up(xl) {
+            max-width: $container-xl;
+        }
+    }
+
+    &__cat {
+        flex: 1;
+        padding: 0 15px;
+    }
+
+    &__title {
+        display: block;
+        max-width: 200px;
+        padding: 15px 0;
+
+        color: $color-secondary;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        background: {
+            image: repeating-linear-gradient(
+                to right,
+                $color-secondary,
+                $color-secondary 9px,
+                transparent 9px,
+                transparent 12px);
+            position: bottom;
+            repeat: repeat-x;
+            size: 100% 1px;
+        }
+    }
+
+    &__list {
+        margin-top: 12px;
+    }
+
+    &__link {
+        display: block;
+        padding: 8px 0;
+
+        color: $color-text;
+        font-family: $font-family-serif;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}

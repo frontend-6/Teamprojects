@@ -1,0 +1,17 @@
+mixin star-rating(data = {}, mods = {})
+    .star-rating&attributes(attributes)
+        - let i = 5;
+        while i > 0
+            input(
+                type     = "radio"
+                id       = "star-rating-" + i
+                name     = data.name
+                value    = i
+                required = (i == 5) && !!data.required
+            ).star-rating__radio
+            label.star-rating__label(
+                class = "star-rating__label"
+                for   = "star-rating-" + i
+            )
+                i.fas.fa-star(aria-label=i + " out of 5 stars")
+            - i--;

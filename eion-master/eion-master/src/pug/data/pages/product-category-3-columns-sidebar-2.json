@@ -1,0 +1,142 @@
+{
+    "pageTitle": "Product Category 3 Columns with Sidebar 2",
+
+    "content": {
+        "pageHeader": {
+            "title": "Flower Category",
+            "bg": "img/content/products/shop-header-bg-01.jpg"
+        },
+
+        "blog": {
+            "sidebar": {
+                "lists": [{
+                    "title": "Flower Type",
+                    "items": [
+                        "Bouquets",
+                        "Centerpieces",
+                        "Decorations",
+                        "Boutonniers"
+                    ]
+                }, {
+                    "title": "Wedding Style",
+                    "items": [
+                        "Alternative",
+                        "Beach",
+                        "Bohemian",
+                        "Casual",
+                        "Classic",
+                        "DIY",
+                        "Fall"
+                    ]
+                }, {
+                    "title": "Blossom",
+                    "items": [
+                        "Alliums",
+                        "Amaryllis",
+                        "Andromedas",
+                        "Anemones",
+                        "Apple & Cherry Blossoms",
+                        "Astrantias",
+                        "Bells Of Ireland",
+                        "Berries & Fruit",
+                        "Branches",
+                        "Calla Lilies"
+                    ]
+                }],
+
+                "coupon": {
+                    "bg": "img/content/products/shop-coupon-bg.jpg",
+                    "title": "Coupon 15%",
+                    "btn": {
+                        "text": "Shop now",
+                        "url": "javascript:void(0);"
+                    }
+                }
+            },
+
+            "filter": {
+                "layouts": [{
+                    "label": "2 Columns",
+                    "iconClass": "fas fa-th-large",
+                    "link": "product-category-2-columns.html"
+                }, {
+                    "label": "3 Columns",
+                    "iconClass": "fas fa-th-list",
+                    "link": "product-category-3-columns.html"
+                }, {
+                    "label": "4 Columns",
+                    "iconClass": "fas fa-th",
+                    "link": "product-category-4-columns.html"
+                }],
+                "showProducts": 6,
+                "totalProducts": 30,
+                "views": ["12", "24", "All"],
+    
+                "sort": ["Newest", "Popylarity", "Price: low to high", "Price: high to low"]
+            },
+    
+            "list": {
+                "products": [{
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-01.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html",
+                    "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>"
+                }, {
+                    "name": "Fl-Model A351",
+                    "oldPrice": 530,
+                    "price": 399,
+                    "label": {
+                        "shape": "circle",
+                        "theme": "sale",
+                        "text": "Sale"
+                    },
+                    "img": "img/content/products/480x360/flower-02.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html",
+                    "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>"
+                }, {
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-03.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html",
+                    "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>"
+                }, {
+                    "name": "Fl-Model A351",
+                    "oldPrice": 530,
+                    "price": 399,
+                    "label": {
+                        "shape": "circle",
+                        "theme": "sale",
+                        "text": "Sale"
+                    },
+                    "img": "img/content/products/480x360/flower-04.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html",
+                    "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>"
+                }, {
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-05.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html",
+                    "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>"
+                }, {
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-06.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html",
+                    "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>"
+                }]
+            },
+    
+            "pagination": {
+                "pages": 2,
+                "activePage": 1
+            }
+        }
+    }
+}

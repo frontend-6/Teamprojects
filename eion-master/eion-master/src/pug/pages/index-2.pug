@@ -1,0 +1,40 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/countdown/countdown.pug
+include ../../blocks/common/carousel/carousel.pug
+include ../../blocks/common/counters/counters.pug
+include ../../blocks/common/side-section/side-section.pug
+include ../../blocks/common/product-grid/product-grid.pug
+
+include ../../blocks/index/slider/slider.pug
+include ../../blocks/index/special-offers/special-offers.pug
+include ../../blocks/index/featured-products/featured-products.pug
+include ../../blocks/index/banner/banner.pug
+include ../../blocks/index/cta/cta.pug
+include ../../blocks/index/popular-products/popular-products.pug
+
+block page
+    +slider(data.content.slider).page__slider
+    +special-offers(data.content.specialOffers).page__section
+    +section({
+        title: data.content.featuredProducts.title,
+        text: data.content.featuredProducts.text,
+    }).page__section
+        +popular-products(data.content.featuredProducts)
+    .two-section
+        +banner(data.content.coupon1).two-section__left
+        +side-section(data.content.dealOfTheWeek).two-section__right
+    +section({
+        title : data.content.newProducts.title,
+        text  : data.content.newProducts.text,
+    }).page__section
+        +carousel(data.content.newProducts.items, {fourCols: true}, 'product')
+    +counters(data.content.counters, {theme: 'bordered'}).page__section
+    .two-section
+        +side-section(data.content.newsletter).two-section__left
+        +banner(data.content.coupon2).two-section__right
+    +section({
+        title: data.content.blog.title
+    }).page__section
+        +carousel(data.content.blog.posts, {twoRows: true}, 'post')
+    +cta(data.content.cta).page__section

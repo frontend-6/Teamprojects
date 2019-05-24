@@ -1,0 +1,17 @@
+/**
+ * Styles for the two section block.
+ */
+.two-section {
+    overflow: hidden;
+
+    @include breakpoint-up(lg) {
+        display: flex;
+    }
+
+    &__left,
+    &__right {
+        @include breakpoint-up(lg) {
+            width: 50%;
+        }
+    }
+}

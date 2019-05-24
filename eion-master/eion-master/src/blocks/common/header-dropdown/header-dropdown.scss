@@ -1,0 +1,133 @@
+/**
+ * Styles for the header dropdown block.
+ */
+.header-dropdown {
+    &__backdrop {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 100;
+
+        background: rgba($color-black, 0.5);
+        opacity: 0;
+
+        visibility: hidden;
+        transition: visibility 0s step-start 0.25s,
+                    opacity 0.25s ease-out;
+
+        @include breakpoint-up(md) {
+            display: none;
+        }
+
+        .header-dropdown_visible & {
+            opacity: 1;
+
+            transition-delay: 0s;
+            visibility: visible;
+        }
+    }
+
+    &__popover {
+        bottom: 0;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+
+        background: $color-white;
+
+        visibility: hidden;
+        transition: visibility 0s step-start 0.25s,
+                    transform 0.25s ease-out;
+
+        @include breakpoint-up(md) {  
+            bottom: auto;      
+            position: absolute;
+            top: 100%;
+
+            border-top: 1px solid $color-mercury;
+            box-shadow: 0 2px 5px rgba($color-black, 0.1);
+            opacity: 0;
+
+            transition: visibility 0s step-start 0.25s,
+                        opacity 0.25s ease-out;
+        }
+
+        .header-dropdown_align_left > & {
+            left: 0;
+
+            transform: translateX(-100%);
+
+            @include breakpoint-up(md) {
+                transform: none;
+            }
+        }
+
+        .header-dropdown_align_right > & {
+            right: 0;
+
+            transform: translateX(100%);
+
+            @include breakpoint-up(md) {
+                transform: none;
+            }
+        }
+
+        .header-dropdown_align_mega > & {
+            left: 0;
+            right: 0;
+        }
+
+        .header-dropdown_visible > & {
+            transform: none;
+            transition-delay: 0s;
+            visibility: visible;
+
+            @include breakpoint-up(md) {
+                opacity: 1;
+            }
+        }
+    }
+  
+    &__title {
+        padding: 10px 20px;
+
+        color: $color-secondary;
+        @include font-size(14px);
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+
+        @include breakpoint-up(md) {
+            display: none;
+        }
+    }
+    
+    &__close {
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        
+        padding: 0;
+    
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+
+        @include breakpoint-up(md) {
+            display: none;
+        }
+    }
+
+    &_align_left,
+    &_align_right {
+        @include breakpoint-up(md) {
+            position: relative;
+        }
+    }
+}

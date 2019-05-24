@@ -1,0 +1,229 @@
+/**
+ * Styles for the search modal block.
+ */
+.search-modal {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 300;
+
+    background: $color-gallery;
+    opacity: 0;
+
+    overflow: auto;
+    visibility: hidden;
+
+    transition: opacity 0.25s ease-out,
+                visibility 0.25s ease-out 0.25s;
+
+    &__form {
+        padding: 0 30px;
+
+        background: $color-white;
+        border-bottom: 1px solid rgba($color-black, 0.1);
+
+        @include breakpoint-up(sm) {
+            padding: 0 50px;
+        }
+    }
+
+    &__input {
+        display: block;
+        height: 70px;
+        width: 100%;
+
+        color: $color-secondary;
+        font-family: $font-family-serif;
+        @include font-size(18px);
+        font-style: italic;
+        line-height: 60px;
+        text-align: center;
+
+        background: transparent;
+        border: none;
+
+        &::-ms-clear {
+            display: none;
+        }
+
+        @include breakpoint-up(sm) {
+            height: 100px;
+
+            @include font-size(30px);
+            line-height: 100px;
+        }
+    }
+
+    &__results {
+        padding: 40px 15px;
+
+        @include breakpoint-up(sm) {
+            margin: 0 auto;
+            max-width: 800px;
+            padding-bottom: 80px;
+            padding-top: 80px;
+        }
+    }
+
+    &__result {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+
+        background: $color-white;
+
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
+
+    &__result-thumb {
+        max-width: 130px;
+        width: 35%;
+    }
+
+    &__result-img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__result-body {
+        padding-left: 20px;
+        width: 65%;
+
+        @include breakpoint-up(sm) {
+            width: auto;
+        }
+
+        @include breakpoint-up(md) {
+            padding-left: 50px;
+        }
+    }
+
+    &__result-rating {
+        @include font-size(10px);
+    }
+
+    &__result-title {
+        display: block;
+        margin-top: 6px;
+
+        color: $color-secondary;
+        font-family: $font-family-serif;
+        text-decoration: none;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+
+    &__result-price {
+        margin-top: 1px;
+
+        color: $color-primary;
+    }
+
+    &__result-btn {
+        margin-left: auto;
+        margin-top: 10px;
+        min-width: 100px;
+
+        @include breakpoint-up(sm) {
+            margin-top: 0;
+        }
+
+        @include breakpoint-up(md) {
+            margin-right: 10px;
+        }
+    }
+
+    &__results-link-wrap {
+        margin-top: 40px;
+
+        text-align: center;
+
+        @include breakpoint-up(sm) {
+            margin-top: 80px;
+        }
+    }
+
+    &__results-link {   
+        display: inline-block;
+
+        color: $color-text;
+        @include font-size(18px);
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+
+        background: {
+            image: repeating-linear-gradient(
+                to right,
+                $color-text,
+                $color-text 9px,
+                transparent 9px,
+                transparent 12px);
+            position: bottom;
+            repeat: repeat-x;
+            size: 100% 1px;
+        }
+
+        transition: all 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+
+            background-image: repeating-linear-gradient(
+                to right,
+                $color-primary,
+                $color-primary 9px,
+                transparent 9px,
+                transparent 12px);;
+        }
+    }
+
+    &__results-link-text {
+        margin-right: 8px;
+    }
+
+    &__close {
+        position: absolute;
+        right: 15px;
+        top: 25px;
+
+        padding: 0;
+
+        color: $color-malta;
+        @include font-size(20px);
+        line-height: 1.2;
+
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-secondary;
+        }
+
+        @include breakpoint-up(sm) {
+            right: 30px;
+            top: 40px;
+        }
+    }
+
+    &_visible {
+        opacity: 1;
+
+        transition-delay: 0s;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,12 @@
+mixin special-offer(data = {}, mods = {})
+    .special-offer&attributes(attributes)
+        .special-offer__price $#{data.price}
+            
+            .special-offer__img-container
+                img(src=data.img, alt="").special-offer__img
+                +btn(data.btn, {
+                    theme: 'dark',
+                    size: 'large',
+                }).special-offer__btn
+
+            +countdown().special-offer__countdown

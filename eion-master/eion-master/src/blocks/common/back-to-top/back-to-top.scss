@@ -1,0 +1,22 @@
+/**
+ * Styles for the back to top block.
+ */
+.back-to-top {
+    display: block;
+    height: 40px;
+    width: 40px;
+
+    color: $color-white;
+    line-height: 40px;
+    text-align: center;
+
+    background: $color-silver;
+    border-radius: 50%;
+
+    transition: all 0.25s linear;
+
+    &:hover,
+    &:focus {
+        background: $color-primary;
+    }
+}

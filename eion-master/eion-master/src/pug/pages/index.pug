@@ -1,0 +1,26 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/carousel/carousel.pug
+include ../../blocks/common/counters/counters.pug
+include ../../blocks/common/product-grid/product-grid.pug
+
+include ../../blocks/index/slider/slider.pug
+include ../../blocks/index/banners/banners.pug
+include ../../blocks/index/special-offers/special-offers.pug
+include ../../blocks/index/popular-products/popular-products.pug
+
+block page
+    main
+        +slider(data.content.slider).page__slider
+        +banners(data.content.banners, {paddingTop: true}).page__section#banners
+        +section({
+            title : data.content.products.title,
+            text  : data.content.products.text,
+        }).page__section
+            +popular-products(data.content.products, {cols: 3})
+        +counters(data.content.counters, {theme: 'light'}).page__section
+        +section({
+            title: data.content.blog.title
+        }).page__section
+            +carousel(data.content.blog.posts, {}, 'post')
+        +special-offers(data.content.specialOffers).page__section

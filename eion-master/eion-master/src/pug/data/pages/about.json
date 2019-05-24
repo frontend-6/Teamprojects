@@ -1,0 +1,122 @@
+{
+    "pageTitle": "About",
+
+    "content": {
+        "hero": {
+            "bg": "img/content/about/about-hero-bg.jpg",
+            "title": "Since 1992",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+            "skipLink": "#about-content"
+        },
+
+        "section1": {
+            "leftImg": "img/content/about/about-01.jpg",
+            "title": "About us",
+
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing 1992 elit London, do <em>Bikes</em> tempor incididunt ut labore et dolore magna aliqua.</p><p><em>Vélo’s</em> renim ad 2015 minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p><p>Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p><p>Sed ut perspiciatis unde omnis iste natus.</p>"
+        },
+
+        "section2": {
+            "rightImg": "img/content/about/about-02.jpg",
+            "title": "Testimonials",
+
+            "testimonials": [{
+                "img": "img/content/avatars/160x160/emily-stella.jpg",
+                "author": "Emily Stella",
+                "position": "Buyer",
+                "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p><p>I love it!</p>"
+            }, {
+                "img": "img/content/avatars/160x160/kendall-jenner.jpg",
+                "author": "Kendall Jenner",
+                "position": "Buyer",
+                "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p><p>I love it!</p>"
+            }, {
+                "img": "img/content/avatars/160x160/kimberly.jpg",
+                "author": "Kimberly",
+                "position": "Buyer",
+                "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p><p>I love it!</p>"
+            }]
+        },
+
+        "team": {
+            "title": "Our team",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+
+            "people": [{
+                "img": "img/content/about/team/john-doe.jpg",
+                "name": "John Doe",
+                "position": "Founder",
+
+                "social": {
+                    "links": [{
+                        "className" : "twitter",
+                        "text"      : "Follow on Twitter"
+                    }, {
+                        "className" : "facebook-f",
+                        "text"      : "Follow on Facebook"
+                    }, {
+                        "className" : "google-plus-g",
+                        "text"      : "Follow on Google Plus"
+                    }, {
+                        "className" : "instagram",
+                        "text"      : "Follow on Instagram"
+                    }]
+                }
+            }, {
+                "img": "img/content/about/team/lucy-mary.jpg",
+                "name": "Lucy Mary",
+                "position": "Sales Director",
+
+                "social": {
+                    "links": [{
+                        "className" : "twitter",
+                        "text"      : "Follow on Twitter"
+                    }, {
+                        "className" : "facebook-f",
+                        "text"      : "Follow on Facebook"
+                    }, {
+                        "className" : "google-plus-g",
+                        "text"      : "Follow on Google Plus"
+                    }, {
+                        "className" : "instagram",
+                        "text"      : "Follow on Instagram"
+                    }]
+                }
+            }, {
+                "img": "img/content/about/team/alex-kim.jpg",
+                "name": "Alex Kim",
+                "position": "Marketer",
+
+                "social": {
+                    "links": [{
+                        "className" : "twitter",
+                        "text"      : "Follow on Twitter"
+                    }, {
+                        "className" : "facebook-f",
+                        "text"      : "Follow on Facebook"
+                    }, {
+                        "className" : "google-plus-g",
+                        "text"      : "Follow on Google Plus"
+                    }, {
+                        "className" : "instagram",
+                        "text"      : "Follow on Instagram"
+                    }]
+                }
+            }]
+        },
+
+        "counters": [{
+            "title": "Coffee Cups",
+            "value": 24622
+        }, {
+            "title": "Flower Sold",
+            "value": 6134
+        }, {
+            "title": "Flower Hired",
+            "value": 7516
+        }, {
+            "title": "Happy Customers",
+            "value": 12023
+        }]
+    }
+}

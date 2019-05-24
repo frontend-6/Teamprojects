@@ -1,0 +1,16 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/page-header/page-header.pug
+include ../../blocks/common/pagination/pagination.pug
+include ../../blocks/common/sidebar-coupon/sidebar-coupon.pug
+include ../../blocks/common/sidebar-widget/sidebar-widget.pug
+include ../../blocks/common/sidebar-list/sidebar-list.pug
+
+include ../../blocks/blog/blog-layout/blog-layout.pug
+include ../../blocks/blog/popular-posts/popular-posts.pug
+include ../../blocks/blog/latest-posts/latest-posts.pug
+include ../../blocks/blog/tag-cloud/tag-cloud.pug
+
+block page
+    +page-header(data.content.pageHeader)
+    +blog-layout(data.content.blog)

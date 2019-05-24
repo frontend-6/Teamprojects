@@ -1,0 +1,9 @@
+/**
+ * Styles for the map block.
+ */
+.map {
+    &__container {
+        height: 100%;
+        min-height: 500px;
+    }
+}

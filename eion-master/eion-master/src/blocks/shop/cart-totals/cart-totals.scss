@@ -1,0 +1,40 @@
+/**
+ * Styles for the cart-totals block.
+ */
+.cart-totals {
+    max-width: 370px;
+
+    &__table {
+        width: 100%;
+    }
+
+    &__table-header {
+        padding: 6px 15px;
+
+        font-family: $font-family-serif;
+        text-align: right;
+        vertical-align: baseline;
+    }
+
+    &__table-cell {
+        padding: 6px 15px;
+
+        color: $color-primary;
+        text-align: left;
+        vertical-align: baseline;
+
+        .cart-totals__table-footer & {
+            padding-top: 45px;
+        }
+    }
+
+    &__grand-total {
+        color: $color-secondary;
+        @include font-size(30px);
+    }
+
+    &__btn {
+        margin-top: 40px;
+        width: 100%;
+    }
+}

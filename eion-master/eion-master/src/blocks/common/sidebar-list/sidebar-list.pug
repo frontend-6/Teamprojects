@@ -1,0 +1,7 @@
+mixin sidebar-list(data = {}, mods = {})
+    ul.sidebar-list(
+        class = mods.blog && "sidebar-list_blog"
+    )&attributes(attributes)
+        each item in data
+            li.sidebar-list__item
+                a(href="javascript:void(0);").sidebar-list__link= item

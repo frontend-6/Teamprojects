@@ -1,0 +1,27 @@
+mixin cart-totals(data = {}, mods = {})
+    .cart-totals&attributes(attributes)
+        table.cart-totals__table
+            tbody
+                tr
+                    th.cart-totals__table-header Subtotal
+                    td.cart-totals__table-cell $#{data.total}
+                tr
+                    th.cart-totals__table-header Shipping
+                    td.cart-totals__table-cell Free
+                tr
+                    th.cart-totals__table-header Coupon
+                    td.cart-totals__table-cell No
+
+            tfoot.cart-totals__table-footer
+                tr
+                    th.cart-totals__table-header Total
+                    td.cart-totals__table-cell 
+                        span.cart-totals__grand-total $#{data.total}
+
+        +btn({
+            url: 'checkout.html',
+            text: 'Process to Checkout',
+        }, {
+            theme: 'primary',
+            size: 'large',
+        }).cart-totals__btn

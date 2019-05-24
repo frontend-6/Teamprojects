@@ -1,0 +1,14 @@
+mixin megamenu(data = {}, mods = {})
+    .megamenu&attributes(attributes)
+        .megamenu__inner
+            each cat in data
+                .megamenu__cat
+                    span.megamenu__title= cat.text
+
+                    ul.megamenu__list
+                        each item in cat.submenu
+                            li.megamenu__item
+                                a(href=item.link).megamenu__link= item.text
+                // /.megamenu__cat 
+        // /.megamenu__inner 
+    // /.megamenu 

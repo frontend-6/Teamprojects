@@ -1,0 +1,14 @@
+/**
+ * Styles for the rating block.
+ */
+.rating {
+    color: $color-bright-sun;
+
+    &__sr-text {
+        display: none;
+    }
+
+    &_not-rated {
+        color: $color-gallery;
+    }
+}

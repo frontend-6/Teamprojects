@@ -1,0 +1,35 @@
+/**
+ * Styles for the form fields block.
+ */
+.form-fields {
+    &__inner {
+        @include breakpoint-up(sm) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -5px;
+        }
+    }
+
+    &__field {
+        margin-top: 10px;
+        width: 100%;
+
+        @include breakpoint-up(sm) {
+            margin-top: 0;
+            padding: 5px;
+
+            &_small {
+                min-width: 220px;
+                width: 50%;
+            }
+        }
+    }
+
+    &__error {
+        display: block;
+        margin-top: 5px;
+
+        color: $color-primary;
+        @include font-size(14px);
+    }
+}

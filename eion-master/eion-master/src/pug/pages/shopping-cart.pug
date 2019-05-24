@@ -1,0 +1,10 @@
+extends ../layouts/base.pug
+
+include ../../blocks/common/qty/qty.pug
+
+include ../../blocks/shop/cart/cart.pug
+include ../../blocks/shop/cart-form/cart-form.pug
+include ../../blocks/shop/cart-totals/cart-totals.pug
+
+block page
+    +cart(data.content)

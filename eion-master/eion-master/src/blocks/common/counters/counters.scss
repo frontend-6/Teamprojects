@@ -1,0 +1,72 @@
+/**
+ * Styles for the counters block.
+ */
+.counters {
+    &__inner {
+        .counters_theme_bordered & {
+            border: 2px dashed $color-text;
+        }
+    }
+
+    &__container {
+        padding: 100px 0 50px;
+
+        @include breakpoint-up(md) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+    }
+
+    &__counter {
+        margin-bottom: 60px;
+
+        color: $color-secondary;
+        text-align: center;
+
+        @include breakpoint-up(md) {
+            padding: 0 15px;
+            width: 50%;
+        }
+
+        @include breakpoint-up(lg) {
+            width: 25%;
+        }
+    }
+
+    &__title {
+        @include font-size(14px);
+        text-transform: uppercase;
+
+        &:after {
+            content: "";
+
+            display: block;
+            margin: 14px auto 0;
+
+            height: 1px;
+            width: 105px;
+
+            background: {
+                image: repeating-linear-gradient(
+                    to right,
+                    rgba($color-secondary, 0.2),
+                    rgba($color-secondary, 0.2) 9px,
+                    transparent 9px,
+                    transparent 12px);
+            }
+        }
+    }
+
+    &__value {
+        margin-top: 16px;
+
+        font-family: $font-family-serif;
+        @include font-size(36px);
+        letter-spacing: 0.2em;
+    }
+
+    &_theme_light {
+        background: $color-concrete;
+    }
+}

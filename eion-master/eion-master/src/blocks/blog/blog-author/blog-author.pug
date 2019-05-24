@@ -1,0 +1,27 @@
+mixin blog-author(data = {}, mods = {})
+    section.blog-author&attributes(attributes)
+        .blog-author__avatar
+            img(src=data.img, alt=data.name).blog-author__avatar-img
+
+        .blog-author__body
+            h2.blog-author__title
+                | #{data.name}
+                span.blog-author__subtitle Author
+            
+            .blog-author__bio= data.bio
+
+            +social({
+                links: [{
+                    className : 'twitter',
+                    text      : 'Follow on Twitter',
+                }, {
+                    className : 'facebook-f',
+                    text      : 'Follow on Facebook',
+                }, {
+                    className : 'instagram',
+                    text      : 'Follow on Google Plus',
+                }, {
+                    className : 'linkedin-in',
+                    text      : 'Follow on Linkedin',
+                }]
+            }, {theme: 'default'}).blog-author__social

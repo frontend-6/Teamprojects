@@ -1,0 +1,10 @@
+mixin banner(data = {}, mods = {})
+    .banner(style=`background-image: url(${data.img})`)&attributes(attributes)
+        .banner__inner
+            .banner__content
+                h2.banner__title= data.title
+                p.banner__text= data.text
+                p.banner__footer Eion
+            // /.banner__content 
+        // /.banner__inner 
+    // /.banner 

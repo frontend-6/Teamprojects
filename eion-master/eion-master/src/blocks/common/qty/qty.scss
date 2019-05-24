@@ -1,0 +1,48 @@
+/**
+ * Styles for the qty block.
+ */
+.qty {
+    display: inline-block;
+
+    text-align: center;
+
+    &__input {
+        display: block;
+        padding: 0;
+        height: 50px;
+        max-width: 50px;
+
+        color: $color-text;
+        font-family: $font-family-serif;
+        @include font-size(16px);
+        text-align: center;
+
+        border: 1px dashed $color-silver;
+
+        /* stylelint-disable-next-line property-no-vendor-prefix */
+        -moz-appearance: textfield;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            /* stylelint-disable-next-line property-no-vendor-prefix */
+            -webkit-appearance: none;
+        }
+    }
+
+    &__btn {
+        padding: 3px;
+
+        color: $color-silver;
+        @include font-size(16px);
+
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+
+        transition: color 0.25s linear;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}

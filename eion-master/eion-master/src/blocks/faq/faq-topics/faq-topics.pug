@@ -1,0 +1,5 @@
+mixin faq-topics(data = {}, mods = {})
+    ul.faq-topics&attributes(attributes)
+        each item in data
+            li.faq-topics__item
+                a(href="javascript:void(0);").faq-topics__link= item

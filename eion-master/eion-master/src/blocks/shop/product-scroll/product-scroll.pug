@@ -1,0 +1,13 @@
+mixin product-scroll(data = {}, mods = {})
+    .product-scroll&attributes(attributes)
+        .product-scroll__inner
+            h2.title.product-scroll__title= data.title
+
+            .product-scroll__items
+                .swiper-container.product-scroll__container
+                        .swiper-wrapper
+                            each item in data.items
+                                .swiper-slide
+                                    +product(item, {size: 'small'})
+
+        .product-scroll__scrollbar

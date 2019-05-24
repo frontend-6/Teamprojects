@@ -1,0 +1,63 @@
+/**
+ * Styles for the hero block.
+ */
+.hero {
+    position: relative;
+
+    align-items: center;
+    display: flex;
+    height: 480px;
+    justify-content: center;
+
+    background: {
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    };
+
+    @include breakpoint-up(md) {
+        height: 600px;
+    }
+
+    @include breakpoint-up(lg) {
+        height: 700px;
+    }
+
+    @include breakpoint-up(xl) {
+        height: 800px;
+    }
+
+    &__inner {
+        max-width: 800px;
+        padding: 0 15px;
+
+        color: $color-secondary;
+        font-family: $font-family-serif;
+        text-align: center;
+    }
+
+    &__title {
+        @include font-size(36px);
+        font-weight: $font-weight-bold;
+
+        @include breakpoint-up(md) {
+            @include font-size(50px);
+        }
+
+        @include breakpoint-up(lg) {
+            @include font-size(60px);
+        }
+    }
+
+    &__text {
+        margin-top: 10px;
+
+        @include font-size(18px);
+    }
+
+    &__skip-link {
+        bottom: 25px;
+        left: 50%;
+        position: absolute;
+    }
+}

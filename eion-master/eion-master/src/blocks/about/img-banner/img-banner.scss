@@ -1,0 +1,14 @@
+/**
+ * Styles for the img-banner block.
+ */
+.img-banner {
+    background: {
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    };
+
+    &__inner {
+        padding-top: 80%;
+    }
+}

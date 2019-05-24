@@ -1,0 +1,10 @@
+/**
+ * Styles for the popular posts block.
+ */
+.popular-posts {
+    max-width: 480px;
+
+    &__post:not(:first-child) {
+        margin-top: 55px;
+    }
+}

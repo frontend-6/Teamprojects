@@ -1,0 +1,66 @@
+/**
+ * Styles for the sidebar-coupon block.
+ */
+.sidebar-coupon {
+    background: {
+        color: $color-text;
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    };
+
+    &__inner {
+        position: relative;
+
+        padding-bottom: 100%;
+    }
+
+    &__overlay {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        padding: 10px;
+
+        background: transparent;
+
+        transition: background-color 0.25s linear;
+
+        &:hover {
+            background: rgba($color-black, 0.3);
+        }
+    }
+
+    &__overlay-inner {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        border: 2px dashed $color-white;
+    }   
+
+    &__title {
+        margin-top: 30px;
+
+        color: $color-white;
+        @include font-size(30px);
+        font-weight: $font-weight-bold;
+        line-height: 1.1458;
+        text-align: center;
+        text-transform: uppercase;
+
+        .sidebar-coupon_blog & {
+            @include font-size(48px);
+        }
+    }
+
+    &__btn {
+        margin-top: 30px;
+        min-width: 100px;
+    }
+}

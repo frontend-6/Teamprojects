@@ -1,0 +1,56 @@
+/**
+ * Styles for the product grid block.
+ */
+.product-grid {
+    &__inner {
+        @include breakpoint-up(md) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px -15px;
+        }
+
+        .product-grid_col_1-2 & {
+            @include breakpoint-up(md) {
+                margin-bottom: -30px;
+                margin-top: -30px;
+            }
+        }
+    }
+
+    &__item {
+        margin-top: 30px;
+
+        @include breakpoint-up(md) {
+            margin-top: 0;
+            padding: 15px;
+            width: 50%;
+        }
+
+        .product-grid_col_1-2 & {
+            @include breakpoint-up(md) {
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+        }
+
+        .product-grid_col_1-3 & {
+            @include breakpoint-up(lg) {
+                width: 33.3333%;
+            }
+        }
+
+        .product-grid_col_1-4 & {
+            @include breakpoint-up(lg) {
+                width: 33.3333%;
+            }
+
+            @include breakpoint-up(xl) {
+                width: 25%;
+            }
+        }
+    }
+
+    &__product {
+        height: 100%;
+    }
+}

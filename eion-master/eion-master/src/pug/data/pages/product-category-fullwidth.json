@@ -1,0 +1,171 @@
+{
+    "pageTitle": "Product Category Fullwidth",
+
+    "content": {
+        "pageHeader": {
+            "title": "Fullwidth Category",
+            "bg": "img/content/products/shop-header-bg-01.jpg"
+        },
+
+        "category": {
+            "cta": {
+                "price": 229,
+                "img": "img/content/products/760x570/flower-02.jpg",
+                "btn": {
+                    "link": "javascript:void(0);",
+                    "text": "Shop now"
+                }
+            },
+            "products": {
+                "title": "Single-Flower",
+                "items": [{
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-01.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "oldPrice": 530,
+                    "price": 399,
+                    "label": {
+                        "shape": "circle",
+                        "theme": "sale",
+                        "text": "Sale"
+                    },
+                    "img": "img/content/products/480x360/flower-02.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-03.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-04.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-05.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "oldPrice": 530,
+                    "price": 399,
+                    "label": {
+                        "shape": "circle",
+                        "theme": "sale",
+                        "text": "Sale"
+                    },
+                    "img": "img/content/products/480x360/flower-06.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-09.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "oldPrice": 530,
+                    "price": 399,
+                    "label": {
+                        "shape": "circle",
+                        "theme": "sale",
+                        "text": "Sale"
+                    },
+                    "img": "img/content/products/480x360/flower-10.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-11.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-12.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "price": 530,
+                    "img": "img/content/products/480x360/flower-13.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }, {
+                    "name": "Fl-Model A351",
+                    "oldPrice": 530,
+                    "price": 399,
+                    "label": {
+                        "shape": "circle",
+                        "theme": "sale",
+                        "text": "Sale"
+                    },
+                    "img": "img/content/products/480x360/flower-14.jpg",
+                    "rating": 5,
+                    "link": "product-detail.html"
+                }]
+            }
+        }
+    },
+
+    "footer": {
+        "about": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing 1992 elit London, do <em>flower</em> tempor incididunt ut labore et dolore magna aliqua.</p><p><em>Eion</em> renim ad 2015 minim veniam, quis nostrud exercitation ullamco.</p>",
+
+        "menu": [{
+            "text": "FAQs",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Size Guide",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Delivery Info",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Return Info",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Discount",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Gift",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "My Wishlist",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Our Stores",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Help",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Customize",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "iOS App",
+            "link": "javascript:void(0);"
+        }, {
+            "text": "Android App",
+            "link": "javascript:void(0);"
+        }],
+
+        "address": "PO Box CT16122 Collins Street West, Victoria 8007, Australia.",
+
+        "phone": "+1 (2) 345 6789",
+        "fax": "+1 (2) 345 6789",
+        "email": "Contact@yourdomain.com",
+
+        "copyright": "© Copyright 2015. Powered by WordPress. Eion Theme by SunriseThemes"
+    }
+}

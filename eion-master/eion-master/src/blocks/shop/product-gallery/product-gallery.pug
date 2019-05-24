@@ -1,0 +1,30 @@
+mixin product-gallery(data = {}, mods = {})
+    .product-gallery&attributes(attributes)
+        .product-gallery__content.swiper-container
+            .swiper-wrapper
+                each slide in data
+                    .swiper-slide
+                        .product-gallery__content-item
+                            img(src=slide.large, alt="").product-gallery__content-img
+
+                            a(href=slide.link).product-gallery__link
+                                i.icon-size-fullscreen.icons(
+                                    aria-label="view fullscreen image"
+                                )
+
+        .product-gallery__thumbs.swiper-container
+            .swiper-wrapper
+                each slide, i in data
+                    .swiper-slide
+                        a.product-gallery__thumb(
+                            href       = "javascript:void(0);"
+                            role       = "button"
+                           
+                            data-slide = i
+                        )
+                            img(src=slide.small, alt="").product-gallery__thumb-img
+            
+            button.product-gallery__arrow.product-gallery__arrow_prev.swiper-button-prev
+                i.fas.fa-angle-left(aria-label="Previous")
+            button.product-gallery__arrow.product-gallery__arrow_next.swiper-button-next
+                i.fas.fa-angle-right(aria-label="Next")

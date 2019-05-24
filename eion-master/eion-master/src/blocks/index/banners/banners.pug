@@ -1,0 +1,20 @@
+mixin banners(data = {}, mods = {})
+    .banners&attributes(attributes)
+        .page__container
+            .banners__grid
+                each banner in data
+                    .banners__item(
+                        class = {
+                            banners__item_wide: !!banner.wide,
+                            banners__item_tall: !!banner.tall
+                        }
+                    )
+                        .banners__item-inner(
+                            style = `background-image: url(${banner.img})`
+                        )
+                            a(href=banner.link).banners__link
+                                .banners__text= banner.text
+                    // /.banners__item 
+            // /.banners__grid 
+        // /.page__container 
+    // /.banners 

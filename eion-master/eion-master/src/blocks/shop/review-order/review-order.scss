@@ -1,0 +1,72 @@
+/**
+ * Styles for the review order block.
+ */
+.review-order {
+    width: 100%;
+
+    color: $color-secondary;
+
+    &__header {
+        width: 50%;
+
+        text-align: left;
+
+        &[scope="col"] {
+            padding-bottom: 16px;
+        
+            text-transform: uppercase;
+
+            border-bottom: 1px solid rgba($color-black, 0.1);
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+
+        &[scope="row"] {
+            padding: 10px 0;
+
+            font-family: $font-family-serif;
+        }
+    }
+
+    &__cell {
+        padding: 10px 0;
+        width: 50%;
+
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    &__row_body:first-child .review-order__cell {
+        padding-top: 24px;
+    }
+
+    &__row_body:last-child .review-order__cell {
+        padding-bottom: 24px;
+
+        border-bottom: 1px solid rgba($color-black, 0.1);
+    }
+
+    &__row_footer:first-child .review-order__header,
+    &__row_footer:first-child .review-order__cell {
+        padding-top: 24px;
+    }
+
+    &__row_footer:nth-last-child(2) .review-order__header,
+    &__row_footer:nth-last-child(2) .review-order__cell {
+        padding-bottom: 24px;
+        
+        border-bottom: 1px solid $color-black;
+    }
+
+    &__row_footer:last-child .review-order__header,
+    &__row_footer:last-child .review-order__cell {
+        padding-top: 32px;
+        
+        font-family: $font-family-sans-serif;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+    }
+}

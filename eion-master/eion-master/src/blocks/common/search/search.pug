@@ -1,0 +1,19 @@
+mixin search(data = {}, mods = {})
+    .search&attributes(attributes)
+        input(type="text" placeholder="Type to Search...").search__input
+
+        ul.search__results
+            each result in data.results
+                li.search__result
+                    .search__result-info
+                        +rating(result.rating).search__rating
+                    
+                        a(href=result.link).search__name= result.name
+                        .search__price $#{result.price}
+
+                    a(href=result.link tabindex="-1").search__thumb
+                        img(
+                            src=result.thumb
+                            alt=result.name
+                        ).search__img
+    // /.search 

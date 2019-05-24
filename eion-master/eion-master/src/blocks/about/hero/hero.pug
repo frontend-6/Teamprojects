@@ -1,0 +1,7 @@
+mixin hero(data = {}, mods = {})
+    .hero(style=`background-image: url(${data.bg})`)&attributes(attributes)
+        .hero__inner
+            h1.hero__title= data.title
+            p.hero__text= data.text
+
+        +skip-link(data.skipLink).hero__skip-link

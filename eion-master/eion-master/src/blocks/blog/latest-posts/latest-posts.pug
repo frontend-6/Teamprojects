@@ -1,0 +1,22 @@
+mixin latest-posts(data = {}, mods = {})
+    ul.latest-posts&attributes(attributes)
+        each post in data
+            li.latest-posts__item
+                a(
+                    href        = post.link
+                    aria-hidden = "true"
+                    tabindex    = "-1"
+                ).latest-posts__thumb
+                    img(src=post.img, alt=post.title).latest-posts__thumb-img
+                    .latest-posts__thumb-overlay
+                        i.icon-plus.icons(aria-hidden="true")
+
+                .latest-posts__body
+                    h3.latest-posts__title
+                        a(href=post.link).latest-posts__link= post.title
+
+                    +pubdate({
+                        date: post.date,
+                        authorLink: post.authorLink,
+                        author: post.author,
+                    }).latest-posts__pubdate

@@ -1,0 +1,23 @@
+mixin subscribe(data = {}, mods = {})
+    form.subscribe(
+        class=mods.footer && "subscribe_footer"
+        action="#"
+        method="post"
+    )&attributes(attributes)
+        +form-group({
+            type: 'email',
+            placeholder: 'Your email...',
+            label: 'Your email',
+            required: true
+        }, {
+            theme: mods.footer ? 'footer' : 'newsletter'
+        }).subscribe__input
+        +btn({
+            text: mods.footer ? 'Subscribe' : 'Submit',
+        }, {
+            theme: mods.footer ? 'inverse' : 'primary',
+            size: mods.footer ? 'default' : 'large'
+        })(
+            type = "submit"
+            name = "subscribe"
+        ).subscribe__btn

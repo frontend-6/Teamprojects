@@ -3,6 +3,7 @@ extends ../layouts/base.pug
 include ../../blocks/logo/logo.pug
 include ../../blocks/footer/footer.pug
 include ../../blocks/navbar/navbar.pug
+include ../../blocks/form/form.pug
 
 //- TODO: include page-specific block templates
 
@@ -12,5 +13,7 @@ block page
         +logo().header__logo
     .navbar
         +navbar().navbar
+    .form
+        +form().form
     .footer
         +footer().footer

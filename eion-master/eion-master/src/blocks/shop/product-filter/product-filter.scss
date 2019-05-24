@@ -1,0 +1,119 @@
+/**
+ * Styles for the product filter block.
+ */
+.product-filter {
+    font-family: $font-family-serif;
+    @include font-size(14px);
+
+    border-top: 1px solid rgba($color-black, 0.1);
+
+    @include breakpoint-up(md) {
+        display: flex;
+    }
+    
+    &__left {
+        display: flex;
+        margin-top: 16px;
+    }
+
+    &__right {
+        margin-top: 16px;
+
+        align-items: baseline;
+        display: flex;
+       
+        @include breakpoint-up(md) {
+            margin-left: auto;
+        }
+    }
+
+    &__layouts {
+        display: flex;
+    }
+
+    &__layout-link {
+        color: $color-text;
+        text-decoration: none;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus,
+        &_selected {
+            color: $color-primary;
+        }
+    }
+
+    &__layout-item:not(:first-child) {
+        margin-left: 18px;
+    }
+
+    &__result-number {
+        margin-left: auto;
+
+        @include breakpoint-up(md) {
+            margin-left: 40px;
+        }
+    }
+
+    &__views {
+        @include breakpoint-up(md) {
+            margin-left: auto;
+        }
+    }
+
+    &__view-link {
+        color: $color-text;
+        text-decoration: none;
+
+        transition: all 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+            text-decoration: underline;
+        }
+    }
+
+    &__order-form {
+        position: relative;
+
+        display: inline-block;
+        margin-left: auto;
+
+        @include breakpoint-up(md) {
+            margin-left: 40px;
+        }
+
+        &:after {
+            content: "";
+
+            top: 8px;
+            position: absolute;
+            right: 0;
+
+            display: block;
+            height: 6px;
+            width: 6px;
+
+            border-right: 1px solid $color-text;
+            border-bottom: 1px solid $color-text;
+
+            transform: rotate(45deg);
+        }
+    }
+
+    &__order-select {
+        color: $color-text;
+        font: inherit;
+
+        background: transparent;
+        border: 0;
+
+        appearance: none;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+}

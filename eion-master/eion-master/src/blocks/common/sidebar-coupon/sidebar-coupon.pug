@@ -1,0 +1,10 @@
+mixin sidebar-coupon(data = {}, mods = {})
+    .sidebar-coupon(
+        style = `background-image: url(${data.bg})`
+        class = mods.blog && 'sidebar-coupon_blog'
+    )&attributes(attributes)
+        .sidebar-coupon__inner
+            .sidebar-coupon__overlay
+                .sidebar-coupon__overlay-inner
+                    h3.sidebar-coupon__title= data.title
+                    +btn(data.btn, {theme: 'primary'}).sidebar-coupon__btn

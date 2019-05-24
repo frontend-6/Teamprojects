@@ -1,0 +1,26 @@
+mixin tabs(data)
+    .tabs&attributes(attributes)
+        ul.tabs__list(role="tablist" aria-orientation="vertical")
+            each item in data
+                li.tabs__item
+                    a.tabs__link(
+                        class         = item.active && 'tabs__link_active'
+                        id            = item.id + '-tab'
+                        tabindex      = item.active ? "0" : "-1"
+                        href          = '#' + item.id
+                        role          = 'tab'
+                        aria-controls = item.id
+                        aria-selected = String(item.active)
+                    )= item.title
+        .tabs__panels
+            each item in data
+                .tabs__panel(
+                    class           = item.active && 'tabs__panel_active'
+                    id              = item.id
+                    role            = 'tabpanel'
+                    aria-labelledby = item.id + '-tab'
+                )
+                    +#{item.blockName}(item.content)
+                // /.tabs__panel 
+        // /.tabs__panels
+    // /.tabs 

@@ -1,0 +1,44 @@
+/**
+ * Styles for the carousel block.
+ */
+ .carousel {
+    padding-top: 10px;
+
+    &__pagination {
+        position: static;
+
+        display: flex;
+        justify-content: center;
+        margin-top: 58px;
+
+        transform: none;
+    }
+
+    &__bullet {
+        margin: 0 10px;
+
+        height: 10px;
+        padding: 0;
+        width: 10px;
+
+        text-indent: 10px;
+
+        border: 1px solid $color-secondary;
+        border-radius: 50%;
+        cursor: pointer;
+
+        background: transparent;
+
+        overflow: hidden;
+        transition: all 0.25s linear;
+
+        &_active {
+            background-color: $color-secondary;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 2px 1px $color-primary;
+        }
+    }
+}

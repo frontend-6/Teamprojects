@@ -1,0 +1,23 @@
+include ../../blocks/common/input-box/input-box.pug
+include ../../blocks/common/form-group/form-group.pug
+include ../../blocks/common/btn/btn.pug
+include ../../blocks/under-construction/under-construction/under-construction.pug
+include ../../blocks/common/countdown/countdown.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        title #{data.pageTitle} | #{data.siteTitle}
+
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="icon", href="img/favicon.ico")
+    body.page.page_no-padding
+        +under-construction()
+
+        block scripts
+            script(src="js/vendor.js")
+            script(src="js/main.js")

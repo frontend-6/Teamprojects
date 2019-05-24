@@ -1,0 +1,38 @@
+/**
+ * Styles for the instagram feed carousel block.
+ */
+.instagram-carousel {
+    position: relative;
+
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__link {
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+        z-index: 100;
+
+        display: block;
+        padding: 6px 0;
+        width: 170px;
+
+        color: $color-text;
+        font-family: $font-family-serif;
+        @include font-size(12px);
+        text-align: center;
+        text-decoration: none;
+
+        background: $color-gallery;
+
+        transform: translateX(-50%);
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+}

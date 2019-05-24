@@ -1,0 +1,47 @@
+mixin form-group(data = {}, mods = {})
+    - const theme = mods.theme || 'default';
+    .form-group(class="form-group_theme_"+theme)&attributes(attributes)
+        if data.type === 'textarea'
+            textarea.form-group__input(
+                id=data.id
+                name=data.name
+                placeholder=data.placeholder
+                required=!!data.required
+                aria-labelledby=data.id+"-label"
+                rows=data.rows
+            )
+        else if data.type === 'select'
+            select.form-group__input.form-group__input_select(
+                id=data.id
+                name=data.name
+                aria-labelledby=data.id+"-label"
+                required
+            )
+                if block
+                    block
+        else
+            input.form-group__input(
+                id=data.id
+                type=data.type
+                name=data.name
+                placeholder=data.placeholder
+                required=!!data.required
+                aria-labelledby=data.id+"-label"
+            )
+
+        if data.type === 'select'
+            span.form-group__icon
+                i.fas.fa-angle-down(aria-hidden="true")
+                
+        if data.icon
+            label.form-group__icon(
+                aria-label=data.label
+                id=data.id+"-label"
+                for=data.id
+            )
+                i.icons(class="icon-"+data.icon)
+        else
+            label.form-group__hidden-label(
+                id=data.id+"-label"
+                for=data.id
+            )= data.label

@@ -1,0 +1,22 @@
+mixin qty(data = {}, mods = {})
+    .qty&attributes(attributes)
+        button(
+            type="button"
+            tabindex="-1"
+            aria-hidden="true"
+        ).qty__btn.qty__btn_plus
+            i.fas.fa-chevron-up
+        input(
+            type="number"
+            value=data
+            min="0"
+            size="4"
+            step="1"
+            aria-label="Quantity"
+        ).qty__input
+        button(
+            type="button"
+            tabindex="-1"
+            aria-hidden="true"
+        ).qty__btn.qty__btn_minus
+            i.fas.fa-chevron-down

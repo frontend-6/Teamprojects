@@ -1,0 +1,19 @@
+/**
+ * Styles for the skip link block.
+ */
+.skip-link {
+    color: $color-white;
+    @include font-size(30px);
+
+    transition: color 0.25s linear;
+    transform: translateX(-50%);
+
+    @include breakpoint-up(md) {
+        bottom: 25px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $color-primary;
+    }
+}

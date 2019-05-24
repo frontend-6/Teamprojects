@@ -1,0 +1,13 @@
+mixin post-gallery(data = {}, mods = {})
+    .post-gallery&attributes(attributes)
+        .swiper-container
+            .swiper-wrapper
+                each item in data
+                    .swiper-slide
+                        img(src=item.img, alt=item.alt).post-gallery__img
+
+        button.post-gallery__arrow.post-gallery__arrow_prev.swiper-button-prev
+            i.fas.fa-angle-left(aria-label="Previous Image")
+        button.post-gallery__arrow.post-gallery__arrow_next.swiper-button-next
+            i.fas.fa-angle-right(aria-label="Next Image")
+    // /.post-gallery 

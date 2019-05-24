@@ -1,0 +1,69 @@
+mixin blog-comments(data = {}, mods = {})
+    .blog-comments&attributes(attributes)
+        h2.title.title_comments.blog-comments__title #{data.total} Comments
+
+        ol.blog-comments__list
+            each comment in data.comments
+                +comment(comment).blog-comments__comment
+
+        h2.title.title_comments.blog-comments__title Leave a reply
+
+        +social({
+            text: 'Connect with:',
+            links: [{
+                className : 'twitter',
+                text      : 'Connect with Twitter',
+            }, {
+                className : 'facebook-f',
+                text      : 'Connect with Facebook',
+            }, {
+                className : 'google-plus-g',
+                text      : 'Connect with Google Plus',
+            }]
+        }, {theme: 'default'}).blog-comments__social
+
+        form(
+            action = "#"
+            method = "post"
+            id     = "comment-form"
+        ).blog-comments__form
+            input(type="hidden" name="reply-to").blog-comments__reply-to
+
+            .form-fields
+                .form-fields__inner
+                    .form-fields__field.form-fields__field_small
+                        +form-group({
+                            type: 'text',
+                            id: 'comment-name',
+                            name: 'name',
+                            placeholder: 'Your Name *',
+                            required: true,
+                            label: 'Your name',
+                            icon: 'user'
+                        })
+                    .form-fields__field.form-fields__field_small
+                        +form-group({
+                            type: 'email',
+                            id: 'comment-email',
+                            name: 'email',
+                            placeholder: 'Your Email *',
+                            required: true,
+                            label: 'Your email',
+                            icon: 'envelope'
+                        })
+                    .form-fields__field
+                        +form-group({
+                            type: 'textarea',
+                            id: 'comment-review',
+                            name: 'review',
+                            placeholder: 'Your Review *',
+                            required: true,
+                            label: 'Your review',
+                            icon: 'bubbles',
+                            rows: 6,
+                        })
+                    
+            +btn({text: 'Submit your review'}, {
+                theme : 'primary',
+                size  : 'large',
+            })(type="submit").blog-comments__submit

@@ -1,0 +1,60 @@
+mixin review-form(data = {}, mods = {})
+    form.review-form&attributes(attributes)
+        h2.title Add Your Review
+
+        .review-form__top
+            +social({
+                text: 'Connect with:',
+                links: [{
+                    className : 'twitter',
+                    text      : 'Share on Twitter',
+                }, {
+                    className : 'facebook-f',
+                    text      : 'Share on Facebook',
+                }, {
+                    className : 'google-plus-g',
+                    text      : 'Share on Google Plus',
+                }]
+            })
+
+            .review-form__rating
+                +star-rating({name: 'rating', required: true})
+
+        .form-fields.review-form__fields
+            .form-fields__inner
+                .form-fields__field
+                    +form-group({
+                        type: 'text',
+                        id: 'review-name',
+                        name: 'name',
+                        placeholder: 'Your Name *',
+                        required: true,
+                        label: 'Your name',
+                        icon: 'user'
+                    })
+                .form-fields__field
+                    +form-group({
+                        type: 'email',
+                        id: 'review-email',
+                        name: 'email',
+                        placeholder: 'Your Email *',
+                        required: true,
+                        label: 'Your email',
+                        icon: 'envelope'
+                    })
+                .form-fields__field
+                    +form-group({
+                        type: 'textarea',
+                        id: 'review-review',
+                        name: 'review',
+                        placeholder: 'Your Review *',
+                        required: true,
+                        label: 'Your review',
+                        icon: 'bubbles',
+                        rows: 6,
+                    })
+        
+        +btn({text: 'Submit your review'}, {
+            theme : 'primary',
+            size  : 'large',
+        })(type="submit").review-form__submit

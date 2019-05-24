@@ -1,0 +1,64 @@
+/**
+ * Styles for the post-gallery block.
+ */
+.post-gallery {
+    position: relative;
+
+    max-width: 100%;
+
+    .swiper-container {
+        max-width: 100%;
+    }
+
+    .swiper-slide {
+        height: auto;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 100;
+
+        display: block;
+        height: 40px;
+        margin-top: 0;
+        padding: 0;
+        width: 20px;
+
+        color: $color-white;
+        text-align: center;
+
+        background: rgba($color-black, 0.3);
+        border: 0;
+        cursor: pointer;
+
+        transform: translateY(-50%);
+        transition: background-color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            background: rgba($color-black, 0.8);
+        }
+
+        &_prev {
+            left: 0;
+
+            padding-right: 5px;
+
+            border-radius: 0 20px 20px 0;
+        }
+
+        &_next {
+            right: 0;
+
+            padding-left: 5px;
+
+            border-radius: 20px 0 0 20px;
+        }
+    }
+}

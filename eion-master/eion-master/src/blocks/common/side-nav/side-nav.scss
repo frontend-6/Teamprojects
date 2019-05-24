@@ -1,0 +1,222 @@
+/**
+ * Styles for the vertical menu block.
+ */
+.side-nav {
+    position: relative;
+    z-index: 300;
+
+    transition: visibility 0s step-start 0.25s;
+    visibility: hidden;
+
+    &__backdrop {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+
+        background: rgba($color-black, 0.55);
+        opacity: 0;
+
+        transition: opacity 0.35s ease-out;
+
+        .side-nav_visible & {
+            opacity: 1;
+        }
+    }
+
+    &__drawer {
+        bottom: 0;
+        position: fixed;
+        top: 0;
+
+        width: 320px;
+
+        background: $color-secondary;
+
+        overflow-y: auto;
+        transition: transform 0.35s ease-out;
+
+        .side-nav_align_left & {
+            left: 0;
+
+            transform: translateX(-100%);
+        }
+
+        .side-nav_align_right & {
+            right: 0;
+
+            transform: translateX(100%);
+        }
+
+        .side-nav_visible & {
+            transform: none;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+    }
+
+    &__close {
+        position: absolute;
+        right: 35px;
+        top: 35px;
+
+        padding: 0;
+
+        color: $color-text;
+        @include font-size(20px);
+
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+        }
+    }
+
+    &__social {
+        margin-top: 22px;
+    }
+
+    &__menu {
+        margin-bottom: auto;
+        margin-top: 70px;
+
+        &_submenu {
+            display: none;
+            padding-left: 15px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &__menu-link {
+        position: relative;
+
+        display: block;
+        padding: 23px 0;
+
+        color: $color-text;
+        @include font-size(14px);
+        text-decoration: none;
+        text-transform: uppercase;
+
+        background: {
+            image: repeating-linear-gradient(
+                to right,
+                $color-text,
+                $color-text 9px,
+                transparent 9px,
+                transparent 12px);
+            position: bottom;
+            repeat: repeat-x;
+            size: 100% 1px;
+        }
+
+        transition: all 0.25s linear;
+
+        &_submenu {
+            padding: 16px 0;
+            text-transform: none;
+            
+            background: transparent;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+
+            border-bottom-color: $color-white;
+        }
+    }
+
+    &__menu-label {
+        position: relative;
+
+        display: inline-block;
+        height: 20px;
+        margin-left: 19px;
+        padding: 0 7px;
+
+        color: $color-white;
+        font-family: $font-family-serif;
+        @include font-size(10px);
+        line-height: 20px;
+        text-transform: uppercase;
+
+        background: $color-primary;
+        border-radius: 5px;
+
+        &:before {
+            content: "";
+
+            position: absolute;
+            right: 100%;
+            top: 50%;
+        
+            border: 4px solid transparent;
+            border-right-color: $color-primary;
+
+            transform: translateY(-50%);
+        }
+    }
+
+    &__menu-arrow {
+        position: absolute;
+        right: 0;
+        top: 50%;
+
+        @include font-size(10px);
+
+        transform: translateY(-50%);
+    }
+
+    &__search {
+        margin-top: 70px;
+
+        opacity: 0.1;
+
+        &_focused {
+            opacity: 1;
+        }
+    }
+
+    &__search-inner {
+        display: flex;
+    }
+
+    &__search-icon {
+        color: $color-white;
+        @include font-size(20px);
+    }
+
+    &__search-input {
+        display: block;
+        flex: 1;
+        margin-left: 8px;
+
+        color: $color-white;
+        @include font-size(14px);
+        font-style: italic;
+
+        background: transparent;
+        border: 0;
+
+        &::placeholder {
+            color: $color-white;
+        }
+    }
+
+    &_visible {
+        transition-delay: 0s;
+        visibility: visible;
+    }
+}

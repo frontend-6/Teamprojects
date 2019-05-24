@@ -1,0 +1,6 @@
+mixin post-grid(data = {}, mods = {})
+    .post-grid&attributes(attributes)
+        .post-grid__inner
+            each post in data
+                .post-grid__item(class=mods.small && "post-grid__item_small")
+                    +post(post, {level: 2})

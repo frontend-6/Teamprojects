@@ -1,0 +1,36 @@
+/**
+ * Styles for the blog page block.
+ */
+.blog-page {
+    padding: 110px 0 100px;
+
+    &__grid {
+        margin: 80px auto 0;
+        max-width: 450px;
+
+        @include breakpoint-up(md) {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: none;
+        }
+    }
+
+    &__masonry {
+        margin: 45px auto 0;
+        max-width: 450px;
+
+        @include breakpoint-up(md) {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: none;
+        }
+
+        @include breakpoint-up(lg) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__pagination {
+        margin-top: 60px;
+    }
+}

@@ -1,0 +1,36 @@
+mixin search-modal(data = {}, mods = {})
+    .search-modal(role="dialog")&attributes(attributes)
+        form(action="#" method="get").search-modal__form
+            input(placeholder="Type to Search...").search-modal__input
+
+        .search-modal__results
+            ul.search-modal__results-list
+                each item in data
+                    li.search-modal__result
+                        a(
+                            href="javascript:void(0);"
+                            aria-hidden="true"
+                            tabindex="-1"
+                        ).search-modal__result-thumb
+                            img(
+                                src=item.img
+                                alt=item.title
+                            ).search-modal__result-img
+                        .search-modal__result-body
+                            +rating(item.rating).search-modal__result-rating
+                            a(href=item.link).search-modal__result-title
+                                | #{item.title}
+                            .search-modal__result-price= item.price
+                        +btn({
+                            text: 'Detail',
+                            link: item.link
+                        }, {theme: 'secondary'}).search-modal__result-btn
+        
+            .search-modal__results-link-wrap
+                a(href="javascript:void(0);").search-modal__results-link
+                    span.search-modal__results-link-text
+                        | View all #{data.length} Results 
+                    i.fa.fa-long-arrow-alt-right(aria-hidden="true")
+
+        button.search-modal__close
+            i.icon-close.icons(aria-label="Close")

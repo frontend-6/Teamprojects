@@ -1,0 +1,79 @@
+/**
+ * Styles for the product masonry block.
+ */
+.product-masonry {
+    &__inner {
+        overflow: hidden;
+
+        @include breakpoint-up(md) {
+            margin: 0 -15px;
+        }
+    }
+
+    &__title {
+        color: $color-secondary;
+        @include font-size(54px);
+        line-height: 0.85;
+        font-weight: $font-weight-bold;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        @include breakpoint-up(sm) {
+            @include font-size(90px);
+        }
+
+        @include breakpoint-up(md) {
+            float: left;
+            margin-bottom: 10px;
+            padding: 0 15px;
+            width: 50%;
+
+            @include font-size(130px);
+        }
+
+        @include breakpoint-up(lg) {
+            @include font-size(170px);
+        }
+
+        @include breakpoint-up(xl) {
+            @include font-size(200px);
+        }
+    }
+
+    &__item {
+        margin-top: 40px;
+
+        &:not(:first-child) {
+            @include breakpoint-up(lg) {
+                margin-top: 60px;
+            }
+        }
+
+        &:first-child {
+            @include breakpoint-up(md) {
+                margin-top: 60px;
+            }
+
+            @include breakpoint-up(lg) {
+                margin-top: 80px;
+            }
+        }
+
+        @include breakpoint-up(md) {
+            padding: 0 15px;
+            width: 50%;
+        }
+
+        &_left {
+            @include breakpoint-up(md) {
+                float: left;
+            }
+        }
+
+        &_right {
+            @include breakpoint-up(md) {
+                float: right;
+            }
+        }
+    }
+}

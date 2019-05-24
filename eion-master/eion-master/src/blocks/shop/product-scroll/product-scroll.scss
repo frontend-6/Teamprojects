@@ -1,0 +1,63 @@
+/**
+ * Styles for the product-scroll block.
+ */
+.product-scroll {
+    position: relative;
+
+    overflow: hidden;
+
+    &__inner {
+        padding: 60px 0 60px 15px;
+
+        @include breakpoint-up(lg) {
+            padding: 100px 0 100px 40px;
+        }
+
+        @include breakpoint-up(xl) {
+            padding-left: 60px;
+        }
+    }
+
+    &__items {
+        margin-top: 40px;
+        padding-right: 15px;
+
+        overflow: hidden;
+
+        @include breakpoint-up(lg) {
+            padding-right: 40px;
+        }
+
+        @include breakpoint-up(xl) {
+            padding-right: 60px;
+        }
+    }
+
+    &__container {
+        padding-top: 10px;
+
+        overflow: visible;
+    }
+
+    &__scrollbar {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+
+        height: 15px;
+
+        background: $color-alto;
+    }
+
+    &__scrollbar-drag {
+        background: repeating-linear-gradient(-50deg,
+            $color-gallery,
+            $color-gallery 1px,
+            $color-white 1px,
+            $color-white 7px);
+        cursor: pointer;
+
+        height: 15px;
+    }
+}

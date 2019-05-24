@@ -1,0 +1,28 @@
+mixin under-construction(data = {}, mods = {})
+    .under-construction&attributes(attributes)
+        header.under-construction__header
+            img(src="img/logo.png", alt="Eion").under-construction__logo
+
+        main.under-construction__main
+            h1.under-construction__title Under Construction
+            p.under-construction__text Website is under constructor. We’ll be back with new updated website shortly. <br> Please come back later!
+
+            +countdown({}, {justified: true}).under-construction__countdown
+
+            +input-box({
+                input: {
+                    id: 'subscribe-email',
+                    name: 'subscribe_email',
+                    type: 'email',
+                    placeholder: 'Your Email...',
+                    label: 'Your Email',
+                    required: true
+                },
+                btn: {
+                    text: 'Subscribe'
+                },
+                btnTheme: 'gray',
+            }, {theme: 'white'}).under-construction__subscribe
+
+        footer.under-construction__footer
+            p © Copyright 2015. Powered by WordPress. Eion Theme by SunriseThemes <br> HTML template by polarfawx

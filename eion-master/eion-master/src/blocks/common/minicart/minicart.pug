@@ -1,0 +1,35 @@
+mixin minicart(data = {}, mods = {})
+    .minicart&attributes(attributes)
+        ul.minicart__items
+            each item in data
+                li.minicart__item
+                    a(href=item.link tabindex="-1").minicart__thumb
+                        img(
+                            src=item.thumb
+                            alt=item.name
+                        ).minicart__img
+                    .minicart__product-info
+                        a(href=item.link).minicart__name= item.name
+                        .minicart__price $#{item.price}
+                    if item.qty > 1
+                        .minicart__qty x#{item.qty}
+                    button.minicart__remove
+                        i.fas.fa-times(aria-label="Remove this item")
+        // /.minicart__items 
+            
+        .minicart__total
+            span.minicart__total-text Total:
+            span.minicart__total-price $1,459
+        // /.minicart__total 
+
+        .btn-group.minicart__btns
+            +btn({
+                text : 'View Cart',
+                url  : 'shopping-cart.html',
+            }, {theme: 'secondary'}).btn-group__btn
+            +btn({
+                text : 'Checkout',
+                url  : 'checkout.html',
+            }, {theme: 'primary'}).btn-group__btn
+        // /.minicart__btns 
+    // /.minicart 

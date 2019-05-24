@@ -1,0 +1,55 @@
+mixin blog-layout(data = {}, mods = {})
+    .blog-layout&attributes(attributes)
+        .page__container
+            .blog-layout__inner
+                main.blog-layout__content
+                    if data.posts
+                        each post in data.posts
+                            +post(post, {
+                                level      : 2,
+                                largeTitle : true,
+                            }).blog-layout__post
+
+                        if data.pagination
+                            +pagination(data.pagination).blog-layout__pagination
+                    else if data.singlePost
+                        +post(data.singlePost, {
+                            level      : 1,
+                            largeTitle : true,
+                        }).blog-layout__post
+
+                    if data.author
+                        +blog-author(data.author).blog-layout__author
+
+                    if data.comments
+                        +blog-comments(data.comments).blog-layout__comments
+
+                    if data.relatedPosts
+                        +post-grid(data.relatedPosts).blog-layout__related
+
+                // .blog-layout__content 
+
+                if data.sidebar
+                    aside.blog-layout__sidebar
+                        +sidebar-widget({
+                            title: 'Categories'
+                        }).blog-layout__sidebar-widget
+                            +sidebar-list(data.sidebar.categories, {blog: true})
+                        +sidebar-widget({
+                            title: 'Popular Posts'
+                        }).blog-layout__sidebar-widget
+                            +popular-posts(data.sidebar.popularPosts)
+                        +sidebar-widget({
+                            title: 'Latest Posts'
+                        }).blog-layout__sidebar-widget
+                            +latest-posts(data.sidebar.latestPosts)
+                        +sidebar-widget({
+                            title: 'Tags'
+                        }).blog-layout__sidebar-widget
+                            +tag-cloud(data.sidebar.tagCloud)
+                        +sidebar-coupon(data.sidebar.coupon, {
+                            blog: true
+                        }).blog-layout__sidebar-coupon
+                    // .blog-layout__sidebar 
+        // /.page__container
+    // .blog-layout 

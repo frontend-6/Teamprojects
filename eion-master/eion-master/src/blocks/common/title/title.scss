@@ -1,0 +1,69 @@
+/**
+ * Styles for the title block.
+ */
+.title {
+    color: $color-secondary;
+    @include font-size(20px);
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+
+    &:after {
+        content: "";
+
+        display: block;
+        height: 1px;
+        margin-top: 12px;
+        width: 105px;
+
+        background: {
+            image: repeating-linear-gradient(
+                to right,
+                $color-secondary,
+                $color-secondary 9px,
+                transparent 9px,
+                transparent 12px);
+        }
+    }
+
+    &_comments:after {
+        margin-top: 6px;
+    }
+
+    &_center {
+        text-align: center;
+
+        &:after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &_light {
+        color: $color-white;
+
+        &:after {
+            background-image: repeating-linear-gradient(
+                to right,
+                $color-white,
+                $color-white 9px,
+                transparent 9px,
+                transparent 12px);
+        }
+    }
+
+    &_size_small {
+        @include font-size(14px);
+
+        &:after {
+            width: 60px;
+        }
+    }
+
+    &_size_large {
+        @include font-size(30px);
+
+        &:after {
+            width: 60px;
+        }
+    }
+}

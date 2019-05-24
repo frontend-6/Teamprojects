@@ -1,0 +1,25 @@
+mixin category-layout(data = {}, mods = {})
+    .category-layout&attributes(attributes)
+        .page__container
+            .category-layout__inner
+                main.category-layout__content
+                    +product-filter(data.filter)
+
+                    if data.grid
+                        +product-grid(data.grid).category-layout__grid
+                    else if data.list
+                        +product-list(data.list).category-layout__list
+
+                    +pagination(data.pagination).category-layout__pagination 
+
+                aside.category-layout__sidebar
+                    +sidebar-cart()
+
+                    each list in data.sidebar.lists
+                        +sidebar-widget({
+                            title: list.title
+                        }).category-layout__sidebar-widget
+                            +sidebar-list(list.items)
+
+                    if data.sidebar.coupon
+                        +sidebar-coupon(data.sidebar.coupon).category-layout__sidebar-coupon

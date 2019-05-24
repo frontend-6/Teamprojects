@@ -1,0 +1,71 @@
+/**
+ * Styles for the special offer block.
+ */
+.special-offer {
+    padding: 80px 15px 50px;
+
+    text-align: center;
+
+    background: $color-white;
+
+    @include breakpoint-up(sm) {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    &__price {
+        color: $color-silver;
+        @include font-size(90px);
+        font-weight: $font-weight-bold;
+        line-height: 1;
+
+        @include breakpoint-up(sm) {
+            @include font-size(110px);
+        }
+
+        @include breakpoint-up(lg) {
+            @include font-size(130px);
+        }
+
+        @include breakpoint-up(xl) {
+            @include font-size(150px);
+        }
+    }
+
+    &__img-container {
+        position: relative;
+
+        margin-top: 40px;
+        max-width: 480px;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__btn {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+
+        min-width: 170px;
+
+        opacity: 0.8;
+
+        transform: translate(-50%, -50%);
+
+        .special-offer__img-container:hover & {
+            opacity: 1;
+        }
+    }
+
+    &__countdown {
+        margin-top: 100px;
+        max-width: 570px;
+        width: 100%;
+    }
+}

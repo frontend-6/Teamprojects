@@ -1,0 +1,32 @@
+{
+    "pageTitle": "FAQs",
+
+    "content": {
+        "hero": {
+            "bg": "img/content/faqs/faqs-header-bg.jpg",
+            "title": "Hi! Can We Help You?"
+        },
+
+        "topics": [
+            "What’s ut perspiciatis unde omnis iste natus error?",
+            "How ipsa quae ab illo inventore veritatis et quasi architecto?",
+            "How porro quisquam est?",
+            "When ipsum quia dolor sit amet?",
+            "What’s non numquam eius modi tempora incidunt?",
+            "When ipsum quia dolor sit amet?",
+            "How porro quisquam est?",
+            "Where quia non numquam eius modi tempora incidunt?"
+        ],
+
+        "popularArticles": [{
+            "title": "Are Sed ut perspiciatis unde omnis natus error?",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat deserunt mollit anim id est laborum."
+        }, {
+            "title": "What rem aperiam eaque ipsa quae ab illo inventore?",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat deserunt mollit anim id est laborum."
+        }, {
+            "title": "How enim ipsam voluptatem quia voluptas?",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat deserunt mollit anim id est laborum."
+        }]
+    }
+}

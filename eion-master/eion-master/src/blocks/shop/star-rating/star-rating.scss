@@ -1,0 +1,33 @@
+/**
+ * Styles for the star rating block.
+ */
+.star-rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+
+    &__radio {
+        @include visually-hidden();
+    }
+
+    &__label {
+        margin-left: 2px;
+
+        color: $color-silver;
+        @include font-size(18px);
+        cursor: pointer;
+
+        &:hover,
+        &:hover ~ & {
+            color: $color-bright-sun;
+        }
+    }
+
+    &__radio:checked ~ .star-rating__label,
+    &__radio:focus ~ .star-rating__label {
+        color: $color-bright-sun;
+    }
+
+    &__radio:first-child + .star-rating__label {
+        margin-left: 0;
+    }   
+}

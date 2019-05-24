@@ -1,0 +1,17 @@
+mixin category-page(data = {}, mods = {})
+    main.category-page&attributes(attributes)
+        .page__container.category-page__inner
+            if data.header
+                .category-page__header
+                    h1.title.title_center.category-page__title= data.header.title
+                    p.category-page__intro= data.header.text
+
+            .category-page__content
+                +product-filter(data.filter)
+
+                if data.grid
+                    +product-grid(data.grid).category-page__grid
+                else if data.list
+                    +product-list(data.list, {large: true}).category-page__list
+
+                +pagination(data.pagination).category-page__pagination 

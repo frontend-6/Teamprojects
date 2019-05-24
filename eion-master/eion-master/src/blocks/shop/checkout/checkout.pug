@@ -1,0 +1,230 @@
+mixin checkout(data = {}, mods = {})
+    form(action="#" method="post").checkout&attributes(attributes)
+        .page__container
+            h1.checkout__title Checkout
+
+            .checkout__inner
+                .checkout__left
+                    +back-link()
+
+                    h2.title.checkout__section-title Billing Details
+
+                    .form-fields
+                        .form-fields__inner
+                            .form-fields__field.form-fields__field_small
+                                +form-group({
+                                    type: 'text',
+                                    id: 'billing-first-name',
+                                    name: 'billing_first_name',
+                                    placeholder: 'First Name *',
+                                    required: true,
+                                    label: 'First name',
+                                }, {theme: 'checkout'})
+                            .form-fields__field.form-fields__field_small
+                                +form-group({
+                                    type: 'text',
+                                    id: 'billing-last-name',
+                                    name: 'billing_last_name',
+                                    placeholder: 'Last Name *',
+                                    required: true,
+                                    label: 'Last name',
+                                }, {theme: 'checkout'})
+                            .form-fields__field
+                                +form-group({
+                                    type: 'email',
+                                    id: 'billing-email',
+                                    name: 'billing_email',
+                                    placeholder: 'Your Email *',
+                                    required: true,
+                                    label: 'Your Email',
+                                    icon: 'envelope',
+                                }, {theme: 'checkout'})
+                            .form-fields__field
+                                +form-group({
+                                    type: 'tel',
+                                    id: 'billing-phone',
+                                    name: 'billing_phone',
+                                    placeholder: 'Your Phone *',
+                                    required: true,
+                                    label: 'Your Phone',
+                                    icon: 'screen-smartphone',
+                                }, {theme: 'checkout'})
+                            .form-fields__field
+                                +form-group({
+                                    type: 'select',
+                                    id: 'billing-country',
+                                    name: 'billing_country',
+                                    label: 'Your Country',
+                                }, {theme: 'checkout'})
+                                    option(value="" disabled selected) Country *
+                                    option(value="ru") Russia (RU)
+                            .form-fields__field.form-fields__field_small
+                                +form-group({
+                                    type: 'text',
+                                    id: 'billing-city',
+                                    name: 'billing_city',
+                                    placeholder: 'Town / City *',
+                                    required: true,
+                                    label: 'Town / City',
+                                }, {theme: 'checkout'})
+                            .form-fields__field.form-fields__field_small
+                                +form-group({
+                                    type: 'text',
+                                    id: 'billing-postcode',
+                                    name: 'billing_postcode',
+                                    placeholder: 'Postcode / Zip *',
+                                    required: true,
+                                    label: 'Postcode / Zip',
+                                }, {theme: 'checkout'})
+                            .form-fields__field
+                                +form-group({
+                                    type: 'text',
+                                    id: 'billing-address1',
+                                    name: 'billing_address1',
+                                    placeholder: 'Address 1 *',
+                                    required: true,
+                                    label: 'Address 1',
+                                    icon: 'location-pin'
+                                }, {theme: 'checkout'})
+                            .form-fields__field
+                                +form-group({
+                                    type: 'text',
+                                    id: 'billing-address2',
+                                    name: 'billing_address2',
+                                    placeholder: 'Address 2',
+                                    label: 'Address 2',
+                                    icon: 'location-pin'
+                                }, {theme: 'checkout'})
+
+                    label.checkout__check
+                        input(
+                            type        = "checkbox"
+                            name        = "create_account"
+                            value       = "1"
+                            data-toggle = "create-account"
+                        ).checkout__check-input
+                        span.checkout__check-mark(aria-hidden="true")
+                        span.checkout__check-text.checkout__check-text_small Create an account?
+
+                    .checkout__account-fields#create-account
+                        p.checkout__account-text Create an account by entering the information below. If you are a returning customer please login at the top of the page.
+                        
+                        .form-fields
+                            .form-fields__inner
+                                .form-fields__field
+                                    +form-group({
+                                        type: 'password',
+                                        id: 'checkout-account-password',
+                                        name: 'checkout_account_password',
+                                        placeholder: 'Password *',
+                                        required: true,
+                                        label: 'Password',
+                                        icon: 'icon-lock'
+                                    }, {theme: 'checkout'})
+                                
+                    h2.title.checkout__section-title 
+                        label.checkout__check.checkout__check_title
+                            span.checkout__check-text Ship to a different address?
+                            input(
+                                type        = "checkbox"
+                                name        = "ship_different_address"
+                                value       = "1"
+                                data-toggle = "shipping-fields"
+                            ).checkout__check-input
+                            span.checkout__check-mark(aria-hidden="true")
+
+                    .checkout__shipping-fields#shipping-fields
+                        .form-fields
+                            .form-fields__inner
+                                .form-fields__field.form-fields__field_small
+                                    +form-group({
+                                        type: 'text',
+                                        id: 'shipping-first-name',
+                                        name: 'shipping_first_name',
+                                        placeholder: 'First Name *',
+                                        required: true,
+                                        label: 'First name',
+                                    }, {theme: 'checkout'})
+                                .form-fields__field.form-fields__field_small
+                                    +form-group({
+                                        type: 'text',
+                                        id: 'shipping-last-name',
+                                        name: 'shipping_last_name',
+                                        placeholder: 'Last Name *',
+                                        required: true,
+                                        label: 'Last name',
+                                    }, {theme: 'checkout'})
+                                .form-fields__field
+                                    +form-group({
+                                        type: 'select',
+                                        id: 'shipping-country',
+                                        name: 'shipping_country',
+                                        label: 'Your Country',
+                                    }, {theme: 'checkout'})
+                                        option(value="" disabled selected) Country *
+                                        option(value="ru") Russia (RU)
+                                .form-fields__field.form-fields__field_small
+                                    +form-group({
+                                        type: 'text',
+                                        id: 'shipping-city',
+                                        name: 'shipping_city',
+                                        placeholder: 'Town / City *',
+                                        required: true,
+                                        label: 'Town / City',
+                                    }, {theme: 'checkout'})
+                                .form-fields__field.form-fields__field_small
+                                    +form-group({
+                                        type: 'text',
+                                        id: 'shipping-postcode',
+                                        name: 'shipping_postcode',
+                                        placeholder: 'Postcode / Zip *',
+                                        required: true,
+                                        label: 'Postcode / Zip',
+                                    }, {theme: 'checkout'})
+                                .form-fields__field
+                                    +form-group({
+                                        type: 'text',
+                                        id: 'shipping-address1',
+                                        name: 'shipping_address1',
+                                        placeholder: 'Address 1 *',
+                                        required: true,
+                                        label: 'Address 1',
+                                        icon: 'location-pin'
+                                    }, {theme: 'checkout'})
+                                .form-fields__field
+                                    +form-group({
+                                        type: 'text',
+                                        id: 'shipping-address2',
+                                        name: 'shipping_address2',
+                                        placeholder: 'Address 2',
+                                        label: 'Address 2',
+                                        icon: 'location-pin'
+                                    }, {theme: 'checkout'})
+             
+                    .form-fields
+                        .form-fields__inner
+                            .form-fields__field
+                                +form-group({
+                                    type: 'textarea',
+                                    id: 'shipping-notes',
+                                    name: 'shipping_notes',
+                                    placeholder: 'Order Notes',
+                                    label: 'Order Notes',
+                                    icon: 'pencil',
+                                    rows: 6,
+                                })
+
+                .checkout__right
+                    .checkout__right-inner
+                        .checkout__review-order
+                            h2.title.checkout__section-title Your order
+                            +review-order(data.order)
+
+                        .checkout__payment
+                            +payment()
+
+                        .checkout__btn-wrap
+                            +btn({text: 'Place Order'}, {
+                                size: 'large',
+                                theme: 'primary',
+                            })(type="submit").checkout__btn

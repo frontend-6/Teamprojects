@@ -1,0 +1,31 @@
+mixin faq-page(data = {}, mods = {})
+    .faq-page&attributes(attributes)
+        .faq-page__header(style=`background-image: url(${data.hero.bg})`)
+            .faq-page__header-inner
+                h1.faq-page__title= data.hero.title
+
+                +input-box({
+                    input: {
+                        id: 'help-search',
+                        name: 's',
+                        type: 'text',
+                        placeholder: 'Search our help center',
+                        label: 'Search our help center',
+                        required: true
+                    },
+                    btn: {
+                        text: 'Search'
+                    },
+                }, {theme: 'white'}).faq-page__search
+
+        .page__container
+            .faq-page__content
+                .faq-page__section
+                    h2.title.faq-page__section-title Help Topics
+
+                    +faq-topics(data.topics)
+
+                .faq-page__section
+                    h2.title.faq-page__section-title Popular Articles
+
+                    +accordion(data.popularArticles)

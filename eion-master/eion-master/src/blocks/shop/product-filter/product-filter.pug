@@ -1,0 +1,37 @@
+mixin product-filter(data = {}, mods = {})
+    .product-filter&attributes(attributes)
+        .product-filter__left
+            ul.product-filter__layouts
+                each layout in data.layouts
+                    li.product-filter__layout-item
+                        a.product-filter__layout-link(
+                            class = layout.selected && "product-filter__layout-link_selected"
+                            href  = layout.link
+                        )
+                            i(
+                                class      = layout.iconClass
+                                aria-label = layout.label
+                            )
+            // /.product-filter__layouts
+        
+            .product-filter__result-number Showing 1-#{data.showProducts} of 
+                | #{data.totalProducts} products
+        // .product-filter__left 
+        
+        .product-filter__right
+            .product-filter__views View 
+                each view, i in data.views
+                    if i > 0
+                        | #{' / '}
+                    a(href="javascript:void(0);").product-filter__view-link
+                        | #{view}
+            // /.shop-grid__views
+
+            form(action="#").product-filter__order-form
+                select.product-filter__order-select
+                    each option in data.sort
+                        option(value=option).product-filter__order-option
+                            | Sort by #{option}
+            // .product-filter__order-form 
+        // .product-filter__right 
+    // /.product-filter 

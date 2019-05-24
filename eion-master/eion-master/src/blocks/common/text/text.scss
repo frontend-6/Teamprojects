@@ -1,0 +1,23 @@
+/**
+ * Styles for the text block.
+ */
+.text {
+    font-family: $font-family-serif;
+    line-height: 1.7;
+
+    em {
+        font-style: italic;
+    }
+
+    * + * {
+        margin-top: 1em;
+    }
+
+    &_post {
+        line-height: 1.875;
+
+        * + * {
+            margin-top: 1.75em;
+        }
+    }
+}

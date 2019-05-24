@@ -1,0 +1,8 @@
+mixin review(data = {}, mods = {})
+    li.review&attributes(attributes)
+        .review__thumb
+            img(src=data.avatar, alt=data.author).review__avatar
+        .review__body
+            .review__author= data.author
+            +rating(data.rating).review__rating
+            .review__text= data.text

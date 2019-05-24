@@ -1,0 +1,79 @@
+/**
+ * Styles for the latest-posts block.
+ */
+.latest-posts {
+    &__item {
+        align-items: center;
+        display: flex;
+
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
+
+    &__thumb {
+        position: relative;
+
+        display: block;
+
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    &__thumb-img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__thumb-overlay {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        @include font-size(24px);
+
+        background: rgba($color-secondary, 0.5);
+        opacity: 0;
+
+        transition: opacity 0.25s linear;
+
+        .latest-posts__thumb:hover > &,
+        .latest-posts__thumb:focus > & {
+            opacity: 1;
+        }
+    }
+
+    &__body {
+        margin-left: 10px;
+
+        @include font-size(14px);
+    }
+
+    &__title {
+        color: $color-secondary;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        color: $color-secondary;
+        text-decoration: none;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+
+    &__pubdate {
+        margin-top: 8px;
+    }
+}

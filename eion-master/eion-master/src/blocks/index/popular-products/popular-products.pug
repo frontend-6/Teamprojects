@@ -1,0 +1,11 @@
+mixin popular-products(data = {}, mods = {})
+    - const col = mods.col || 3;
+    .popular-products&attributes(attributes)
+        +product-grid(data).popular-products__grid
+
+        if data.moreLink
+            +btn({
+                text: 'View more',
+                url: data.moreLink,
+            }, {size: 'large'}).popular-products__view-more
+    // /.products 

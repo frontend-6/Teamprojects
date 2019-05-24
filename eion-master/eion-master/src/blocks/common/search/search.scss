@@ -1,0 +1,69 @@
+/**
+ * Styles for the search block.
+ */
+.search {
+    width: 370px;
+    max-width: 100vw;
+
+    &__input {
+        display: block;
+        height: 60px;
+        padding: 0 20px;
+        width: 100%;
+
+        color: $color-primary;
+        font-family: $font-family-serif;
+        font-style: italic;
+        line-height: 60px;
+
+        border: 0;
+        border-bottom: 1px solid $color-gray;
+    }
+
+    &__result {
+        display: flex;
+        padding: 20px;
+    }
+
+    &__result-info {
+        flex: 1;
+    }
+
+    &__rating {
+        @include font-size(10px);
+    }
+
+    &__name {
+        display: block;
+        margin-top: 8px;
+
+        color: $color-secondary;
+        font-family: $font-family-serif;
+        font-style: italic;
+        text-decoration: none;
+
+        transition: color 0.25s linear;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+
+    &__price {
+        margin-top: 5px;
+
+        color: $color-primary;
+    }
+
+    &__thumb {
+        display: block;
+        margin-left: 20px;
+        width: 80px;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,77 @@
+mixin side-nav__menu(data, lvl=1)
+    ul.side-nav__menu(class = (lvl>1) && "side-nav__menu_submenu")
+        each item in data
+            li.side-nav__menu-item
+                a.side-nav__menu-link(
+                    href          = item.link
+                    class         = (lvl > 1) && "side-nav__menu-link_submenu"
+                    role          = item.submenu && "button"
+                    aria-haspopup = item.submenu && "true"
+                    aria-expanded = item.submenu && "false"
+                )= item.text
+                    if item.label
+                        .side-nav__menu-label= item.label
+                    if item.submenu
+                        i.icon-arrow-down.icons.side-nav__menu-arrow(
+                            aria-hidden="true"
+                        )
+                if item.submenu
+                    +side-nav__menu(item.submenu, lvl+1)
+    // /.side-nav__menu 
+
+mixin side-nav(data, mods = {})
+    - const align = mods.align || 'left';
+    nav.side-nav(
+        class = "side-nav_align_" + align
+    )&attributes(attributes)
+        .side-nav__backdrop
+
+        .side-nav__drawer
+            .side-nav__inner
+                .side-nav__logo
+                    img(src="img/logo-alt.png", alt="Eion")
+
+                +social({
+                    links: [{
+                        className: 'twitter',
+                        text: 'Follow us on Twitter',
+                    }, {
+                        className: 'facebook-f',
+                        text: 'Follow us on Facebook',
+                    }, {
+                        className: 'instagram',
+                        text: 'Follow us on Instagram',
+                    }, {
+                        className: 'google-plus-g',
+                        text: 'Follow us on Google Plus',
+                    }, {
+                        className: 'pinterest',
+                        text: 'Follow us on Pinterest',
+                    }]
+                }, {theme: 'side-nav'}).side-nav__social
+                
+                +side-nav__menu(data.menu)
+
+                form.side-nav__search(method="post" action=".")
+                    .side-nav__search-inner
+                        label.side-nav__search-icon(
+                            for="side-search"
+                            id="side-search-label"
+                        )
+                            i.icon-magnifier.icons(
+                                aria-label="Search"
+                            )
+                        input(
+                            type="text"
+                            name="s"
+                            id="side-search"
+                            aria-labelledby="side-search-label"
+                            placeholder="Search..."
+                        ).side-nav__search-input
+                // /.side-nav__search 
+
+                button.side-nav__close
+                    i.icon-close.icons(aria-label="Hide side nav")
+            // /.side-nav__inner 
+        // /.side-nav__drawer 
+    // /.side-nav 
