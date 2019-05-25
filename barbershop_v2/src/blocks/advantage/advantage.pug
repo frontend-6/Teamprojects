@@ -1,0 +1,12 @@
+//-
+    name: advantage
+    description: Markup for the advantage block
+    arguments:
+        - {object} data - block data
+
+mixin advantage(data = {})
+    .advantage&attributes(attributes)
+            p.advantage__info= data.advantageInfo
+            img.advantage__img(src="./img/advantage-1-illustration.png", alt="")
+            h2.advantage__title= data.advantageTitle
+            p.advantage__subtitle= data.advantageSubtitle
