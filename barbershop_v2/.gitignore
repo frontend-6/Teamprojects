@@ -1,6 +1,7 @@
 dist/
 node_modules/
 package-lock.json
+.idea/
 
 # ignore auto-generated files
 src/blocks/icon/icon.scss
