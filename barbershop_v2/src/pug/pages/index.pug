@@ -3,6 +3,7 @@ extends ../layouts/base.pug
 include ../../blocks/logo/logo.pug
 include ../../blocks/footer/footer.pug
 include ../../blocks/statistic/statistic.pug
+include ../../blocks/reviews/reviews.pug
 include ../../blocks/navbar/navbar.pug
 include ../../blocks/advantage/advantage.pug
 include ../../blocks/form/form.pug
@@ -13,8 +14,21 @@ block page
     //- TODO: add code
     .header
         +logo().header__logo
+    .navbar
+        +navbar().navbar
+    .reviews
+        +reviews().reviews
+    .footer
+        +footer().footer
+        +statistic(data)
+    +navbar()
+    +footer()
         +navbar()
         +statistic(data.statistic)
     +advantage(data)
+<<<<<<< HEAD
     +footer()
     +form()
+=======
+    +footer()
+>>>>>>> 05067f4ebb1f1184001ce41718fc9683e40bfff1
