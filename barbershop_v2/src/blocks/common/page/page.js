@@ -3,7 +3,11 @@
  */
 
 // TODO: imports other blocks
+<<<<<<< HEAD
 import * navbar from '../../navbar/navbar'
+=======
+// import * as navbar          from '../../navbar/navbar';
+>>>>>>> 8812730daa953efdaee609240df22db4f650ba7e
 // -------------------------- BEGIN MODULE VARIABLES --------------------------
 const RESIZE_INTERVAL = 200;    // Resize event debouncing interval
 const SCROLL_INTERVAL = 200;    // Scroll event throttling interval
