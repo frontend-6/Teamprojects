@@ -9,6 +9,10 @@ mixin form(data = {})
         h2.form_h2= data.form_h2
         .form_sign_haircut
             each i in ['Фамилия', 'Имя', 'Отчество', 'Контактный телефон', 'Контактный e-mail']
-                input(class="form_input", type="text", name="barb_form", placeholder=i)
+                input(
+                    class       = "form_input" 
+                    type        = "text"
+                    name        = "barb_form" 
+                    placeholder = i
+                    )
             textarea(class="form_textarea", name="barb_form", placeholder= "Доп. информация для мастера")
-
