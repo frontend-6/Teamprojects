@@ -1,0 +1,52 @@
+/**
+ * Styles for the statistic block.
+ */
+.statistic {
+    // Selector styles
+    // TODO: add code
+    // margin-top: 50px;
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // Bem modifiers
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+    &__white {
+        background-color: $color-white;
+        padding-top: 27px;
+    }
+
+    &__title {
+        color: $color-black;
+        font-family: $font-pt-sans;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 220px;
+        margin: 0 auto;
+        letter-spacing: -.09em;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        color: $color-black;
+        font-family: $font-pt-sans;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: -.09em;
+        max-width: 245px;
+        margin: 0 auto;
+    }
+}

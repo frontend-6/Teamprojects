@@ -1,9 +1,12 @@
 /**
- * Styles for the {{block}} block.
+ * Styles for the footer block.
  */
-.{{block}} {
+.footer {
     // Selector styles
-    // TODO: add code
+    height: 200px;
+    width: 100%;
+    background-color: #292929;
+    color: $color-white;
 
     // @media queries
     // TODO: add code
@@ -14,9 +17,9 @@
     // Nested selectors
     // TODO: add code
 
-    // Bem modifiers
+    // BEM elements
     // TODO: add code
 
-    // BEM elements
+    // Bem modifiers
     // TODO: add code
 }

@@ -1,0 +1,51 @@
+/**
+ * Styles for the advantage block.
+ */
+.advantage {
+
+    // Selector styles
+    background-color: #242424;
+    width: 100%;
+    height: 445px;
+
+  // @media queries
+  // TODO: add code
+
+  // Pseudo-classes and pseudo-elements
+  // TODO: add code
+
+  // Nested selectors
+  // TODO: add code
+
+  // Bem modifiers
+
+  &__info {
+    opacity: 0.3;
+    color: white;
+    font-family: $font-pt-sans;
+    font-size: 20px;
+    text-align: center;
+  }
+  &__img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  &__title{
+    text-align: center;
+    color: #f7f4f1;
+    font-family: $font-pt-sans;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__subtitle{
+    text-align: center;
+    color: white;
+    font-family: $font-pt-sans;
+    font-size: 20px;
+  }
+  // BEM elements
+
+}
