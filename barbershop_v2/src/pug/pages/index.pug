@@ -3,15 +3,9 @@ extends ../layouts/base.pug
 include ../../blocks/logo/logo.pug
 include ../../blocks/footer/footer.pug
 include ../../blocks/statistic/statistic.pug
-<<<<<<< HEAD
 include ../../blocks/reviews/reviews.pug
-=======
 include ../../blocks/navbar/navbar.pug
-<<<<<<< HEAD
->>>>>>> 8812730daa953efdaee609240df22db4f650ba7e
-=======
 include ../../blocks/advantage/advantage.pug
->>>>>>> db0960ed914205a6c454c70746cd93e962b9012b
 
 //- TODO: include page-specific block templates
 
@@ -19,24 +13,16 @@ block page
     //- TODO: add code
     .header
         +logo().header__logo
-<<<<<<< HEAD
     .navbar
         +navbar().navbar
-<<<<<<< HEAD
     .reviews
         +reviews().reviews
-=======
-    .advantage
-        +advantage(data).advantage
->>>>>>> db0960ed914205a6c454c70746cd93e962b9012b
     .footer
         +footer().footer
-=======
         +statistic(data)
     +navbar()
     +footer()
-<<<<<<< HEAD
->>>>>>> 8812730daa953efdaee609240df22db4f650ba7e
-=======
->>>>>>> 84d4c1c6e9767230193e5066ee09f93aa65f99a4
->>>>>>> db0960ed914205a6c454c70746cd93e962b9012b
+        +navbar()
+        +statistic(data.statistic)
+    +advantage(data)
+    +footer()
