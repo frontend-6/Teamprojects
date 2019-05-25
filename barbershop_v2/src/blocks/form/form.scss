@@ -4,6 +4,8 @@
 .form {
     // Selector styles
     // TODO: add code
+    background: #f8f5f2;
+    text-align: center;
 
     // @media queries
     // TODO: add code
@@ -21,9 +23,8 @@
     // TODO: add code
 
     &_sign_haircut {
-        background: #f8f5f2;
         padding: 0 20px;
-        max-width: 320px;
+        // max-width: 320px;
         width: 100%;
         display: grid;
         grid-template-rows: repeat(3, 1fr) 22px repeat(2, 1fr) 22px 112px;
