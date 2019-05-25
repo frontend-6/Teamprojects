@@ -1,0 +1,14 @@
+//-
+    name: form
+    description: Markup for the form block
+    arguments:
+        - {object} data - block data
+
+mixin form(data = {})
+    .form(action="#", name="barb_form")&attributes(attributes)
+        h2.form_h2= data.form_h2
+        .form_sign_haircut
+            each i in ['Фамилия', 'Имя', 'Отчество', 'Контактный телефон', 'Контактный e-mail']
+                input(class="form_input", type="text", name="barb_form", placeholder=i)
+            textarea(class="form_textarea", name="barb_form", placeholder= "Доп. информация для мастера")
+
