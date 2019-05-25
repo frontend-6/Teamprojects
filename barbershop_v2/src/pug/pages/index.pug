@@ -5,6 +5,7 @@ include ../../blocks/footer/footer.pug
 include ../../blocks/statistic/statistic.pug
 include ../../blocks/navbar/navbar.pug
 include ../../blocks/advantage/advantage.pug
+include ../../blocks/form/form.pug
 
 //- TODO: include page-specific block templates
 
@@ -12,15 +13,6 @@ block page
     //- TODO: add code
     .header
         +logo().header__logo
-<<<<<<< HEAD
-    .navbar
-        +navbar().navbar
-    .advantage
-        +advantage(data).advantage
-    .footer
-        +footer().footer
-=======
         +statistic(data)
     +navbar()
     +footer()
->>>>>>> 84d4c1c6e9767230193e5066ee09f93aa65f99a4
