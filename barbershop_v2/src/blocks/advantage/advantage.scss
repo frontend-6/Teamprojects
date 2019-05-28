@@ -4,6 +4,7 @@
 .advantage {
 
   // Selector styles
+  // TODO: add code
   background-color: #242424;
   width: 100%;
   height: 445px;
@@ -12,6 +13,7 @@
   // TODO: add code
 
   // Pseudo-classes and pseudo-elements
+  // TODO: add code
   &__radio:checked ~ &__label{
     background: white;
   }
@@ -20,6 +22,7 @@
   // TODO: add code
 
   // Bem modifiers
+  // TODO: add code
 
   &__info {
     opacity: 0.3;
@@ -71,5 +74,6 @@
     margin: 5px;
   }
   // BEM elements
+  // TODO: add code
 
 }
