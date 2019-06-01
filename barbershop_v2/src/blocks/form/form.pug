@@ -1,19 +1,18 @@
 //-
-    name: news
-    description: Markup for the news block
+    name: form
+    description: Markup for the form block
     arguments:
         - {object} data - block data
 
 mixin form(data = {})
-    .form&attributes(attributes)
-
-       .col
-          h1.form__main= data.formTitle
-          form.forma(action="#", method="post")
-            input.form-control(type="surname" name="surname" placeholder="Фамилия")
-            input.form-control(type="name" name="name" placeholder="Имя")
-            input.form-control.form-control--mb(type="patronumic" name="patronumic" placeholder="Отчество")
-            input.form-control(type="phone" placeholder="Контактный телефон")
-            input.form-control.form-control--mb(type="email" placeholder="Контактный Email")
-            textarea.form-control.form-control--ta(name="textarea", cols="30", rows="10" placeholder="Доп.информация для мастера")
-            button.form-btn(type="submit")= data.text
+    .form(action="#", name="barb_form")&attributes(attributes)
+        h2.form_h2= data.form_h2
+        .form_sign_haircut
+            each i in ['Фамилия', 'Имя', 'Отчество', 'Контактный телефон', 'Контактный e-mail']
+                input(
+                    class       = "form_input"
+                    type        = "text"
+                    name        = "barb_form" 
+                    placeholder = i
+                    )
+            textarea(class="form_textarea", name="barb_form", placeholder="Доп. информация для мастера")

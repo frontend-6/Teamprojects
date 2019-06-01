@@ -63,6 +63,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.0",
+    "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9"
   }
 }

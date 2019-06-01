@@ -1,3 +1,5 @@
+import advantage from "../../advantage/advantage";
+
 /**
  * @file Implementation of the page block
  */
@@ -71,6 +73,7 @@ function initBlock() {
     });
 
     // TODO: initialize other blocks
+    advantage.initBlock();
 
     // Process the initial window size and scroll position
     handleWindowResize();
