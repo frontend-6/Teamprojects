@@ -15,6 +15,20 @@ html(lang="en")
 
         link(rel="stylesheet", href="css/style.css")
     body.page
+    
+        -
+            const navData = data.navigation.map((item) => {
+                if (item.text == data.activeItem) {
+                    return {
+                        link: item.link,
+                        text: item.text,
+                        active: true
+                    }
+                } else {
+                    return item;
+                }
+            });
+
         block page
 
         block scripts

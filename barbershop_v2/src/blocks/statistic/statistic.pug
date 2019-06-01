@@ -9,3 +9,9 @@ mixin statistic(data = {})
         .statistic__white
             h1.statistic__title= data.title
             p.statistic__subtitle= data.subtitle
+        .statistic__list
+            each item in data.list
+                .statistic__item
+                    .statistic__number!= item.number
+                    .statistic__description!= item.description
+        .statistic__footnote= data.footnote

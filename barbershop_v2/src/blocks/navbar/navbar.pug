@@ -10,4 +10,6 @@ mixin navbar(data = {})
         button.navbar__burger
             span.navbar__burger--line
         ul.navbar__list
-            
+            each val in data
+                li.navbar__item
+                    a(href= val.link, class= val.active ? 'navbar__link--active' : '').navbar__link= val.text
