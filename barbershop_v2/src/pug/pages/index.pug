@@ -6,6 +6,7 @@ include ../../blocks/statistic/statistic.pug
 include ../../blocks/reviews/reviews.pug
 include ../../blocks/navbar/navbar.pug
 include ../../blocks/advantage/advantage.pug
+include ../../blocks/news/news.pug
 
 //- TODO: include page-specific block templates
 
@@ -16,5 +17,6 @@ block page
         +navbar(navData)
         +statistic(data.statistic)
     +advantage(data.advantage)
+    +news(data.news)
     +reviews()
     +footer()

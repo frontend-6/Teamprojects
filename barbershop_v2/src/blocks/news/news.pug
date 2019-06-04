@@ -1,0 +1,17 @@
+//-
+    name: news
+    description: Markup for the news block
+    arguments:
+        - {object} data - block data
+
+mixin news(data = {})
+    .news&attributes(attributes)
+        .container.news__container
+            h2.news__title= data.title
+            each val in data.list
+                .news__item
+                    .news__date
+                        .news__number= val.date.number
+                        .news__month= val.date.month
+                    p.news__text= val.text
+            +btn(data.button, 'ghost', true).news__button

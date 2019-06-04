@@ -1,0 +1,12 @@
+//-
+    name: btn
+    description: Markup for the btn block
+    arguments:
+        - {object} data - block data
+
+mixin btn(data = {}, mod, link = false)
+    - const tag = link ? "a" : "button"
+    - var attributes= {}
+    - link ? attributes.href= data.link : ''
+    - mod ? attributes.class= `btn--${mod}` : ''
+    #{tag}.btn&attributes(attributes)= data.text
