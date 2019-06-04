@@ -13,9 +13,9 @@ block page
     //- TODO: add code
     .header
         +logo().header__logo
-        +navbar().navbar
+        +navbar(navData)
         +statistic(data.statistic)
-    +advantage(data)
+    +advantage(data.advantage)
     +reviews()
     +footer()
     .navbar
@@ -30,4 +30,5 @@ block page
         +navbar()
         +statistic(data.statistic)
     +advantage(data)
+    +footer()
     +footer()

@@ -25,7 +25,10 @@
  */
 function initBlock() {
     // TODO: add code here
-    $('.advantage__slider').slick();
+    $('.advantage__slider').slick({
+        arrows: false,
+        dots: true
+    });
     return true;
 }
 // ---------------------------- END PUBLIC METHODS ----------------------------

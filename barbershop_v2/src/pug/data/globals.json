@@ -1,4 +1,23 @@
 {
-    "siteTitle": "Site Title",
-    "siteTagline": "Site Tagline"
+    "siteTitle": "Borodinski",
+    "siteTagline": "Barbershop",
+
+    "navigation": [
+        {
+            "text": "ГЛАВНАЯ",
+            "link": "index.html"
+        },
+        {
+            "text": "Наши работы",
+            "link": "photo.html"
+        },
+        {
+            "text": "Записаться",
+            "link": "form.html"
+        },
+        {
+            "text": "Контакты",
+            "link": "#contact"
+        }
+    ]
 }

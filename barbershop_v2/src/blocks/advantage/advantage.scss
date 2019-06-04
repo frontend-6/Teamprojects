@@ -2,78 +2,83 @@
  * Styles for the advantage block.
  */
 .advantage {
+    // Selector styles
+    // TODO: add code
+    background-color: #242424;
+    width: 100%;
+    padding-bottom: 48px;
+    
+    // @media queries
+    // TODO: add code
 
-  // Selector styles
-  // TODO: add code
-  background-color: #242424;
-  width: 100%;
-  height: 445px;
-  padding-top: 13px;
-  // @media queries
-  // TODO: add code
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
 
-  // Pseudo-classes and pseudo-elements
-  // TODO: add code
-  &__radio:checked ~ &__label{
-    background: white;
-  }
+    // Nested selectors
+    // TODO: add code
+    .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
 
-  // Nested selectors
-  // TODO: add code
+        li {
+            margin: 0 13px;
 
-  // Bem modifiers
-  // TODO: add code
+            &.slick-active {
 
-  &__info {
-    opacity: 0.3;
-    color: white;
-    font-family: $font-pt-sans;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  &__img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-  &__title {
-    text-align: center;
-    color: #f7f4f1;
-    font-family: $font-pt-sans;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 22px;
-  }
+                button {
+                    background-color: $color-white;
+                }
+            }
+        }
 
-  &__subtitle {
-    text-align: center;
-    color: white;
-    font-family: $font-pt-sans;
-    font-size: 20px;
-  }
-  &__radio {
-    display: none;
-  }
-  &__label {
-    display: block;
-    border: 1px solid white;
+        button {
+            transform: rotateZ(45deg);
+            border: 1px solid white;
+            width: 7px;
+            height: 7px;
+            display: block;
+            padding: 0;
+            background: none;
+            color: transparent;
+        }
+    }
 
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
-    text-align: center;
-    margin: 0 auto;
-  }
-  &__ul {
-    display: flex;
-    justify-content: center;
-  }
-  &__ul li {
-    margin: 5px;
-  }
-  // BEM elements
-  // TODO: add code
+    // Bem modifiers
+    // TODO: add code
+
+    &__img {
+        display: block;
+        max-width: 95px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    &__title {
+        text-align: center;
+        color: #f7f4f1;
+        font-family: $font-pt-sans;
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: -5px;
+        letter-spacing: -.07em;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: white;
+        font-family: $font-pt-sans;
+        font-size: 20px;
+        padding: 0 20px;
+        letter-spacing: -.1em;
+        line-height: 27px;
+        margin-top: 7px;
+        margin-bottom: 30px;
+    }
+
+    // BEM elements
+    // TODO: add code
 
 }
