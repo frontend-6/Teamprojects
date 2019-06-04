@@ -3,10 +3,14 @@
  */
 .footer {
     // Selector styles
-    height: 200px;
-    width: 100%;
-    background-color: #292929;
+    background-color: $color-black;
     color: $color-white;
+    text-align: center;
+    &__title {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 700;
+    }
 
     // @media queries
     // TODO: add code

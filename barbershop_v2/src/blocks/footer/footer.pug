@@ -5,5 +5,7 @@
         - {object} data - block data
 
 mixin footer(data = {})
-    .footer&attributes(attributes) Hello World
-        
+    .footer&attributes(attributes)
+        .footer__adress
+            h5.footer__title= data.adress.title
+            p.footer__text= data.adress.text
