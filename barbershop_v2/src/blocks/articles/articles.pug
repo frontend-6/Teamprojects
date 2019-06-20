@@ -1,0 +1,29 @@
+//-
+    name: articles
+    description: Markup for the articles block
+    arguments:
+        - {object} data - block data
+
+mixin articles(data = {})
+    .articles&attributes(attributes)
+        each item, index in data
+            .article(class= item.type ? `article--${item.type}` : '')
+                -
+                    let panelDark = false
+                    if ( (item.type == 'link') || (item.type == 'grid') || (item.type == 'blockqoute') )
+                        panelDark = true
+                .article__panel(class= panelDark ? 'article__panel--dark' : '')
+                    .article__icon
+                        +icon(item.icon)
+                    if item.media
+                        .article__media
+                            if (item.media.length > 1)
+                                each img, index in item.media
+                                    img(src=img.src, alt="")
+                            else if (item.media.type == 'img')
+                                img(src=item.media.src, alt="")
+                            else if (item.media.type == 'video')
+                                video(src=item.media.src)
+                    if item.category
+                        .article__category= item.category
+                    
